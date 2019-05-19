@@ -1,0 +1,47 @@
+= Demographic Variables and Sample Weights (DEMO_I)
+SDDSRVYR - Data release cycle
+RIDSTATR - Interview/Examination status
+RIAGENDR - Gender
+RIDAGEYR - Age in years at screening
+RIDAGEMN - Age in months at screening - 0 to 24 mos
+RIDRETH1 - Race/Hispanic origin
+RIDRETH3 - Race/Hispanic origin w/ NH Asian
+RIDEXMON - Six month time period
+RIDEXAGM - Age in months at exam - 0 to 19 years
+DMQMILIZ - Served active duty in US Armed Forces
+DMQADFC - Served in a foreign country
+DMDBORN4 - Country of birth
+DMDCITZN - Citizenship status
+DMDYRSUS - Length of time in US
+DMDEDUC3 - Education level - Children/Youth 6-19
+DMDEDUC2 - Education level - Adults 20+
+DMDMARTL - Marital status
+RIDEXPRG - Pregnancy status at exam
+SIALANG - Language of SP Interview
+SIAPROXY - Proxy used in SP Interview?
+SIAINTRP - Interpreter used in SP Interview?
+FIALANG - Language of Family Interview
+FIAPROXY - Proxy used in Family Interview?
+FIAINTRP - Interpreter used in Family Interview?
+MIALANG - Language of MEC Interview
+MIAPROXY - Proxy used in MEC Interview?
+MIAINTRP - Interpreter used in MEC Interview?
+AIALANGA - Language of ACASI Interview
+DMDHHSIZ - Total number of people in the Household
+DMDFMSIZ - Total number of people in the Family
+DMDHHSZA - # of children 5 years or younger in HH
+DMDHHSZB - # of children 6-17 years old in HH
+DMDHHSZE - # of adults 60 years or older in HH
+DMDHRGND - HH ref person's gender
+DMDHRAGE - HH ref person's age in years
+DMDHRBR4 - HH ref person's country of birth
+DMDHREDU - HH ref person's education level
+DMDHRMAR - HH ref person's marital status
+DMDHSEDU - HH ref person's spouse's education level
+WTINT2YR - Full sample 2 year interview weight
+WTMEC2YR - Full sample 2 year MEC exam weight
+SDMVPSU - Masked variance pseudo-PSU
+SDMVSTRA - Masked variance pseudo-stratum
+INDHHIN2 - Annual household income
+INDFMIN2 - Annual family income
+INDFMPIR - Ratio of family income to poverty

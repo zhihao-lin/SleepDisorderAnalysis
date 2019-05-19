@@ -1,0 +1,826 @@
+= Albumin & Creatinine - Urine (ALB_CR_I)
+URXUMA - Albumin, urine (ug/mL)
+URDUMALC - Albumin, urine comment code
+URXUMS - Albumin, urine (mg/L)
+URXUCR - Creatinine, urine (mg/dL)
+URDUCRLC - Creatinine, urine comment code
+URXCRS - Creatinine, urine (umol/L)
+URDACT - Albumin creatinine ratio (mg/g)
+= Apolipoprotein B (APOB_I)
+WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+LBXAPB - Apolipoprotein (B) (mg/dL)
+LBDAPBSI - Apolipoprotein (B) (g/L)
+= Aromatic Diamines - Urine (UADM_I)
+WTSA2YR - Subsample A Weights
+URX4TDA - 2,4-Diaminotoluene (4TDA) (ng/mL)
+URD4DALC - 2,4-Diaminotoluene (4TDA) Comment Code
+URX6TDA - 2,6-Diaminotoluene (6TDA) (ng/mL)
+URD6DALC - 2,6-Diaminotoluene (6TDA) Comment Code
+URX4MDA - 4MDA (ng/mL)
+URD4MALC - 4MDA Comment Code
+URX5NDA - 1,5-Diaminonaphthalene (5NDA) (ng/mL)
+URD5NALC - 5NDA Comment Code
+URXPPDA - p-Phenylenediamine (PPDA) (ng/mL)
+URDPDALC - p-Phenylenediamine (PPDA) Comment Code
+= Arsenic - Total - Urine - Special Sample (Subsample) (UTASS_I)
+WTFSM - Two year smoking weights
+URXUAS - Urinary arsenic, total (ug/L)
+= Arsenic - Total - Urine (UTAS_I)
+WTSA2YR - Subsample A weights
+URXUAS - Urinary arsenic, total (ug/L)
+= Arsenic - Total - Urine (UTAS_I)
+WTSA2YR - Subsample A weights
+URXUAS - Urinary arsenic, total (ug/L)
+= Blood Lead, Cadmium, Total Mercury, Selenium & Manganese - Blood (PBCD_I)
+WTSH2YR - Blood metal weights
+LBXBPB - Blood lead (ug/dL)
+LBDBPBSI - Blood lead (umol/L)
+LBDBPBLC - Blood lead comment code
+LBXBCD - Blood cadmium (ug/L)
+LBDBCDSI - Blood cadmium (umol/L)
+LBDBCDLC - Blood cadmium comment code
+LBXTHG - Blood mercury, total (ug/L)
+LBDTHGSI - Blood mercury, total (umol/L)
+LBDTHGLC - Blood mercury, total comment code
+LBXBSE - Blood selenium (ug/L)
+LBDBSESI - Blood selenium (umol/L)
+LBDBSELC - Blood selenium comment code
+LBXBMN - Blood manganese (ug/L)
+LBDBMNSI - Blood manganese (umol/L)
+LBDBMNLC - Blood manganese comment code
+= Mercury: Inorganic, Ethyl and Methyl – Blood (IHGEM_I)
+WTSH2YR - Blood metal weights
+LBXIHG - Mercury, inorganic (ug/L)
+LBDIHGSI - Mercury, inorganic (umol/L)
+LBDIHGLC - Mercury, inorganic comment code
+LBXBGE - Mercury, ethyl (ug/L)
+LBDBGELC - Mercury, ethyl comment code
+LBXBGM - Mercury, methyl (ug/L)
+LBDBGMLC - Mercury, methyl comment code
+= Chlamydia - Urine (CHLMDA_I)
+URXUCL - Chlamydia, Urine
+= Cholesterol - High-Density Lipoprotein (HDL) (HDL_I)
+LBDHDD - Direct HDL-Cholesterol (mg/dL)
+LBDHDDSI - Direct HDL-Cholesterol (mmol/L)
+= Cholesterol - Low - Density Lipoprotein (LDL) & Triglycerides (TRIGLY_I)
+WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+LBXTR - Triglyceride (mg/dL)
+LBDTRSI - Triglyceride (mmol/L)
+LBDLDL - LDL-cholesterol (mg/dL)
+LBDLDLSI - LDL-cholesterol (mmol/L)
+= Cholesterol - Total (TCHOL_I)
+LBXTC - Total Cholesterol (mg/dL)
+LBDTCSI - Total Cholesterol (mmol/L)
+= Chromium & Cobalt (CRCO_I)
+LBXBCR - Chromium (ug/L)
+LBDBCRSI - Chromium (nmol/L)
+LBDBCRLC - Chromium comment code
+LBXBCO - Cobalt (ug/L)
+LBDBCOSI - Cobalt (nmol/L)
+LBDBCOLC - Cobalt comment code
+= Complete Blood Count with 5-Part Differential - Whole Blood (CBC_I)
+LBXWBCSI - White blood cell count (1000 cells/uL)
+LBXLYPCT - Lymphocyte percent (%)
+LBXMOPCT - Monocyte percent (%)
+LBXNEPCT - Segmented neutrophils percent (%)
+LBXEOPCT - Eosinophils percent (%)
+LBXBAPCT - Basophils percent (%)
+LBDLYMNO - Lymphocyte number (1000 cells/uL)
+LBDMONO - Monocyte number (1000 cells/uL)
+LBDNENO - Segmented neutrophils num (1000 cell/uL)
+LBDEONO - Eosinophils number (1000 cells/uL)
+LBDBANO - Basophils number (1000 cells/uL)
+LBXRBCSI - Red blood cell count (million cells/uL)
+LBXHGB - Hemoglobin (g/dL)
+LBXHCT - Hematocrit (%)
+LBXMCVSI - Mean cell volume (fL)
+LBXMCHSI - Mean Cell Hgb Conc. (g/dL)
+LBXMCH - Mean cell hemoglobin (pg)
+LBXRDW - Red cell distribution width (%)
+LBXPLTSI - Platelet count (1000 cells/uL)
+LBXMPSI - Mean platelet volume (fL)
+= Copper, Selenium & Zinc - Serum (CUSEZN_I)
+WTSA2YR - Subsample A weights
+LBXSCU - Serum Copper (ug/dL)
+LBDSCUSI - Serum Copper (umol/L)
+LBXSSE - Serum Selenium (ug/L)
+LBDSSESI - Serum Selenium (umol/L)
+LBXSZN - Serum Zinc (ug/dL)
+LBDSZNSI - Serum Zinc (umol/L)
+= Cotinine and Hydroxycotinine - Serum (COT_I)
+LBXCOT - Cotinine, Serum (ng/mL)
+LBDCOTLC - Cotinine, Serum Comment Code
+LBXHCT - Hydroxycotinine, Serum (ng/mL)
+LBDHCTLC - Hydroxycotinine, Serum Comment Code
+= Fasting Questionnaire (FASTQX_I)
+PHQ020 - Coffee or tea with cream or sugar?
+PHACOFHR - Coffee/tea fast time (hours)
+PHACOFMN - Coffee/tea fast time (minutes)
+PHQ030 - Alcohol, such as beer, wine, or liquor?
+PHAALCHR - Alcohol fast time (hours)
+PHAALCMN - Alcohol fast time (minutes)
+PHQ040 - Gum, mints, lozenges or cough drops
+PHAGUMHR - Gum, mints cough drops fast time (hours)
+PHAGUMMN - Gum, mints, cough fast time (minutes)
+PHQ050 - Antacids, laxatives, or anti-diarrheals?
+PHAANTHR - Antacids, laxatives fast time (hours)
+PHAANTMN - Antacids, laxatives fast time (minutes)
+PHQ060 - Dietary supplements?
+PHASUPHR - Dietary supplements fast time (hours)
+PHASUPMN - Dietary supplements fast time (minutes)
+PHAFSTHR - Total length of "food fast," hours
+PHAFSTMN - Total length of "food fast," minutes
+PHDSESN - Session in which SP was examined
+= Fluoride - Plasma (FLDEP_I)
+LBDPFL - Fluoride, plasma (umol/L) average 2
+= Fluoride - Water (FLDEW_I)
+LBDWFL - Fluoride, water (mg/L) average 2 values
+= Folate - RBC (FOLATE_I)
+LBDRFO - RBC folate (ng/mL)
+LBDRFOSI - RBC folate (nmol/L)
+= Folate Forms - Total & Individual - Serum (FOLFMS_I)
+LBDFOTSI - Serum total folate (nmol/L)
+LBDFOT - Serum total folate (ng/mL)
+LBXSF1SI - 5-Methyl-tetrahydrofolate (nmol/L)
+LBDSF1LC - 5-Methyl-tetrahydrofolate cmt
+LBXSF2SI - Folic acid (nmol/L)
+LBDSF2LC - Folic acid cmt
+LBXSF3SI - 5-Formyl-tetrahydrofolate (nmol/L)
+LBDSF3LC - 5-Formyl-tetrahydrofolate cmt
+LBXSF4SI - Tetrahydrofolate (nmol/L)
+LBDSF4LC - Tetrahydrofolate cmt
+LBXSF5SI - 5,10-Methenyl-tetrahydrofolate (nmol/L)
+LBDSF5LC - 5,10-Methenyl-tetrahydrofolate cmt
+LBXSF6SI - Mefox oxidation product (nmol/L)
+LBDSF6LC - Mefox oxidation product cmt
+= Glycohemoglobin (GHB_I)
+LBXGH - Glycohemoglobin (%)
+= Hepatitis A (HEPA_I)
+LBXHA - Hepatitis A antibody
+= Hepatitis B: Core antibody, Surface antigen, and Hepatitis D antibody (HEPBD_I)
+LBXHBC - Hepatitis B core antibody
+LBDHBG - Hepatitis B surface antigen
+LBDHD - Hepatitis D (anti-HDV)
+= Hepatitis B: Surface Antibody (HEPB_S_I)
+LBXHBS - Hepatitis B Surface Antibody
+= Hepatitis C: RNA (HCV-RNA) and Hepatitis C Genotype (HEPC_I)
+LBXHCR - Hepatitis C RNA
+LBXHCG - Hepatitis C Genotype
+= Hepatitis E: IgG & IgM Antibodies (HEPE_I)
+LBDHEG - Hepatitis E IgG (anti-HEV)
+LBDHEM - Hepatitis E IgM (anti-HEV)
+= Herpes Simplex Virus Type-1 & Type-2 (HSV_I)
+LBXHE1 - Herpes Simplex Virus Type 1
+LBXHE2 - Herpes Simplex Virus Type 2
+= HIV Antibody Test (HIV_I)
+LBXHIVC - HIV-1, 2 Combo Test
+LBXHIV1 - HIV-1
+LBXHIV2 - HIV-2
+LBXHNAT - HIV Confirmatory Test
+= Human Papillomavirus (HPV) - Oral Rinse (ORHPV_I)
+ORXGH - HPV High Globulin Band result
+ORXGL - HPV Low Globulin Band result
+ORXH06 - HPV Type 6
+ORXH11 - HPV Type 11
+ORXH16 - HPV Type 16
+ORXH18 - HPV Type 18
+ORXH26 - HPV Type 26
+ORXH31 - HPV Type 31
+ORXH33 - HPV Type 33
+ORXH35 - HPV Type 35
+ORXH39 - HPV Type 39
+ORXH40 - HPV Type 40
+ORXH42 - HPV Type 42
+ORXH45 - HPV Type 45
+ORXH51 - HPV Type 51
+ORXH52 - HPV Type 52
+ORXH53 - HPV Type 53
+ORXH54 - HPV Type 54
+ORXH55 - HPV Type 55
+ORXH56 - HPV Type 56
+ORXH58 - HPV Type 58
+ORXH59 - HPV Type 59
+ORXH61 - HPV Type 61
+ORXH62 - HPV Type 62
+ORXH64 - HPV Type 64
+ORXH66 - HPV Type 66
+ORXH67 - HPV Type 67
+ORXH68 - HPV Type 68
+ORXH69 - HPV Type 69
+ORXH70 - HPV Type 70
+ORXH71 - HPV Type 71
+ORXH72 - HPV Type 72
+ORXH73 - HPV Type 73
+ORXH81 - HPV Type 81
+ORXH82 - HPV Type 82
+ORXH83 - HPV Type 83
+ORXH84 - HPV Type 84
+ORXHPC - HPV CP 6108
+ORXHPI - HPV Type IS39
+ORXHPV - Oral HPV Result
+= Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Cobas High-Risk (HPVSWC_I)
+LBXHP2C - Cobas HPV Swab High Risk
+= Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Linear Array (HPVSWR_I)
+LBDRPCR - Roche HPV linear array summary result
+LBDRHP - Roche LA high positive globin control
+LBDRLP - Roche LA low positive globin control
+LBDR06 - HPV type 6
+LBDR11 - HPV type 11
+LBDR16 - HPV type 16
+LBDR18 - HPV type 18
+LBDR26 - HPV type 26
+LBDR31 - HPV type 31
+LBDR33 - HPV type 33
+LBDR35 - HPV type 35
+LBDR39 - HPV type 39
+LBDR40 - HPV type 40
+LBDR42 - HPV type 42
+LBDR45 - HPV type 45
+LBDR51 - HPV type 51
+LBDR52 - HPV type 52
+LBDR53 - HPV type 53
+LBDR54 - HPV type 54
+LBDR55 - HPV type 55
+LBDR56 - HPV type 56
+LBDR58 - HPV type 58
+LBDR59 - HPV type 59
+LBDR61 - HPV type 61
+LBDR62 - HPV type 62
+LBDR64 - HPV type 64
+LBDR66 - HPV type 66
+LBDR67 - HPV type 67
+LBDR68 - HPV type 68
+LBDR69 - HPV type 69
+LBDR70 - HPV type 70
+LBDR71 - HPV type 71
+LBDR72 - HPV type 72
+LBDR73 - HPV type 73
+LBDR81 - HPV type 81
+LBDR82 - HPV type 82
+LBDR83 - HPV type 83
+LBDR84 - HPV type 84
+LBDR89 - HPV type 89
+LBDRPI - HPV type IS39
+= Neonicotinoids - Urine - Surplus (SSNEON_I)
+WTSB2YR - Subsample B weights
+SSIMID - Imidacloprid (ug/L)
+SSIMIDLC - Imidacloprid (ug/L) Cmt code
+SSACET - Acetamiprid (ug/L)
+SSACETLC - Acetamiprid (ug/L) Cmt code
+SSCLOT - Clothianidin (ug/L)
+SSCLOTLC - Clothianidin (ug/L) Cmt code
+SSTHIA - Thiacloprid (ug/L)
+SSTHIALC - Thiacloprid (ug/L) Cmt code
+SSOHIM - 5-Hydroxyimidacloprid (ug/L)
+SSOHIMLC - 5-Hydroxyimidacloprid (ug/L)Cmt code
+SSAND - N-Desmethylacetamiprid (ug/L)
+SSANDLC - N-Desmethylacetamiprid (ug/L) Cmt code
+= Insulin (INS_I)
+WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+LBXIN - Insulin (uU/mL)
+LBDINSI - Insulin (pmol/L)
+LBDINLC - Insulin Comment Code
+PHAFSTHR - Total length of 'food fast', hours
+PHAFSTMN - Total length of 'food fast', minutes
+= Iodine - Urine (UIO_I)
+WTSA2YR - Subsample A weights
+URXUIO - Iodine, urine (ng/mL)
+URDUIOLC - Iodine, urine comment code
+= Mercury - Urine (UHG_I)
+WTSA2YR - Subsample A weights
+URXUHG - Urine Mercury (ng/mL)
+URDUHGLC - Mercury, Urine Comment Code
+= Metals - Urine (UM_I)
+WTSA2YR - Subsample A weights
+URXUBA - Barium, urine (ug/L)
+URDUBALC - Urinary Barium Comment Code
+URXUCD - Cadmium, urine (ug/L)
+URDUCDLC - Urinary Cadmium Comment Code
+URXUCO - Cobalt, urine (ug/L)
+URDUCOLC - Urinary Cobalt Comment Code
+URXUCS - Cesium, urine (ug/L)
+URDUCSLC - Urinary Cesium Comment Code
+URXUMO - Molybdenum, urine (ug/L)
+URDUMOLC - Urinary Molybdenum Comment Code
+URXUMN - Manganese, urine (ug/L)
+URDUMNLC - Urinary Mn Comment Code
+URXUPB - Lead, urine (ug/L)
+URDUPBLC - Urinary Lead Comment Code
+URXUSB - Antimony, urine (ug/L)
+URDUSBLC - Urinary Antimony Comment Code
+URXUSN - Tin, urine (ug/L)
+URDUSNLC - USN Comment Code
+URXUSR - Strontium, urine (ug/L)
+URDUSRLC - USR Comment Code
+URXUTL - Thallium, urine (ug/L)
+URDUTLLC - Urinary Thallium Comment Code
+URXUTU - Tungsten, urine (ug/L)
+URDUTULC - Urinary Tungsten Comment Code
+URXUUR - Uranium, urine (ug/L)
+URDUURLC - Urinary Uranium Comment Code
+= Metals - Urine - Special Sample (Subsample) (UMS_I)
+WTFSM - Two year smoking weights
+URXUBA - Barium, urine (ug/L)
+URDUBALC - Urinary Barium Comment Code
+URXUCD - Cadmium, urine (ug/L)
+URDUCDLC - Urinary Cadmium Comment Code
+URXUCO - Cobalt, urine (ug/L)
+URDUCOLC - Urinary Cobalt Comment Code
+URXUCS - Cesium, urine (ug/L)
+URDUCSLC - Urinary Cesium Comment Code
+URXUMO - Molybdenum, urine (ug/L)
+URDUMOLC - Urinary Molybdenum Comment Code
+URXUMN - Manganese, urine (ug/L)
+URDUMNLC - Urinary Mn Comment Code
+URXUPB - Lead, urine (ug/L)
+URDUPBLC - Urinary Lead Comment Code
+URXUSB - Antimony, urine (ug/L)
+URDUSBLC - Urinary Antimony Comment Code
+URXUSN - Tin, urine (ug/L)
+URDUSNLC - USN Comment Code
+URXUSR - Strontium, urine (ug/L)
+URDUSRLC - USR Comment Code
+URXUTL - Thallium, urine (ug/L)
+URDUTLLC - Urinary Thallium Comment Code
+URXUTU - Tungsten, urine (ug/L)
+URDUTULC - Urinary Tungsten Comment Code
+URXUUR - Uranium, urine (ug/L)
+URDUURLC - Urinary Uranium Comment Code
+= Mono-2-ethyl-5-hydroxyhexyl terephthalate, mono-2-ethyl-5-carboxypentyl terephthalate, and monooxoisononyl phthalate - Urine (Surplus) (SSMHHT_I)
+WTSB2YR - Subsample B weights
+SSMHHT - Mono2ethyl5hydroxyhexyl terephth (ug/L)
+SSMHHTL - Mono2ethy-5hydroxyhexyl terephth cmt cd
+SSECPT - Mono2ethyl5carboxypentyl terephth (ug/L)
+SSECPTL - Mono2ethyl5carboxypentyl terephth cmt cd
+SSMONP - Monooxoisononyl phthalate (ug/L)
+SSMONPL - Monooxoisononyl phthalate cmt cd
+= Oral Glucose Tolerance Test (OGTT_I)
+WTSOG2YR - OGTT Subsample MEC Weight
+LBXGLT - Two Hour Glucose (OGTT) (mg/dL)
+LBDGLTSI - Two Hour Glucose (OGTT) (mmol/L)
+GTDSCMMN - Glucose challenge Administer Time in min
+GTDDR1MN - Time from fast glucose & challenge(min)
+GTDBL2MN - Time from fasting glucose & OGTT (min)
+GTDDR2MN - Time from glucose challenge & OGTT(min)
+GTXDRANK - Amount of glucose challenge drank
+GTDCODE - Incomplete OGTT Comment Code
+= Perfluoroalkyl and Polyfluoroalkyl (PFAS_I)
+LBXPFDE - Perfluorodecanoic acid (ng/mL)
+LBDPFDEL - Perfluorodecanoic acid Comment Code
+LBXPFHS - Perfluorohexane sulfonic acid (ng/mL)
+LBDPFHSL - Perfluorohexane sulfonic acid Comt Code
+LBXMPAH - 2-(N-methyl-PFOSA)acetic acid (ng/mL)
+LBDMPAHL - 2-(N-methyl-PFOSA) acetic acid Comt Code
+LBXPFNA - Perfluorononanoic acid (ng/mL)
+LBDPFNAL - Perfluorononanoic acid Comment Code
+LBXPFUA - Perfluoroundecanoic acid (ng/mL)
+LBDPFUAL - Perfluoroundecanoic acid Comment Code
+LBXPFDO - Perfluorododecanoic acid (ng/mL)
+LBDPFDOL - Perfluorododecanoic acid comment
+LBXNFOA - n-perfluorooctanoic acid (ng/mL)
+LBDNFOAL - n-perfluorooctanoic acid Comment Code
+LBXBFOA - Br. perfluorooctanoic acid iso (ng/mL)
+LBDBFOAL - Br. perfluorooctanoic acid iso Comt Code
+LBXNFOS - n-perfluorooctane sulfonic acid (ng/mL)
+LBDNFOSL - n-perfluorooctane sulfonic Comt Code
+LBXMFOS - Sm-PFOS (ng/mL)
+LBDMFOSL - Sm-PFOS Comment Code
+= Personal Care and Consumer Product Chemicals and Metabolites (EPHPP_I)
+WTSB2YR - Subsample B weights
+URXBP3 - Urinary Benzophenone-3 (ng/mL)
+URDBP3LC - Urinary Benzophenone-3 Comment Code
+URXBPH - Urinary Bisphenol A (ng/mL)
+URDBPHLC - Urinary Bisphenol A Comment Code
+URXBPF - Urinary Bisphenol F (ng/mL)
+URDBPFLC - Urinary Bisphenol F Comment Code
+URXBPS - Urinary Bisphenol S (ng/mL)
+URDBPSLC - Urinary Bisphenol S Comment Code
+URXTLC - Urinary Triclocarban (ng/mL)
+URDTLCLC - Urinary Triclocarban Comment Code
+URXTRS - Urinary Triclosan (ng/mL)
+URDTRSLC - Urinary Triclosan Comment Code
+URXBUP - Butyl paraben (ng/mL)
+URDBUPLC - Butyl paraben Comment Code
+URXEPB - Ethyl paraben (ng/mL)
+URDEPBLC - Ethyl paraben Comment Code
+URXMPB - Methyl paraben (ng/mL)
+URDMPBLC - Methyl paraben Comment Code
+URXPPB - Propyl paraben (ng/mL)
+URDPPBLC - Propyl paraben Comment Code
+URX14D - 2,5-dichlorophenol (ng/mL)
+URD14DLC - 2,5-dichlorophenol Comment Code
+URXDCB - 2,4-dichlorophenol (ng/mL)
+URDDCBLC - 2,4-dichlorophenol Comment Code
+= Phthalates and Plasticizers Metabolites - Urine (PHTHTE_I)
+WTSB2YR - Environmental B 2-year weights
+URXCNP - Mono(carboxynonyl) Phthalate (ng/mL)
+URDCNPLC - Mono(carboxynonyl) Phthalate cmt code
+URXCOP - Mono(carboxyoctyl) Phthalate (ng/mL)
+URDCOPLC - Mono(carboxyoctyl) phthalate cmt code
+URXECP - MECP phthalate (ng/mL)
+URDECPLC - MECP phthalate comment code
+URXHIBP - MHIBP phthalate (ng/mL)
+URDHIBLC - MHIBP phthalate Comment Code
+URXMBP - Mono-n-butyl phthalate (ng/mL)
+URDMBPLC - Mono-n-butyl phthalate comment code
+URXMC1 - Mono-(3-carboxypropyl) phthalate (ng/mL)
+URDMC1LC - Mono-(3-carboxypropyl) phthalate cmt
+URXMCOH - MCOCH phthalate (ng/mL)
+URDMCOLC - MCOCH phthalate Comment Code
+URXMEP - Mono-ethyl phthalate (ng/mL)
+URDMEPLC - Mono-ethyl phthalate comment code
+URXMHBP - Mono-3-hydroxy-n-butyl phthalate (ng/mL)
+URDMHBLC - MHBP phthalate Comment Code
+URXMHH - MEHP phthalate (ng/mL)
+URDMHHLC - MEHP phthalate comment code
+URXMHNC - MHNCH (ng/mL)
+URDMCHLC - MHNCH comment code
+URXMHP - Mono-(2-ethyl)-hexyl phthalate (ng/mL)
+URDMHPLC - Mono-(2-ethyl)-hexyl phthalate cmt code
+URXMIB - Mono-isobutyl phthalate (ng/mL)
+URDMIBLC - Mono-isobutyl phthalate comment code
+URXMNP - Mono-isononyl phthalate (ng/mL)
+URDMNPLC - Mono-isononyl phthalate comment code
+URXMOH - MEOH phthalate (ng/mL)
+URDMOHLC - MEOH phthalate comment code
+URXMZP - Mono-benzyl phthalate (ng/mL)
+URDMZPLC - Mono-benzyl phthalate comment code
+= Plasma Fasting Glucose (GLU_I)
+WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+LBXGLU - Fasting Glucose (mg/dL)
+LBDGLUSI - Fasting Glucose (mmol/L)
+= Pregnancy Test - Urine (UCPREG_I)
+URXPREG - Urine Pregnancy Result
+= Sex Steroid Hormone - Serum (TST_I)
+LBXTST - Testosterone, total (ng/dL)
+LBDTSTLC - Testosterone comment code
+LBXEST - Estradiol (pg/mL)
+LBDESTLC - Estradiol Comment Code
+LBXSHBG - SHBG (nmol/L)
+LBDSHGLC - SHBG Comment Code
+= Speciated Arsenics - Urine - Special Sample (Subsample) (UASS_I)
+WTFSM - Two year smoking weights
+URXUAS3 - Urinary Arsenous acid (ug/L)
+URDUA3LC - Urinary Arsenous acid comment code
+URXUAS5 - Urinary Arsenic acid (ug/L)
+URDUA5LC - Urinary Arsenic acid comment code
+URXUAB - Urinary Arsenobetaine (ug/L)
+URDUABLC - Urinary Arsenobetaine comment code
+URXUAC - Urinary Arsenocholine (ug/L)
+URDUACLC - Urinary Arsenocholine comment code
+URXUDMA - Urinary Dimethylarsinic acid (ug/L)
+URDUDALC - Urinary Dimethylarsonic acid coment code
+URXUMMA - Urinary Monomethylacrsonic acid (ug/L)
+URDUMMAL - Urinary MMA acid comment code
+= Speciated Arsenics - Urine (UAS_I)
+WTSA2YR - Subsample A weights
+URXUAS3 - Urinary Arsenous acid (ug/L)
+URDUA3LC - Urinary Arsenous acid comment code
+URXUAS5 - Urinary Arsenic acid (ug/L)
+URDUA5LC - Urinary Arsenic acid comment code
+URXUAB - Urinary Arsenobetaine (ug/L)
+URDUABLC - Urinary Arsenobetaine comment code
+URXUAC - Urinary Arsenocholine (ug/L)
+URDUACLC - Urinary Arsenocholine comment code
+URXUDMA - Urinary Dimethylarsinic acid (ug/L)
+URDUDALC - Urinary Dimethylarsonic acid comment
+URXUMMA - Urinary Monomethylacrsonic acid (ug/L)
+URDUMMAL - Urinary Monomethylacrsonic acid comment
+= Standard Biochemistry Profile (BIOPRO_I)
+LBXSAL - Albumin, refrigerated serum (g/dL)
+LBDSALSI - Albumin, refrigerated serum (g/L)
+LBXSAPSI - Alkaline Phosphatase (ALP) (IU/L)
+LBXSASSI - Aspartate Aminotransferase (AST) (IU/L)
+LBXSATSI - Alanine Aminotransferase (ALT) (IU/L)
+LBXSBU - Blood Urea Nitrogen (mg/dL)
+LBDSBUSI - Blood Urea Nitrogen (mmol/L)
+LBXSC3SI - Bicarbonate (mmol/L)
+LBXSCA - Total Calcium (mg/dL)
+LBDSCASI - Total Calcium (mmol/L)
+LBXSCH - Cholesterol, refrigerated serum (mg/dL)
+LBDSCHSI - Cholesterol, refrigerated serum (mmol/L)
+LBXSCK - Creatine Phosphokinase (CPK) (IU/L)
+LBXSCLSI - Chloride (mmol/L)
+LBXSCR - Creatinine, refrigerated serum (mg/dL)
+LBDSCRSI - Creatinine, refrigerated serum (umol/L)
+LBXSGB - Globulin (g/dL)
+LBDSGBSI - Globulin (g/L)
+LBXSGL - Glucose, refrigerated serum (mg/dL)
+LBDSGLSI - Glucose, refrigerated serum (mmol/L)
+LBXSGTSI - Gamma Glutamyl Transferase (GGT) (U/L)
+LBXSIR - Iron, refrigerated serum (ug/dL)
+LBDSIRSI - Iron, refrigerated serum (umol/L)
+LBXSKSI - Potassium (mmol/L)
+LBXSLDSI - Lactate Dehydrogenase (LDH) (U/L)
+LBXSNASI - Sodium (mmol/L)
+LBXSOSSI - Osmolality (mmol/Kg)
+LBXSPH - Phosphorus (mg/dL)
+LBDSPHSI - Phosphorus (mmol/L)
+LBXSTB - Total Bilirubin (mg/dL)
+LBDSTBSI - Total Bilirubin (umol/L)
+LBXSTP - Total Protein (g/dL)
+LBDSTPSI - Total Protein (g/L)
+LBXSTR - Triglycerides, refrig serum (mg/dL)
+LBDSTRSI - Triglycerides, refrig serum (mmol/L)
+LBXSUA - Uric acid (mg/dL)
+LBDSUASI - Uric acid (umol/L)
+= Trichomonas - Urine (TRICH_I)
+URXUTRI - Trichomonas, Urine
+= Urine Flow Rate (UCFLOW_I)
+URXVOL1 - The volume of urine collection #1 (mL)
+URDFLOW1 - Urine #1 Flow Rate (mL/min)
+URDTIME1 - Minutes b/w last urination & urine # 1
+URXVOL2 - The volume of urine collection #2 (mL)
+URDFLOW2 - Urine #2 Flow Rate (mL/min)
+URDTIME2 - Minutes b/w urine # 1 & urine # 2
+URXVOL3 - The volume of urine collection #3 (mL)
+URDFLOW3 - Urine #3 Flow Rate (mL/min)
+URDTIME3 - Minutes b/w urine # 2 & urine # 3
+= Volatile Organic Compound (VOC) Metabolites - Urine (UVOC_I)
+WTSA2YR - Subsample A Weights
+URX1DC - N-acel-S-(1,2-dichlorovinl)-L-cys(ng/mL)
+URD1DCLC - N-acel-S-(1,2-dichlorovinl)-L-cys comt
+URX2DC - N-acel-S-(2,2-dichlorvinyl)-L-cys(ng/mL)
+URD2DCLC - N-acel-S-(2,2-dichlorvinyl)-L-cys comt
+URX2MH - 2-methylhippuric acid (ng/mL)
+URD2MHLC - 2-methylhippuric acid comment code
+URX34M - 3-methipurc acd & 4-methipurc acd(ng/mL)
+URD34MLC - 3-methipurc acd & 4-methipurc acid comt
+URXAAM - N-ace-S-(2-carbamoylethyl)-L-cys(ng/mL)
+URDAAMLC - N-ace-S-(2-carbamoylethyl)-L-cys comt
+URXAMC - N-ace-S-(N-methlcarbamoyl)-L-cys(ng/mL)
+URDAMCLC - N-ace-S-(N-methlcarbamoyl)-L-cys comt
+URXATC - 2-amnothiazolne-4-carbxylic acid(ng/mL)
+URDATCLC - 2-amnothiazolne-4-carbxylic acid comt
+URXBMA - N-acetyl-S-(benzyl)-L-cysteine(ng/mL)
+URDBMALC - N-acetyl-S-(benzyl)-L-cysteine comt
+URXBPM - N-acetyl-S-(n-propyl)-L-cysteine(ng/mL)
+URDBPMLC - N-acetyl-S-(n-propyl)-L-cysteine comt
+URXCEM - N-acetyl-S-(2-carbxyethyl)-L-cys(ng/mL)
+URDCEMLC - N-acetyl-S-(2-carbxyethyl)-L-cys comt
+URXCYHA - CYHA cysteine (ng/mL)
+URDCYALC - CYHA cysteine comment code
+URXCYM - N-acetyl-S-(2-cyanoethyl)-L-cyst(ng/mL)
+URDCYMLC - N-acetyl-S-(2-cyanoethyl)-L-cyst comt
+URXDHB - N-ace-S-(3,4-dihidxybutl)-L-cys(ng/mL)
+URDDHBLC - N-ace-S-(3,4-dihidxybutl)-L-cys comt
+URXDPM - N-ace-S-(dimethylphenyl)-L-cys(ng/mL)
+URDDPMLC - N-ace-S-(dimethylphenyl)-L-cys comt
+URXGAM - N-ac-S-(2-carbmo-2-hydxel)-L-cys(ng/mL)
+URDGAMLC - N-ac-S-(2-carbmo-2-hydxel)-L-cys comt
+URXHEM - N-ace-S-(2-hydroxyethyl)-L-cys(ng/mL)
+URDHEMLC - N-ace-S-(2-hydroxyethyl)-L-cys comt
+URXHP2 - N-ace-S-(2-hydroxypropyl)-L-cys(ng/mL)
+URDHP2LC - N-ace-S-(2-hydroxypropyl)-L-cys comt
+URXHPM - N-ace-S-(3-hydroxypropyl)-L-cys(ng/mL)
+URDHPMLC - N-ace-S-(3-hydroxypropyl)-L-cys comt
+URXIPM1 - IPM1 cysteine (ng/mL)
+URDPM1LC - IPM1 cysteine comment code
+URXIPM3 - IPM3 cysteine (ng/mL)
+URDPM3LC - IPM3 cysteine comment code
+URXMAD - Mandelic acid(ng/mL)
+URDMADLC - Mandelic acid comment code
+URXMB1 - N-A-S-(1-hydrxmet)-2-Prpn)-L-cys(ng/mL)
+URDMB1LC - N-A-S-(1-hydrxmet)-2-Prpn)-L-cys comt
+URXMB2 - N-Ac-S-(2-hydrxy-3-butenyl)-L-cys(ng/mL)
+URDMB2LC - N-Ac-S-(2-hydrxy-3-butenyl)-L-cys comt
+URXMB3 - N-A-S-(4-hydrxy-2-butenyl)-L-cys(ng/mL)
+URDMB3LC - N-A-S-(4-hydrxy-2-butenyl)-L-cys comt
+URXPHE - N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)
+URDPHELC - N-ace-S-(phenl-2-hydxyetl)-L-cys comt
+URXPHG - Phenylglyoxylic acid(ng/mL)
+URDPHGLC - Phenylglyoxylic acid comment code
+URXPMA - N-acetyl-S-(phenyl)-L-cysteine(ng/mL)
+URDPMALC - N-acetyl-S-(phenyl)-L-cysteine comt
+URXPMM - N-A-S-(3-hydrxprpl-1-metl)-L-cys(ng/mL)
+URDPMMLC - N-A-S-(3-hydrxprpl-1-metl)-L-cys comt
+URXTCV - N-acetyl-S-(trichlorovinyl)-L-cys(ng/mL)
+URDTCVLC - N-acetyl-S-(trichlorovinyl)-L-cys comt
+= Volatile Organic Compound (VOC) Metabolites - Urine - Special Sample (UVOCS_I)
+WTFSM - Two Year Smoking Weights
+URX1DC - N-acel-S-(1,2-dichlorovinl)-L-cys(ng/mL)
+URD1DCLC - N-acel-S-(1,2-dichlorovinl)-L-cys comt
+URX2DC - N-acel-S-(2,2-dichlorvinyl)-L-cys(ng/mL)
+URD2DCLC - N-acel-S-(2,2-dichlorvinyl)-L-cys comt
+URX2MH - 2-methylhippuric acid (ng/mL)
+URD2MHLC - 2-methylhippuric acid comment code
+URX34M - 3-methipurc acd & 4-methipurc acd(ng/mL)
+URD34MLC - 3-methipurc acd & 4-methipurc acid comt
+URXAAM - N-ace-S-(2-carbamoylethyl)-L-cys(ng/mL)
+URDAAMLC - N-ace-S-(2-carbamoylethyl)-L-cys comt
+URXAMC - N-ace-S-(N-methlcarbamoyl)-L-cys(ng/mL)
+URDAMCLC - N-ace-S-(N-methlcarbamoyl)-L-cys comt
+URXATC - 2-amnothiazolne-4-carbxylic acid(ng/mL)
+URDATCLC - 2-amnothiazolne-4-carbxylic acid comt
+URXBMA - N-acetyl-S-(benzyl)-L-cysteine(ng/mL)
+URDBMALC - N-acetyl-S-(benzyl)-L-cysteine comt
+URXBPM - N-acetyl-S-(n-propyl)-L-cysteine(ng/mL)
+URDBPMLC - N-acetyl-S-(n-propyl)-L-cysteine comt
+URXCEM - N-acetyl-S-(2-carbxyethyl)-L-cys(ng/mL)
+URDCEMLC - N-acetyl-S-(2-carbxyethyl)-L-cys comt
+URXCYHA - CYHA cysteine (ng/mL)
+URDCYALC - CYHA cysteine comment code
+URXCYM - N-acetyl-S-(2-cyanoethyl)-L-cyst(ng/mL)
+URDCYMLC - N-acetyl-S-(2-cyanoethyl)-L-cyst comt
+URXDHB - N-ace-S-(3,4-dihidxybutl)-L-cys(ng/mL)
+URDDHBLC - N-ace-S-(3,4-dihidxybutl)-L-cys comt
+URXDPM - N-ace-S-(dimethylphenyl)-L-cys(ng/mL)
+URDDPMLC - N-ace-S-(dimethylphenyl)-L-cys comt
+URXGAM - N-ac-S-(2-carbmo-2-hydxel)-L-cys(ng/mL)
+URDGAMLC - N-ac-S-(2-carbmo-2-hydxel)-L-cys comt
+URXHEM - N-ace-S-(2-hydroxyethyl)-L-cys(ng/mL)
+URDHEMLC - N-ace-S-(2-hydroxyethyl)-L-cys comt
+URXHP2 - N-ace-S-(2-hydroxypropyl)-L-cys(ng/mL)
+URDHP2LC - N-ace-S-(2-hydroxypropyl)-L-cys comt
+URXHPM - N-ace-S-(3-hydroxypropyl)-L-cys(ng/mL)
+URDHPMLC - N-ace-S-(3-hydroxypropyl)-L-cys comt
+URXIPM1 - IPM1 cysteine (ng/mL)
+URDPM1LC - IPM1 cysteine comment code
+URXIPM3 - IPM3 cysteine (ng/mL)
+URDPM3LC - IPM3 cysteine comment code
+URXMAD - Mandelic acid(ng/mL)
+URDMADLC - Mandelic acid comment code
+URXMB1 - N-A-S-(1-hydrxmet)-2-Prpn)-L-cys(ng/mL)
+URDMB1LC - N-A-S-(1-hydrxmet)-2-Prpn)-L-cys comt
+URXMB2 - N-Ac-S-(2-hydrxy-3-butenyl)-L-cys(ng/mL)
+URDMB2LC - N-Ac-S-(2-hydrxy-3-butenyl)-L-cys comt
+URXMB3 - N-A-S-(4-hydrxy-2-butenyl)-L-cys(ng/mL)
+URDMB3LC - N-A-S-(4-hydrxy-2-butenyl)-L-cys comt
+URXPHE - N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)
+URDPHELC - N-ace-S-(phenl-2-hydxyetl)-L-cys comt
+URXPHG - Phenylglyoxylic acid(ng/mL)
+URDPHGLC - Phenylglyoxylic acid comment code
+URXPMA - N-acetyl-S-(phenyl)-L-cysteine(ng/mL)
+URDPMALC - N-acetyl-S-(phenyl)-L-cysteine comt
+URXPMM - N-A-S-(3-hydrxprpl-1-metl)-L-cys(ng/mL)
+URDPMMLC - N-A-S-(3-hydrxprpl-1-metl)-L-cys comt
+URXTCV - N-acetyl-S-(trichlorovinyl)-L-cys(ng/mL)
+URDTCVLC - N-acetyl-S-(trichlorovinyl)-L-cys comt
+= Volatile Organic Compounds and Trihalomethanes/MTBE - Blood (VOCWB_I)
+WTSVOC2Y - VOC Subsample Weight
+LBX2DF - Blood 2,5-Dimethylfuran (ng/mL)
+LBD2DFLC - Blood 2,5-Dimethylfuran Comment Code
+LBX4CE - Blood 1,1,1,2-Tetrachloroethane (ng/mL)
+LBD4CELC - Blood 1,1,1,2-Tetrachloroethane Cmt Code
+LBXV06 - Blood Hexane (ng/mL)
+LBDV06LC - Blood Hexane Comment Code
+LBXV07N - Blood Heptane (ng/mL)
+LBDV07LC - Blood Heptane Comment Code
+LBXV08N - Blood Octane (ng/mL)
+LBDV08LC - Blood Octane Comment Code
+LBXV1D - Blood 1,2-Dichlorobenzene (ng/mL)
+LBDV1DLC - Blood 1,2-Dichlorobenzene Comment Code
+LBXV2A - Blood 1,2-Dichloroethane (ng/mL)
+LBDV2ALC - Blood 1,2-Dichloroethane Comment Code
+LBXV3B - Blood 1,3-Dichlorobenzene (ng/mL)
+LBDV3BLC - Blood 1,3-Dichlorobenzene Comment Code
+LBXV4C - Blood Tetrachloroethene (ng/mL)
+LBDV4CLC - Blood Tetrachloroethene Comment Code
+LBXVBF - Blood Bromoform (ng/mL)
+LBDVBFLC - Blood Bromoform Comment Code
+LBXVBM - Blood Bromodichloromethane (ng/mL)
+LBDVBMLC - Blood Bromodichloromethane Comment Code
+LBXVBZ - Blood Benzene (ng/mL)
+LBDVBZLC - Blood Benzene Comment Code
+LBXVBZN - Blood Benzonitrile (ng/mL)
+LBDVZBLC - Blood Benzonitrile Comment Code
+LBXVC6 - Blood Cyclohexane (ng/mL)
+LBDVC6LC - Blood Cyclohexane Comment Code
+LBXVCB - Blood Chlorobenzene (ng/mL)
+LBDVCBLC - Blood Chlorobenzene Comment Code
+LBXVCF - Blood Chloroform (ng/mL)
+LBDVCFLC - Blood Chloroform Comment Code
+LBXVCM - Blood Dibromochloromethane (ng/mL)
+LBDVCMLC - Blood Dibromochloromethane Comment Code
+LBXVCT - Blood Carbon Tetrachloride (ng/mL)
+LBDVCTLC - Blood Carbon Tetrachloride Comment Code
+LBXVDB - Blood 1,4-Dichlorobenzene (ng/mL)
+LBDVDBLC - Blood 1,4-Dichlorobenzene Comment Code
+LBXVDE - Blood 1,2-Dibromoethane (ng/mL)
+LBDVDELC - Blood 1,2-Dibromoethane Comment Code
+LBXVDEE - Blood Diethyl Ether (ng/mL)
+LBDVEELC - Blood Diethyl Ether Comment Code
+LBXVDX - Blood 1,4-Dioxane (ng/mL)
+LBDVDXLC - Blood 1,4-Dioxane Comment Code
+LBXVEA - Blood Ethyl Acetate (ng/mL)
+LBDVEALC - Blood Ethyl Acetate Comment Code
+LBXVEB - Blood Ethylbenzene (ng/mL)
+LBDVEBLC - Blood Ethylbenzene Comment Code
+LBXVEC - Blood Chloroethane (ng/mL)
+LBDVECLC - Blood Chloroethane Comment Code
+LBXVFN - Blood Furan (ng/mL)
+LBDVFNLC - Blood Furan Comment Code
+LBXVIBN - Blood Isobutyronitrile (ng/mL)
+LBDVIBLC - Blood Isobutyronitrile Comment Code
+LBXVIPB - Blood Isopropylbenzene (ng/mL)
+LBDVIPLC - Blood Isopropylbenzene Comment Code
+LBXVMC - Blood Methylene Chloride (ng/mL)
+LBDVMCLC - Blood Methylene Chloride Comment Code
+LBXVME - Blood MTBE (ng/mL)
+LBDVMELC - Blood MTBE Comment Code
+LBXVMCP - Blood Methylcyclopentane (ng/mL)
+LBDVMPLC - Blood Methylcyclopentane Comment Code
+LBXVNB - Blood Nitrobenzene (ng/mL)
+LBDVNBLC - Blood Nitrobenzene Comment Code
+LBXVOX - Blood o-Xylene (ng/mL)
+LBDVOXLC - Blood o-Xylene Comment Code
+LBXVTC - Blood Trichloroethene (ng/mL)
+LBDVTCLC - Blood Trichloroethene Comment Code
+LBXVTE - Blood 1,1,1-Trichloroethane (ng/mL)
+LBDVTELC - Blood 1,1,1-Trichloroethane Comment Code
+LBXVTFT - Blood aaa-Trifluorotoluene (ng/mL)
+LBDVFTLC - Blood aaa-Trifluorotoluene Comment Code
+LBXVTHF - Blood Tetrahydrofuran (ng/mL)
+LBDVHTLC - Blood Tetrahydrofuran Comment Code
+LBXVTO - Blood Toluene (ng/mL)
+LBDVTOLC - Blood Toluene Comment Code
+LBXVTP - Blood 1,2,3-Trichloropropane (ng/mL)
+LBDVTPLC - Blood 1,2,3-Trichloropropane Comt Code
+LBXVVB - Blood Vinyl Bromide (ng/mL)
+LBDVVBLC - Blood Vinyl Bromide Comment Code
+LBXVXY - Blood m-/p-Xylene (ng/mL)
+LBDVXYLC - Blood m-/p-Xylene Comment Code
+= Volatile Organic Compounds and Trihalomethanes/MTBE – Blood – Special Sample (VOCWBS_I)
+WTSVS2YR - VOC Smoking Subsample Weight
+LBX2DF - Blood 2,5-Dimethylfuran (ng/mL)
+LBD2DFLC - Blood 2,5-Dimethylfuran Comment Code
+LBX4CE - Blood 1,1,1,2-Tetrachloroethane (ng/mL)
+LBD4CELC - Blood 1,1,1,2-Tetrachloroethane Cmt Code
+LBXV06 - Blood Hexane (ng/mL)
+LBDV06LC - Blood Hexane Comment Code
+LBXV07N - Blood Heptane (ng/mL)
+LBDV07LC - Blood Heptane Comment Code
+LBXV08N - Blood Octane (ng/mL)
+LBDV08LC - Blood Octane Comment Code
+LBXV1D - Blood 1,2-Dichlorobenzene (ng/mL)
+LBDV1DLC - Blood 1,2-Dichlorobenzene Comment Code
+LBXV2A - Blood 1,2-Dichloroethane (ng/mL)
+LBDV2ALC - Blood 1,2-Dichloroethane Comment Code
+LBXV3B - Blood 1,3-Dichlorobenzene (ng/mL)
+LBDV3BLC - Blood 1,3-Dichlorobenzene Comment Code
+LBXV4C - Blood Tetrachloroethene (ng/mL)
+LBDV4CLC - Blood Tetrachloroethene Comment Code
+LBXVBF - Blood Bromoform (ng/mL)
+LBDVBFLC - Blood Bromoform Comment Code
+LBXVBM - Blood Bromodichloromethane (ng/mL)
+LBDVBMLC - Blood Bromodichloromethane Comment Code
+LBXVBZ - Blood Benzene (ng/mL)
+LBDVBZLC - Blood Benzene Comment Code
+LBXVBZN - Blood Benzonitrile (ng/mL)
+LBDVZBLC - Blood Benzonitrile Comment Code
+LBXVC6 - Blood Cyclohexane (ng/mL)
+LBDVC6LC - Blood Cyclohexane Comment Code
+LBXVCB - Blood Chlorobenzene (ng/mL)
+LBDVCBLC - Blood Chlorobenzene Comment Code
+LBXVCF - Blood Chloroform (ng/mL)
+LBDVCFLC - Blood Chloroform Comment Code
+LBXVCM - Blood Dibromochloromethane (ng/mL)
+LBDVCMLC - Blood Dibromochloromethane Comment Code
+LBXVCT - Blood Carbon Tetrachloride (ng/mL)
+LBDVCTLC - Blood Carbon Tetrachloride Comment Code
+LBXVDB - Blood 1,4-Dichlorobenzene (ng/mL)
+LBDVDBLC - Blood 1,4-Dichlorobenzene Comment Code
+LBXVDE - Blood 1,2-Dibromoethane (ng/mL)
+LBDVDELC - Blood 1,2-Dibromoethane Comment Code
+LBXVDEE - Blood Diethyl Ether (ng/mL)
+LBDVEELC - Blood Diethyl Ether Comment Code
+LBXVDX - Blood 1,4-Dioxane (ng/mL)
+LBDVDXLC - Blood 1,4-Dioxane Comment Code
+LBXVEA - Blood Ethyl Acetate (ng/mL)
+LBDVEALC - Blood Ethyl Acetate Comment Code
+LBXVEB - Blood Ethylbenzene (ng/mL)
+LBDVEBLC - Blood Ethylbenzene Comment Code
+LBXVEC - Blood Chloroethane (ng/mL)
+LBDVECLC - Blood Chloroethane Comment Code
+LBXVFN - Blood Furan (ng/mL)
+LBDVFNLC - Blood Furan Comment Code
+LBXVIBN - Blood Isobutyronitrile (ng/mL)
+LBDVIBLC - Blood Isobutyronitrile Comment Code
+LBXVIPB - Blood Isopropylbenzene (ng/mL)
+LBDVIPLC - Blood Isopropylbenzene Comment Code
+LBXVMC - Blood Methylene Chloride (ng/mL)
+LBDVMCLC - Blood Methylene Chloride Comment Code
+LBXVME - Blood MTBE (ng/mL)
+LBDVMELC - Blood MTBE Comment Code
+LBXVMCP - Blood Methylcyclopentane (ng/mL)
+LBDVMPLC - Blood Methylcyclopentane Comment Code
+LBXVNB - Blood Nitrobenzene (ng/mL)
+LBDVNBLC - Blood Nitrobenzene Comment Code
+LBXVOX - Blood o-Xylene (ng/mL)
+LBDVOXLC - Blood o-Xylene Comment Code
+LBXVTC - Blood Trichloroethene (ng/mL)
+LBDVTCLC - Blood Trichloroethene Comment Code
+LBXVTE - Blood 1,1,1-Trichloroethane (ng/mL)
+LBDVTELC - Blood 1,1,1-Trichloroethane Comment Code
+LBXVTFT - Blood aaa - Trifluorotoluene (ng/mL)
+LBDVFTLC - Blood aaa -Trifluorotoluene Comment Code
+LBXVTHF - Blood Tetrahydrofuran (ng/mL)
+LBDVHTLC - Blood Tetrahydrofuran Comment Code
+LBXVTO - Blood Toluene (ng/mL)
+LBDVTOLC - Blood Toluene Comment Code
+LBXVTP - Blood 1,2,3-Trichloropropane (ng/mL)
+LBDVTPLC - Blood 1,2,3-Trichloropropane Comt Code
+LBXVVB - Blood Vinyl Bromide (ng/mL)
+LBDVVBLC - Blood Vinyl Bromide Comment Code
+LBXVXY - Blood m-/p-Xylene (ng/mL)
+LBDVXYLC - Blood m-/p-Xylene Comment Code

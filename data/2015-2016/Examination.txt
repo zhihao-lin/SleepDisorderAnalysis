@@ -1,0 +1,202 @@
+= Blood Pressure (BPX_I)
+PEASCCT1 - Blood Pressure Comment
+BPXCHR - 60 sec HR (30 sec HR * 2)
+BPAARM - Arm selected
+BPACSZ - Coded cuff size
+BPXPLS - 60 sec. pulse (30 sec. pulse * 2)
+BPXPULS - Pulse regular or irregular?
+BPXPTY - Pulse type
+BPXML1 - MIL: maximum inflation levels (mm Hg)
+BPXSY1 - Systolic: Blood pres (1st rdg) mm Hg
+BPXDI1 - Diastolic: Blood pres (1st rdg) mm Hg
+BPAEN1 - Enhancement used first reading
+BPXSY2 - Systolic: Blood pres (2nd rdg) mm Hg
+BPXDI2 - Diastolic: Blood pres (2nd rdg) mm Hg
+BPAEN2 - Enhancement used second reading
+BPXSY3 - Systolic: Blood pres (3rd rdg) mm Hg
+BPXDI3 - Diastolic: Blood pres (3rd rdg) mm Hg
+BPAEN3 - Enhancement used third reading
+BPXSY4 - Systolic: Blood pres (4th rdg) mm Hg
+BPXDI4 - Diastolic: Blood pres (4th rdg) mm Hg
+BPAEN4 - Enhancement used fourth reading
+= Body Measures (BMX_I)
+BMDSTATS - Body Measures Component Status Code
+BMXWT - Weight (kg)
+BMIWT - Weight Comment
+BMXRECUM - Recumbent Length (cm)
+BMIRECUM - Recumbent Length Comment
+BMXHEAD - Head Circumference (cm)
+BMIHEAD - Head Circumference Comment
+BMXHT - Standing Height (cm)
+BMIHT - Standing Height Comment
+BMXBMI - Body Mass Index (kg/m**2)
+BMDBMIC - BMI Category - Children/Youth
+BMXLEG - Upper Leg Length (cm)
+BMILEG - Upper Leg Length Comment
+BMXARML - Upper Arm Length (cm)
+BMIARML - Upper Arm Length Comment
+BMXARMC - Arm Circumference (cm)
+BMIARMC - Arm Circumference Comment
+BMXWAIST - Waist Circumference (cm)
+BMIWAIST - Waist Circumference Comment
+BMXSAD1 - Sagittal Abdominal Diameter 1st (cm)
+BMXSAD2 - Sagittal Abdominal Diameter 2nd (cm)
+BMXSAD3 - Sagittal Abdominal Diameter 3rd (cm)
+BMXSAD4 - Sagittal Abdominal Diameter 4th (cm)
+BMDAVSAD - Average Sagittal Abdominal Diameter (cm)
+BMDSADCM - Sagittal Abdominal Diameter Comment
+= Fluorosis - Clinical (FLXCLN_I)
+FCX02DI - Fluorosis DI: #2
+FCX03DI - Fluorosis DI: #3
+FCX04DI - Fluorosis DI: #4
+FCX05DI - Fluorosis DI: #5
+FCX06DI - Fluorosis DI: #6
+FCX07DI - Fluorosis DI: #7
+FCX08DI - Fluorosis DI: #8
+FCX09DI - Fluorosis DI: #9
+FCX10DI - Fluorosis DI: #10
+FCX11DI - Fluorosis DI: #11
+FCX12DI - Fluorosis DI: #12
+FCX13DI - Fluorosis DI: #13
+FCX14DI - Fluorosis DI: #14
+FCX15DI - Fluorosis DI: #15
+FCX18DI - Fluorosis DI: #18
+FCX19DI - Fluorosis DI: #19
+FCX20DI - Fluorosis DI: #20
+FCX21DI - Fluorosis DI: #21
+FCX22DI - Fluorosis DI: #22
+FCX23DI - Fluorosis DI: #23
+FCX24DI - Fluorosis DI: #24
+FCX25DI - Fluorosis DI: #25
+FCX26DI - Fluorosis DI: #26
+FCX27DI - Fluorosis DI: #27
+FCX28DI - Fluorosis DI: #28
+FCX29DI - Fluorosis DI: #29
+FCX30DI - Fluorosis DI: #30
+FCX31DI - Fluorosis DI: #31
+= Oral Health - Dentition (OHXDEN_I)
+OHDEXSTS - Overall Oral Health Exam Status
+OHDDESTS - Dentition Status Code
+OHXIMP - Dental Implant: yes / no?
+OHX01TC - Tooth Count: #1
+OHX02TC - Tooth Count: #2
+OHX03TC - Tooth Count: #3
+OHX04TC - Tooth Count: #4
+OHX05TC - Tooth Count: #5
+OHX06TC - Tooth Count: #6
+OHX07TC - Tooth Count: #7
+OHX08TC - Tooth Count: #8
+OHX09TC - Tooth Count: #9
+OHX10TC - Tooth Count: #10
+OHX11TC - Tooth Count: #11
+OHX12TC - Tooth Count: #12
+OHX13TC - Tooth Count: #13
+OHX14TC - Tooth Count: #14
+OHX15TC - Tooth Count: #15
+OHX16TC - Tooth Count: #16
+OHX17TC - Tooth Count: #17
+OHX18TC - Tooth Count: #18
+OHX19TC - Tooth Count: #19
+OHX20TC - Tooth Count: #20
+OHX21TC - Tooth Count: #21
+OHX22TC - Tooth Count: #22
+OHX23TC - Tooth Count: #23
+OHX24TC - Tooth Count: #24
+OHX25TC - Tooth Count: #25
+OHX26TC - Tooth Count: #26
+OHX27TC - Tooth Count: #27
+OHX28TC - Tooth Count: #28
+OHX29TC - Tooth Count: #29
+OHX30TC - Tooth Count: #30
+OHX31TC - Tooth Count: #31
+OHX32TC - Tooth Count: #32
+OHX02CTC - Coronal Caries: Tooth Count #2
+OHX03CTC - Coronal Caries: Tooth Count #3
+OHX04CTC - Coronal Caries: Tooth Count #4
+OHX05CTC - Coronal Caries: Tooth Count #5
+OHX06CTC - Coronal Caries: Tooth Count #6
+OHX07CTC - Coronal Caries: Tooth Count #7
+OHX08CTC - Coronal Caries: Tooth Count #8
+OHX09CTC - Coronal Caries: Tooth Count #9
+OHX10CTC - Coronal Caries: Tooth Count #10
+OHX11CTC - Coronal Caries: Tooth Count #11
+OHX12CTC - Coronal Caries: Tooth Count #12
+OHX13CTC - Coronal Caries: Tooth Count #13
+OHX14CTC - Coronal Caries: Tooth Count #14
+OHX15CTC - Coronal Caries: Tooth Count #15
+OHX18CTC - Coronal Caries: Tooth Count #18
+OHX19CTC - Coronal Caries: Tooth Count #19
+OHX20CTC - Coronal Caries: Tooth Count #20
+OHX21CTC - Coronal Caries: Tooth Count #21
+OHX22CTC - Coronal Caries: Tooth Count #22
+OHX23CTC - Coronal Caries: Tooth Count #23
+OHX24CTC - Coronal Caries: Tooth Count #24
+OHX25CTC - Coronal Caries: Tooth Count #25
+OHX26CTC - Coronal Caries: Tooth Count #26
+OHX27CTC - Coronal Caries: Tooth Count #27
+OHX28CTC - Coronal Caries: Tooth Count #28
+OHX29CTC - Coronal Caries: Tooth Count #29
+OHX30CTC - Coronal Caries: Tooth Count #30
+OHX31CTC - Coronal Caries: Tooth Count #31
+OHX02CSC - Coronal Caries: Surface condition #2
+OHX03CSC - Coronal Caries: Surface condition #3
+OHX04CSC - Coronal Caries: Surface condition #4
+OHX05CSC - Coronal Caries: Surface condition #5
+OHX06CSC - Coronal Caries: Surface condition #6
+OHX07CSC - Coronal Caries: Surface condition #7
+OHX08CSC - Coronal Caries: Surface condition #8
+OHX09CSC - Coronal Caries: Surface condition #9
+OHX10CSC - Coronal Caries: Surface condition #10
+OHX11CSC - Coronal Caries: Surface condition #11
+OHX12CSC - Coronal Caries: Surface condition #12
+OHX13CSC - Coronal Caries: Surface condition #13
+OHX14CSC - Coronal Caries: Surface condition #14
+OHX15CSC - Coronal Caries: Surface condition #15
+OHX18CSC - Coronal Caries: Surface condition #18
+OHX19CSC - Coronal Caries: Surface condition #19
+OHX20CSC - Coronal Caries: Surface condition #20
+OHX21CSC - Coronal Caries: Surface condition #21
+OHX22CSC - Coronal Caries: Surface condition #22
+OHX23CSC - Coronal Caries: Surface condition #23
+OHX24CSC - Coronal Caries: Surface condition #24
+OHX25CSC - Coronal Caries: Surface condition #25
+OHX26CSC - Coronal Caries: Surface condition #26
+OHX27CSC - Coronal Caries: Surface condition #27
+OHX28CSC - Coronal Caries: Surface condition #28
+OHX29CSC - Coronal Caries: Surface condition #29
+OHX30CSC - Coronal Caries: Surface condition #30
+OHX31CSC - Coronal Caries: Surface condition #31
+OHXRCAR - Root caries
+OHXRCARO - Other non-carious root lesion
+OHXRRES - Root caries restoration
+OHXRRESO - Other non-carious root restoration
+OHX02SE - Dental Sealants: #2
+OHX03SE - Dental Sealants: #3
+OHX04SE - Dental Sealants: #4
+OHX05SE - Dental Sealants: #5
+OHX07SE - Dental Sealants: #7
+OHX10SE - Dental Sealants: #10
+OHX12SE - Dental Sealants: #12
+OHX13SE - Dental Sealants: #13
+OHX14SE - Dental Sealants: #14
+OHX15SE - Dental Sealants: #15
+OHX18SE - Dental Sealants: #18
+OHX19SE - Dental Sealants: #19
+OHX20SE - Dental Sealants: #20
+OHX21SE - Dental Sealants: #21
+OHX28SE - Dental Sealants: #28
+OHX29SE - Dental Sealants: #29
+OHX30SE - Dental Sealants: #30
+OHX31SE - Dental Sealants: #31
+= Oral Health - Recommendation of Care (OHXREF_I)
+OHDEXSTS - Overall Oral Health Exam Status
+OHDRCSTS - Recommendation Care Status Code
+OHAREC - Overall recommendation for care
+OHAROCDT - Decayed teeth
+OHAROCGP - Gum disease/problem
+OHAROCOH - Oral hygiene
+OHAROCCI - Impression of soft tissue condition
+OHAROCDE - Denture/Partial Denture/Plates
+OHARNF - No significant findings
+OHAROTH - Some other finding (specify w/referral)
+OHAPOS - Was participant exam position recumbent
