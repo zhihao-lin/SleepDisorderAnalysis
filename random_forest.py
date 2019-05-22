@@ -16,7 +16,7 @@ def main():
     data = process_nan(data)
 
     x_train, x_valid, y_train, y_valid = train_test_split(data, target, test_size = .2, random_state=0) 
-    model = RandomForestClassifier(n_estimators= 20, max_depth=100, random_state= 0)
+    model = RandomForestClassifier(n_estimators= 20, max_depth=10, random_state= 0)
     model.fit(x_train, y_train)
 
     train_score = model.score(x_train, y_train)
