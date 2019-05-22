@@ -83,13 +83,15 @@ def process_nan(csv):
     for feature in csv.columns:
         possible_values = np.unique(csv[feature])
         if len(possible_values) < 10: # categorical
+            # print('== {} =='.format(feature))
             csv[feature][csv[feature] == max(possible_values)] = np.nan
             csv[feature] = csv[feature].astype('object')
         else: # numerical
+            # print('** {} **'.format(feature))
+            csv[feature] = csv[feature].fillna(max(possible_values))
             median = np.median(csv[feature][csv[feature] != max(possible_values)])
             csv[feature][csv[feature] == max(possible_values)] = median
-            csv[feature][csv[feature] == np.nan] = median
-            csv[feature] = csv[feature].astype('float64')
+            csv[feature] = csv[feature].astype('float')
     csv = pd.get_dummies(csv)
     return csv
 
@@ -145,7 +147,7 @@ def test_labelhandler():
 def test_get_data():
     data = get_2015_Quesitonaire_data()
     data = process_nan(data)
-    print(data)
+    print(data.columns)
 
 if __name__ == '__main__':
     test_get_data()
