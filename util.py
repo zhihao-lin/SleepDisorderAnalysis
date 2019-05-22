@@ -100,32 +100,37 @@ def get_2015_Quesitonaire_data( csv= 'data_preprocess/Questionnaire.csv',
     raw_csv = pd.read_csv(csv)
     label_handler = LabelHandler(label)
     data = filter_data(raw_csv) # Remove features and data for too much mmissing
+	
+	#Select features (default:['SLQ','SLD','SEQ','Unn'])
+    data = select_feature(data,['ALQ','DUQ','SMQ','DPQ','PAQ'])
 
     # Replace feautre names with meaningful contents, and remove unknowns
     columns = data.columns
     contents, noresults = label_handler.symbols_to_contents(columns)
     data.columns = contents
     data = data.drop(noresults, axis= 1)
-    
     object_feature = []
     for i in range(len(data.dtypes)):
         if data.dtypes[i] == 'object':
             object_feature.append(data.columns[i])
-    # Remove Cigaratte feature, too many emptybyte string and aren't caught         
-    data = data.drop(object_feature[-2:], axis= 1) 
+    # Remove Cigaratte feature, too many emptybyte string and aren't caught 
+    # 05/22:Use select_feature() to solve this problem   
+    # data = data.drop(object_feature[-2:], axis= 1) 
+
     # Convert time : e.g. b'23:00' -> -60
     data[object_feature[0]] = normalize_time(data[object_feature[0]])
     data[object_feature[1]] = normalize_time(data[object_feature[1]])
+
     return data
 
 def normalize_time(raw_array):
     normalized = []
-    for raw_data in raw_array:
+    for raw_data in raw_array: 
         if ':' not in raw_data:
             normalized.append(0)
             continue
         hour, minute = str(raw_data).split(':')
-        hour, minute = int(hour[2:]), int(minute[:-1])    
+        hour, minute = int(hour[2:]), int(minute[:-1])  
         if hour > 12:
             time_diff = ((23 - hour)*60 + (60 - minute)) * (-1)
             normalized.append(time_diff)
@@ -149,5 +154,14 @@ def test_get_data():
     data = process_nan(data)
     print(data.columns)
 
+def select_feature(data,feature_list):
+    index = []
+    col_name = ['SLQ','SLD','SEQ','Unn']+feature_list
+    for i in range(len(data.columns)):
+	    if data.columns[i][0:3] not in col_name :
+		    index.append(i)
+    data = data.drop(data.columns[index],axis=1)
+    print('Remove '+str(len(index))+'col | Remain'+str(data.shape[1])+'col')
+    return data
 if __name__ == '__main__':
     test_get_data()
