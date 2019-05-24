@@ -163,5 +163,6 @@ def select_feature(data,feature_list):
     data = data.drop(data.columns[index],axis=1)
     print('Remove '+str(len(index))+'col | Remain'+str(data.shape[1])+'col')
     return data
+
 if __name__ == '__main__':
     test_get_data()
