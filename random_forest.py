@@ -21,14 +21,12 @@ def main():
     model.fit(x_train, y_train)
     train_score = model.score(x_train, y_train)
     valid_score = model.score(x_valid, y_valid)
-    print(data.columns)
-    print(target_feature)
     print('================================')
     print('Target feature:', target_feature)
     print('Training score: ', train_score)
     print('Training score: ', valid_score)
-
-    generate_tree_png(model.estimators_[5],data.columns,target_feature,'output_png/tree.png')
-
+    print('=======analyze=======')
+    generate_tree_png(model.estimators_[0], data.columns, target_feature,'analyze_files/tree.png')
+    permutation_importance(model, x_valid, y_valid, 'analyze_files/permutation_importance.csv')
 if __name__ == '__main__':
     main()
