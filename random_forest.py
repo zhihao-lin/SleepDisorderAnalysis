@@ -6,7 +6,8 @@ from sklearn.model_selection import train_test_split
 from util import *
 from analyze import *
 def main():
-    data = get_2015_Quesitonaire_data()
+    feature_selected = ['ALQ','DUQ','SMQ','DPQ','PAQ']
+    data = get_2015_Quesitonaire_data(feature_selected)
     label_handler = LabelHandler('data/2015-2016/Questionnaire.txt')
     target_feature = label_handler.get_content_by_symbol('SLQ050')
     #SLQ310：0.98/0.97
@@ -29,5 +30,6 @@ def main():
     generate_tree_png(model.estimators_[0], data.columns, target_feature,'analyze_files/tree.png')
     permutation_importance(model, x_valid, y_valid, 'analyze_files/permutation_importance.csv')
     partial_dependence_plot('Avg # alcoholic drinks/day - past 12 mos', model, x_valid, data.columns,'analyze_files/partial_dependence_plot.png')
+    shap_plot(model, x_valid, 'analyze_files/')
 if __name__ == '__main__':
     main()

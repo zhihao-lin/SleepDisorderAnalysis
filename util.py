@@ -95,14 +95,15 @@ def process_nan(csv):
     csv = pd.get_dummies(csv)
     return csv
 
-def get_2015_Quesitonaire_data( csv= 'data_preprocess/Questionnaire.csv', 
+def get_2015_Quesitonaire_data( feature_selected,
+								csv= 'data_preprocess/Questionnaire.csv', 
                                 label= 'data/2015-2016/Questionnaire.txt'):
     raw_csv = pd.read_csv(csv)
     label_handler = LabelHandler(label)
     data = filter_data(raw_csv) # Remove features and data for too much mmissing
 	
 	#Select features (default:['SLQ','SLD','SEQ','Unn'])
-    data = select_feature(data,['ALQ','DUQ','SMQ','DPQ','PAQ'])
+    data = select_feature(data,feature_selected)
 
     # Replace feautre names with meaningful contents, and remove unknowns
     columns = data.columns
