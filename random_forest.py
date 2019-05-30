@@ -8,18 +8,19 @@ from analyze import *
 import os
 def main():
     label_handler = LabelHandler('data/2015-2016/Questionnaire.txt')
-    feature_selected = ['ALQ','DUQ','SMQ','DPQ','PAQ']
-    feature_selected = []  #use all data
+    f = open('analyze_files/acc.txt', 'w')
+    #feature_selected = ['ALQ','DUQ','SMQ','DPQ','PAQ'] #choose some data
+    #feature_selected = []  #use all data
     category = label_handler.get_categories()
-    for cat in category:
+    for cat in range(0,len(category),2):
         try:
-            os.makedirs('analyze_files/'+cat, exist_ok=True)
-            feature_selected = label_handler.get_symbols_by_category(cat)
-            print(feature_selected)
+            os.makedirs('analyze_files/'+category[cat]+' and '+category[cat+1] , exist_ok=True)
+            feature_selected = []
+            for i in range (2):
+                feature_selected += label_handler.get_symbols_by_category(category[cat+i])
+            print('feature_selected: ',feature_selected)
             data = get_2015_Quesitonaire_data(feature_selected)
             target_feature = label_handler.get_content_by_symbol('SLQ050')
-            #SLQ310：0.98/0.97
-            #SLQ050：0.90/0.77
             target = data[target_feature].astype('int')
             target[target <  2] = 0
             target[target >= 2] = 1
@@ -35,12 +36,25 @@ def main():
             print('Training score: ', train_score)
             print('Training score: ', valid_score)
             print('=======analyze=======')
-            generate_tree_png(model.estimators_[0], data.columns, target_feature,'analyze_files/'+cat+'/tree.png')
-            permutation_importance(model, x_valid, y_valid, 'analyze_files/'+cat+'/permutation_importance.csv')
+            generate_tree_png(model.estimators_[0], data.columns, target_feature,'analyze_files/'+category[cat]+' and '+category[cat+1]+'/tree.png')
+            permutation_importance(model, x_valid, y_valid, 'analyze_files/'+category[cat]+' and '+category[cat+1]+'/permutation_importance.csv')
             #partial_dependence_plot('Avg # alcoholic drinks/day - past 12 mos', model, x_valid, data.columns,'analyze_files/partial_dependence_plot.png')
-            shap_plot(model, x_valid, 'analyze_files/'+cat+'/')
-        except :
+            shap_plot(model, x_valid, 'analyze_files/'+category[cat]+' and '+category[cat+1]+'/')
+            f.write('================================'+"\n")
+            f.write('Target feature:'+str(target_feature)+"\n")
+            f.write(category[cat]+' and '+category[cat+1]+"\n")
+            f.write('feature_selected:'+str(feature_selected)+"\n")
+            f.write('--------------------------------'+"\n")
+            f.write('Training score: '+str(train_score)+"\n")
+            f.write('Training score: '+str(valid_score)+"\n")
+            
+        except Exception as e: 
+            f.write('########Warn########'+"\n")
+            f.write(str(e)+"\n")
+            f.write('########Warn########'+"\n")
             pass
         continue
 if __name__ == '__main__':
     main()
+    
+
