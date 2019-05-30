@@ -8,6 +8,7 @@ def select_feature(data, symbol_list):
         return data
 
     symbol_list += ['SEQN']
+    symbol_list = [symbol for symbol in symbol_list if(symbol in data.columns)]
     data = data[symbol_list]
     return data
 
@@ -120,6 +121,8 @@ def align_data_with_target(train_data, target_data):
     all_data = pd.merge(train_data, target_data, how= 'inner', on= 'SEQN')
     train_data = all_data.drop(target, axis= 1)
     target_data = all_data[target]
+    target_data[target_data <  2] = 0
+    target_data[target_data >= 2] = 1
     return train_data, target_data
 
 ## TEST ##
