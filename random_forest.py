@@ -17,7 +17,8 @@ def main(mode):
     if mode == 0:
         path = '../analyze_mode_0/'
         category=['']
-        feature_selected = []  #use all data
+		#use all data
+        feature_selected = []  
     elif mode == 1:
         path = '../analyze_mode_1/'
         category = label_handler.get_categories()
