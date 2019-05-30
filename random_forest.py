@@ -20,7 +20,7 @@ def main():
             os.makedirs('../analyze_files/'+category[cat], exist_ok=True)
             feature_selected = label_handler.get_symbols_by_category(category[cat])
             print('feature_selected: ',feature_selected)
-            data = get_2015_Quesitonaire_data(feature_selected)
+            data = get_2015_Questionnaire_data(feature_selected)
             target_feature = label_handler.get_content_by_symbol('SLQ050')
             target = data[target_feature].astype('int')
             target[target <  2] = 0

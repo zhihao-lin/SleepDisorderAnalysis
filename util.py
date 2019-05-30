@@ -3,19 +3,12 @@ import pandas as pd
 from label_handler import LabelHandler
 
 ### Get data ##
-def select_feature(data,feature_list):
-    if feature_list == []:
+def select_feature(data, symbol_list):
+    if symbol_list == []:
         return data
-    index = []
-    for i in range(len(feature_list)):
-        feature_list[i] = feature_list[i][0:3]
 
-    col_name = ['SLQ','SLD','SEQ','Unn']+feature_list
-    for i in range(len(data.columns)):
-        if data.columns[i][0:3] not in col_name :
-            index.append(i)
-    data = data.drop(data.columns[index],axis=1)
-    print('Remove '+str(len(index))+'col | Remain'+str(data.shape[1])+'col')
+    symbol_list += ['SEQN']
+    data = data[symbol_list]
     return data
 
 def filter_data(csv, column_threshold= 0.5, row_threshold= 0.5):
@@ -44,7 +37,7 @@ def filter_data(csv, column_threshold= 0.5, row_threshold= 0.5):
 def process_nan(csv):
     # split categorical data & replace nan with median if numerical data
     for feature in csv.columns:
-        possible_values = np.unique(csv[feature])
+        possible_values = np.unique(csv[feature][~np.isnan(csv[feature])])
         if len(possible_values) < 10: # categorical
             # print('== {} =='.format(feature))
             csv[feature][csv[feature] == max(possible_values)] = np.nan
@@ -55,6 +48,7 @@ def process_nan(csv):
             median = np.median(csv[feature][csv[feature] != max(possible_values)])
             csv[feature][csv[feature] == max(possible_values)] = median
             csv[feature] = csv[feature].astype('float')
+    
     csv = pd.get_dummies(csv)
     return csv
 
@@ -74,41 +68,75 @@ def normalize_time(raw_array):
             normalized.append(time_diff)
     return normalized
 
-def get_2015_Quesitonaire_data( feature_selected,
+def get_2015_sleep_data(csv= 'data_preprocess/Sleep.csv', 
+                        label= 'data/2015-2016/Questionnaire.txt', target= None):
+    
+    data = pd.read_csv(csv)
+    label_handler = LabelHandler(label)
+    data = data.drop('Unnamed: 0', 1)
+    
+    if target:
+        data = data[['SEQN', target]]
+        data = filter_data(data, 1, 0)
+        return data
+
+    columns = data.columns
+    contents, noresults = label_handler.symbols_to_contents(columns)
+    data.columns = contents
+    
+    # Convert time : e.g. b'23:00' -> -60
+    data[contents[1]] = normalize_time(data[contents[1]])
+    data[contents[2]] = normalize_time(data[contents[2]])
+    return data
+
+def get_2015_Questionnaire_data(symbol_list, target_data,
                                 csv= 'data_preprocess/Questionnaire.csv', 
                                 label= 'data/2015-2016/Questionnaire.txt'):
     raw_csv = pd.read_csv(csv)
     label_handler = LabelHandler(label)
-    data = filter_data(raw_csv) # Remove features and data for too much mmissing
     
-    #Select features (default:['SLQ','SLD','SEQ','Unn'])
-    data = select_feature(data,feature_selected)
-
+    train_data = select_feature(raw_csv, symbol_list)
+    # Remove features and data for too much mmissing
+    train_data = filter_data(train_data) 
+    # Align train data and target data according to 'SEQN'
+    train_data, target_data = align_data_with_target(train_data, target_data)
+    
     # Replace feautre names with meaningful contents, and remove unknowns
-    columns = data.columns
+    columns = train_data.columns
     contents, noresults = label_handler.symbols_to_contents(columns)
-    data.columns = contents
-    data = data.drop(noresults, axis= 1)
-    object_feature = []
-    for i in range(len(data.dtypes)):
-        if data.dtypes[i] == 'object':
-            object_feature.append(data.columns[i])
+    train_data.columns = contents
+    train_data = train_data.drop(noresults, axis= 1)
+    
     # Remove Cigaratte feature, too many emptybyte string and aren't caught 
-    # 05/22:Use select_feature() to solve this problem   
-    if feature_selected == []:
-       data = data.drop(object_feature[-2:], axis= 1) 
+    if symbol_list == []:
+        cigarette_feature = ['Cig 12-digit Universal Product Code-UPC', 'Cigarette Brand/sub-brand']
+        train_data = train_data.drop(cigarette_feature, axis= 1) 
 
-    # Convert time : e.g. b'23:00' -> -60
-    data[object_feature[0]] = normalize_time(data[object_feature[0]])
-    data[object_feature[1]] = normalize_time(data[object_feature[1]])
+    train_data = process_nan(train_data)
+    return train_data, target_data
 
-    return data
+def align_data_with_target(train_data, target_data):
+    target = target_data.columns[1]
+    all_data = pd.merge(train_data, target_data, how= 'inner', on= 'SEQN')
+    train_data = all_data.drop(target, axis= 1)
+    target_data = all_data[target]
+    return train_data, target_data
 
 ## TEST ##
-def test_get_data():
-    data = get_2015_Quesitonaire_data()
-    data = process_nan(data)
-    print(data.columns)
+def test_get_sleep():
+    data = get_2015_sleep_data(target = 'SLQ120')
+    print(data)
+
+def test_get_questionnaire():
+    label_handler = LabelHandler('data/2015-2016/Questionnaire.txt')
+    cat = label_handler.get_categories()[1]
+    symbols = label_handler.get_symbols_by_category(cat)
+    # symbols = []
+
+    target_data = get_2015_sleep_data(target= 'SLQ050')
+    train_data, target_data = get_2015_Questionnaire_data(symbols, target_data)
+    print(train_data)
+    print(target_data)
 
 if __name__ == '__main__':
-    test_get_data()
+    test_get_questionnaire()

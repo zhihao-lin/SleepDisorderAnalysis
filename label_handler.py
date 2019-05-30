@@ -31,6 +31,10 @@ class LabelHandler():
         categories = list(self.main_categories.keys())
         return categories
     
+    def get_symbols_by_category(self, category):
+        symbols = list(self.main_categories[category])
+        return symbols
+
     def get_contents_by_category(self, category):
         contents = list(self.main_categories[category].values())
         return contents
@@ -54,9 +58,6 @@ class LabelHandler():
             else:
                 contents.append(content)
         return contents, noresult_symbol
-    def get_symbols_by_category(self, category):
-        symbols = list(self.main_categories[category])
-        return symbols
 
 def test_labelhandler():
     path = 'data/2015-2016/Questionnaire.txt'
