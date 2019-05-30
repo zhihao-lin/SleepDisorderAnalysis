@@ -1,62 +1,22 @@
 import numpy as np
 import pandas as pd
+from label_handler import LabelHandler
 
-class LabelHandler():
-    def __init__(self, path):
-        self.main_categories = {}
-        category_name = None
-        file = open(path, 'r')
-        for line in file:
-            if line == '':
-                continue
-            elif line[-1] == '\n':
-                line = line[:-1]
-            
-            if line[0] == '=':
-                category_name = line[2:]
-                self.main_categories[category_name]= {}
-            else:
-                split_index = line.index('-')
-                symbol, content = line[:split_index - 1], line[split_index + 2:]
-                symbol = symbol.upper()
-                self.main_categories[category_name][symbol] = content
+### Get data ##
+def select_feature(data,feature_list):
+    if feature_list == []:
+        return data
+    index = []
+    for i in range(len(feature_list)):
+        feature_list[i] = feature_list[i][0:3]
 
-    def show_all(self):
-        for category in self.main_categories:
-            print('\n = {} = '.format(category))
-            for symbol, content in self.main_categories[category].items():
-                print('{} - {}'.format(symbol, content))
-
-    def get_categories(self):
-        categories = list(self.main_categories.keys())
-        return categories
-    
-    def get_contents_by_category(self, category):
-        contents = list(self.main_categories[category].values())
-        return contents
-    
-    def get_content_by_symbol(self, symbol):
-        symbol = symbol.upper()
-        for category in self.main_categories:
-            if symbol in self.main_categories[category]:
-                return self.main_categories[category][symbol]
-        return None
-
-    def symbols_to_contents(self, symbols):
-        contents = []
-        noresult_symbol = []
-        for i, symbol in enumerate(symbols):
-            content = self.get_content_by_symbol(symbol)
-            if not content:
-                print('Warn: Symbol {} cant be found'.format(symbol))
-                contents.append(symbol)
-                noresult_symbol.append(symbol)
-            else:
-                contents.append(content)
-        return contents, noresult_symbol
-    def get_symbols_by_category(self, category):
-        symbols = list(self.main_categories[category])
-        return symbols
+    col_name = ['SLQ','SLD','SEQ','Unn']+feature_list
+    for i in range(len(data.columns)):
+        if data.columns[i][0:3] not in col_name :
+            index.append(i)
+    data = data.drop(data.columns[index],axis=1)
+    print('Remove '+str(len(index))+'col | Remain'+str(data.shape[1])+'col')
+    return data
 
 def filter_data(csv, column_threshold= 0.5, row_threshold= 0.5):
     raw_shape = csv.shape
@@ -97,6 +57,23 @@ def process_nan(csv):
             csv[feature] = csv[feature].astype('float')
     csv = pd.get_dummies(csv)
     return csv
+
+def normalize_time(raw_array):
+    normalized = []
+    for raw_data in raw_array: 
+        if ':' not in raw_data:
+            normalized.append(0)
+            continue
+        hour, minute = str(raw_data).split(':')
+        hour, minute = int(hour[2:]), int(minute[:-1])  
+        if hour > 12:
+            time_diff = ((23 - hour)*60 + (60 - minute)) * (-1)
+            normalized.append(time_diff)
+        else:
+            time_diff = hour * 60 + minute
+            normalized.append(time_diff)
+    return normalized
+
 def get_2015_Quesitonaire_data( feature_selected,
                                 csv= 'data_preprocess/Questionnaire.csv', 
                                 label= 'data/2015-2016/Questionnaire.txt'):
@@ -127,51 +104,11 @@ def get_2015_Quesitonaire_data( feature_selected,
 
     return data
 
-def normalize_time(raw_array):
-    normalized = []
-    for raw_data in raw_array: 
-        if ':' not in raw_data:
-            normalized.append(0)
-            continue
-        hour, minute = str(raw_data).split(':')
-        hour, minute = int(hour[2:]), int(minute[:-1])  
-        if hour > 12:
-            time_diff = ((23 - hour)*60 + (60 - minute)) * (-1)
-            normalized.append(time_diff)
-        else:
-            time_diff = hour * 60 + minute
-            normalized.append(time_diff)
-    return normalized
-
-
-def test_labelhandler():
-    path = 'data/2015-2016/Questionnaire.txt'
-    handler = LabelHandler(path)
-    df = pd.read_csv('data_preprocess/Questionnaire.csv')
-    labels = df.columns
-    contents, noresult_id = handler.symbols_to_contents(labels)
-    print(len(contents))
-    print(noresult_id)
-
+## TEST ##
 def test_get_data():
     data = get_2015_Quesitonaire_data()
     data = process_nan(data)
     print(data.columns)
-
-def select_feature(data,feature_list):
-    if feature_list == []:
-        return data
-    index = []
-    for i in range(len(feature_list)):
-        feature_list[i] = feature_list[i][0:3]
-
-    col_name = ['SLQ','SLD','SEQ','Unn']+feature_list
-    for i in range(len(data.columns)):
-        if data.columns[i][0:3] not in col_name :
-            index.append(i)
-    data = data.drop(data.columns[index],axis=1)
-    print('Remove '+str(len(index))+'col | Remain'+str(data.shape[1])+'col')
-    return data
 
 if __name__ == '__main__':
     test_get_data()

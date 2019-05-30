@@ -5,7 +5,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from util import *
 from analyze import *
+from label_handler import LabelHandler
 import os
+
 def main():
     label_handler = LabelHandler('data/2015-2016/Questionnaire.txt')
     f = open('analyze_files/acc.txt', 'w')
