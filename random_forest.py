@@ -17,7 +17,7 @@ def main(mode):
     if mode == 0:
         path = '../analyze_mode_0/'
         category=['']
-		#use all data
+        #use all data
         feature_selected = []  
     elif mode == 1:
         path = '../analyze_mode_1/'
@@ -26,11 +26,16 @@ def main(mode):
         path = '../analyze_mode_2/'
         category=['']
         feature_selected = ['ALQ130','ALQ151','BPQ080','BPQ020','BPQ070','CDQ001','CDQ010',
-							'CBD091','CBD121','HUQ010','HSQ590','DED120','DIQ180','DIQ170',
-							'DLQ150','DLQ140','DUQ200','HIQ270','HUQ051','HUQ090','INQ030',
-							'MCQ160a','DPQ030','DPQ040','DPQ020','PFQ051','PFQ049','SXD031',
-							'SMQ858','SMQ856','WHQ150','WHD050']
-
+                            'CBD091','CBD121','HUQ010','HSQ590','DED120','DIQ180','DIQ170',
+                            'DLQ150','DLQ140','DUQ200','HIQ270','HUQ051','HUQ090','INQ030',
+                            'MCQ160a','DPQ030','DPQ040','DPQ020','PFQ051','PFQ049','SXD031',
+                            'SMQ858','SMQ856','WHQ150','WHD050']
+    elif mode == 3:
+        path = '../analyze_mode_3/'
+        category=['']
+        feature_selected = ['HUQ051','DPQ030','PFQ049','DLQ140',
+                            'DLQ150','HUQ090','CDQ001','PFQ051',
+                            'WHD050','BPQ070','DIQ170']
     #make ../analyze_mode_x & acc.txt
     os.makedirs(path, exist_ok=True)
     f = open(path+'acc.txt', 'w')
@@ -76,9 +81,9 @@ def main(mode):
         continue
 
 if __name__ == '__main__':
-    main(mode = 2) 
-    #mod = 0 :select all
-    #mod = 1 :every category
-    #mod = 2 :customized
-    
+    main(mode = 3) 
+    #mode = 0 :select all
+    #mode = 1 :every category
+    #mode = 2 :choose mode1 mean(SHAP value) > 0.25 
+    #mode = 3 :choose mode2 mean(SHAP value) top 14 except ['DPQ040','CDQ010','BPQ020']
 
