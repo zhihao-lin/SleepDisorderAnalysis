@@ -8,6 +8,7 @@ def select_feature(data, symbol_list):
         return data
 
     symbol_list += ['SEQN']
+    symbol_list = [symbol for symbol in symbol_list if(symbol in data.columns)]
     data = data[symbol_list]
     return data
 
@@ -139,10 +140,6 @@ def get_2015_Demorgraphics_data(target_data, symbol_list= [],
     contents, noresults = label_handler.symbols_to_contents(columns)
     train_data.columns = contents
     train_data = train_data.drop(noresults, axis= 1)
-
-    
-    
-    return train_data, target_data
 
 
 ## TEST ##
