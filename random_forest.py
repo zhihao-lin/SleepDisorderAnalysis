@@ -39,7 +39,7 @@ def main(mode):
     #make ../analyze_mode_x & acc.txt
     os.makedirs(path, exist_ok=True)
     f = open(path+'acc.txt', 'w')
-
+    print(path)
     #train
     for cat in category:
         try:
