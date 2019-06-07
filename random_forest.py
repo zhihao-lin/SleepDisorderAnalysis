@@ -52,7 +52,7 @@ def main(mode):
     
     os.makedirs(path, exist_ok=True)
     f = open(path+'acc.txt', 'w')
-
+    print(path)
     #train
     for cat in category:
         #try:
