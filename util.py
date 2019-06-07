@@ -34,6 +34,16 @@ def filter_data(csv, column_threshold= 0.5, row_threshold= 0.5):
     print('Dropped row: {}/{}'.format(len(drop_rows), raw_shape[0]))
     return csv
 
+def align_data_with_target(train_data, target_data):
+    target = target_data.columns[1]
+    print(train_data.head())
+    print(target_data.head())
+    all_data = pd.merge(train_data, target_data, how= 'inner', on= 'SEQN')
+    print(all_data.head())
+    train_data = all_data.drop(target, axis= 1)
+    target_data = all_data[target]
+    return train_data, target_data
+
 def process_nan(csv):
     # split categorical data & replace nan with median if numerical data
     for feature in csv.columns:
@@ -89,7 +99,7 @@ def get_2015_sleep_data(csv= 'data_preprocess/Sleep.csv',
     data[contents[2]] = normalize_time(data[contents[2]])
     return data
 
-def get_2015_Questionnaire_data(symbol_list, target_data,
+def get_2015_Questionnaire_data(target_data, symbol_list= [],
                                 csv= 'data_preprocess/Questionnaire.csv', 
                                 label= 'data/2015-2016/Questionnaire.txt'):
     raw_csv = pd.read_csv(csv)
@@ -115,12 +125,25 @@ def get_2015_Questionnaire_data(symbol_list, target_data,
     train_data = process_nan(train_data)
     return train_data, target_data
 
-def align_data_with_target(train_data, target_data):
-    target = target_data.columns[1]
-    all_data = pd.merge(train_data, target_data, how= 'inner', on= 'SEQN')
-    train_data = all_data.drop(target, axis= 1)
-    target_data = all_data[target]
+def get_2015_Demorgraphics_data(target_data, symbol_list= [], 
+                                csv= 'data_preprocess/Demographics.csv',
+                                label= 'data/2015-2016/Demographics.txt'):
+    raw_csv = pd.read_csv(csv)
+    label_handler = LabelHandler(label)
+
+    train_data = select_feature(raw_csv, symbol_list)
+    train_data = filter_data(train_data)
+    train_data, target_data = align_data_with_target(train_data, target_data)
+
+    columns = train_data.columns
+    contents, noresults = label_handler.symbols_to_contents(columns)
+    train_data.columns = contents
+    train_data = train_data.drop(noresults, axis= 1)
+
+    
+    
     return train_data, target_data
+
 
 ## TEST ##
 def test_get_sleep():
@@ -134,9 +157,24 @@ def test_get_questionnaire():
     # symbols = []
 
     target_data = get_2015_sleep_data(target= 'SLQ050')
-    train_data, target_data = get_2015_Questionnaire_data(symbols, target_data)
+    train_data, target_data = get_2015_Questionnaire_data(target_data, symbols)
     print(train_data)
     print(target_data)
 
+def test_get_demorgraphics():
+    target_data = get_2015_sleep_data(target= 'SLQ050')
+    train_data, target_data = get_2015_Demorgraphics_data(target_data)
+    print(train_data.head())
+    print(target_data.head())
+
+def test_get_dietary():
+    pass
+
+def test_get_examination():
+    pass
+
+def test_get_laboratory():
+    pass
+
 if __name__ == '__main__':
-    test_get_questionnaire()
+    test_get_demorgraphics()
