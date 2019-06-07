@@ -44,8 +44,16 @@ def align_data_with_target(train_data, target_data):
 
 def process_nan(csv):
     # split categorical data & replace nan with median if numerical data
+    features_to_discard = []
     for feature in csv.columns:
-        possible_values = np.unique(csv[feature][~np.isnan(csv[feature])])
+        try:
+            possible_values = np.unique(csv[feature][~np.isnan(csv[feature])])
+        except:
+            print(' == Fail to process follow ==')
+            print(csv[feature][:10])
+            features_to_discard.append(feature)
+            continue
+
         if len(possible_values) < 10: # categorical
             # print('== {} =='.format(feature))
             csv[feature][csv[feature] == max(possible_values)] = np.nan
@@ -57,6 +65,9 @@ def process_nan(csv):
             csv[feature][csv[feature] == max(possible_values)] = median
             csv[feature] = csv[feature].astype('float')
     
+    if len(features_to_discard) > 0:
+        csv = csv.drop(features_to_discard, axis= 1)
+
     csv = pd.get_dummies(csv)
     return csv
 
@@ -142,6 +153,45 @@ def get_2015_Demorgraphics_data(target_data, symbol_list= [],
     train_data = process_nan(train_data)
     return train_data, target_data
 
+def get_2015_Examination_data(target_data, symbol_list= [], 
+                        csv= 'data_preprocess/Examination.csv',
+                        label= 'data/2015-2016/Examination.txt'):
+    raw_csv = pd.read_csv(csv)
+    label_handler = LabelHandler(label)
+
+    train_data = select_feature(raw_csv, symbol_list)
+    train_data = filter_data(train_data)
+    train_data, target_data = align_data_with_target(train_data, target_data)
+
+    columns = train_data.columns
+    contents, noresults = label_handler.symbols_to_contents(columns)
+    train_data.columns = contents
+    if noresults:
+        train_data = train_data.drop(noresults, axis= 1)
+
+    train_data = process_nan(train_data)
+    return train_data, target_data
+
+def get_2015_Laboratory_data(target_data, symbol_list= [], 
+                        csv= 'data_preprocess/Laboratory.csv',
+                        label= 'data/2015-2016/Laboratory.txt'):
+
+    raw_csv = pd.read_csv(csv)
+    label_handler = LabelHandler(label)
+
+    train_data = select_feature(raw_csv, symbol_list)
+    train_data = filter_data(train_data)
+    train_data, target_data = align_data_with_target(train_data, target_data)
+
+    columns = train_data.columns
+    contents, noresults = label_handler.symbols_to_contents(columns)
+    train_data.columns = contents
+    if noresults:
+        train_data = train_data.drop(noresults, axis= 1)
+
+    train_data = process_nan(train_data)
+    return train_data, target_data 
+
 ## TEST ##
 def test_get_sleep():
     data = get_2015_sleep_data(target = 'SLQ120')
@@ -165,15 +215,29 @@ def test_get_demorgraphics():
     print(train_data.columns)
     print(train_data.head())
     
-
 def test_get_dietary():
-    pass
+    target_data = get_2015_sleep_data(target= 'SLQ050')
+    train_data, target_data = get_2015_Dietary_data(target_data)
+
+    print(train_data.columns)
+    print(train_data.head())
 
 def test_get_examination():
-    pass
+    target_data = get_2015_sleep_data(target= 'SLQ050')
+    train_data, target_data = get_2015_Examination_data(target_data)
+
+    for column in train_data.columns:
+        print(train_data[column][:10])
+        print(' ---------- ')
 
 def test_get_laboratory():
-    pass
+    target_data = get_2015_sleep_data(target= 'SLQ050')
+    train_data, target_data = get_2015_Laboratory_data(target_data)
+
+    # for column in train_data.columns:
+    #     print(train_data[column][:10])
+    #     print(' ---------- ')
+    print(train_data)
 
 if __name__ == '__main__':
-    test_get_demorgraphics()
+    test_get_laboratory()
