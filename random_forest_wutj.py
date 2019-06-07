@@ -47,21 +47,28 @@ def main(mode):
         feature_selected = ['HUQ051','DPQ030','PFQ049','DLQ140',
                             'DLQ150','HUQ090','CDQ001','PFQ051',
                             'WHD050','BPQ070','DIQ170']
-	elif mode == 4:
-		path = '../analyze_mode_4/'
-		category=['']
-		feature_selected = [
-			'URDACT','ALQ130','ALQ151','BPXSY2','BPQ080','BPQ020','BPQ070','BMXWAIST','CDQ010',
-			'CDQ001','LBXTC','LBXRDW','CBD091','CBD121','LBXCOT','LBDHCTLC','HSD010','HSQ590',
-			'RIDAGEYR','DED120','DIQ180','DIQ170','DLQ150','DLQ050','DLQ110','DUQ200','PHDSESN',
-			'PHQ050','PHQ060','LBDRFOSI','LBXGH','HIQ270','HEQ010','HEQ030','LBXHA','LBXHBC',
-			'LBDHBG','LBXHCR','LBDHEG','LBXHIVC','HUQ051','HUQ090','HOD050','HOQ065','ORXHPI',
-			'ORXH16','INQ030','MCQ160a','DPQ020','DPQ040','PFQ051','PFQ049','RXQ510','LBXEST',
-			'LBXTST','SXD031','SMQ020','SMQ858','URXUTRI','WHQ150','WHD110',
-		
-		]
-    
-    #make ../analyze_mode_x & acc.txt
+    elif mode == 4:
+        path = '../analyze_mode_4/'
+        category=['']
+        feature_selected = [
+            'URDACT','ALQ130','ALQ151','BPXSY2','BPQ080','BPQ020','BPQ070','BMXWAIST','CDQ010',
+            'CDQ001','LBXTC','LBXRDW','CBD091','CBD121','LBXCOT','LBDHCTLC','HSD010','HSQ590',
+            'RIDAGEYR','DED120','DIQ180','DIQ170','DLQ150','DLQ050','DLQ110','DUQ200','PHDSESN',
+            'PHQ050','PHQ060','LBDRFOSI','LBXGH','HIQ270','HEQ010','HEQ030','LBXHA','LBXHBC',
+            'LBDHBG','LBXHCR','LBDHEG','LBXHIVC','HUQ051','HUQ090','HOD050','HOQ065','ORXHPI',
+            'ORXH16','INQ030','MCQ160a','DPQ020','DPQ040','PFQ051','PFQ049','RXQ510','LBXEST',
+            'LBXTST','SXD031','SMQ020','SMQ858','URXUTRI','WHQ150','WHD110',
+        
+        ]
+    elif mode == 5:
+        path = '../analyze_mode_5/'
+        category=['']
+        feature_selected = ['PFQ051','DLQ150','HUQ051','MCQ160a','HUQ090','MCQ365a',
+                            'MCQ080','RIDAGEYR','DPQ040','CDQ010','BPQ020',
+                            'CDQ001','LBXBCO','BPQ070','OCD390G','PFQ054',
+                            'LBXBCR'
+        ]
+#make ../analyze_mode_x & acc.txt
     
     os.makedirs(path, exist_ok=True)
     f = open(path+'acc.txt', 'w')
@@ -78,15 +85,9 @@ def main(mode):
             print('feature_selected: ',feature_selected)
             target_data = get_2015_sleep_data(target= 'SLQ050')
             target_feature = label_handler.get_content_by_symbol('SLQ050')
-            if _index == 0:
-                train_data, target_data = get_2015_Questionnaire_data(target_data, feature_selected)
-            if _index == 1:
-                train_data, target_data = get_2015_Demorgraphics_data(target_data, feature_selected)
-            if _index == 2:
-                train_data, target_data = get_2015_Examination_data(target_data, feature_selected)
-            if _index == 3:
-                train_data, target_data = get_2015_Laboratory_data(target_data, feature_selected)
-                
+
+            train_data, target_data = get_2015_all(target_data, feature_selected)
+
             x_train, x_valid, y_train, y_valid = train_test_split(train_data, target_data, test_size = .2, random_state=0) 
             model = RandomForestClassifier(n_estimators= 20, max_depth=10, random_state= 0)
             model.fit(x_train, y_train)
@@ -117,9 +118,10 @@ def main(mode):
         continue
 
 if __name__ == '__main__':
-    main(mode = 4) 
+    main(mode = 5) 
     #mode = 0 :select all
     #mode = 1 :every category
     #mode = 2 :choose mode1 mean(SHAP value) > 0.25 
     #mode = 3 :choose mode2 mean(SHAP value) top 14 except ['DPQ040','CDQ010','BPQ020']
-	#mode = 4 :choose mode1 mean(SHAP value) > 0.25 (all catagory)
+    #mode = 4 :choose mode1 mean(SHAP value) > 0.25 (all catagory)
+    #mode = 5 :choose mode0 mean(SHAP value) top 20 except ['DLQ110','CDQ010','BPQ020']
