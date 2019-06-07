@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from label_handler import LabelHandler
+import os
 
 ### Get data ##
 def select_feature(data, symbol_list):
@@ -19,7 +20,14 @@ def filter_data(csv, column_threshold= 0.5, row_threshold= 0.5):
     
     data_num = len(csv)
     for feature in csv.columns:
+        
         missing_num = csv[feature].isna().sum()
+        # if type(missing_num) != int:
+        #     print('*************')
+        #     print(missing_num)
+        #     drop_columns.append(feature)
+        #     continue
+
         if missing_num/data_num > column_threshold:
             drop_columns.append(feature)
     csv = csv.drop(drop_columns, axis= 1)
@@ -192,6 +200,37 @@ def get_2015_Laboratory_data(target_data, symbol_list= [],
     train_data = process_nan(train_data)
     return train_data, target_data 
 
+def get_all_handler():
+    categories = ['Questionnaire', 'Demographics', 'Examination', 'Laboratory']
+    label_handler = LabelHandler()
+    for category in categories:
+        label_handler.read(os.path.join('data/2015-2016/', '{}.txt'.format(category)))
+    return label_handler
+
+def get_2015_all(target_data, symbol_list= []):
+    categories = ['Questionnaire', 'Demographics', 'Examination', 'Laboratory']
+    label_handler = get_all_handler()
+
+    csv_all = pd.read_csv(os.path.join('data_preprocess/', '{}.csv'.format(categories[0])))
+    csv_all = csv_all.drop('Unnamed: 0', 1)
+    for i in range(1, len(categories)):
+        csv = pd.read_csv(os.path.join('data_preprocess/', '{}.csv'.format(categories[i])))
+        csv = csv.drop('Unnamed: 0', 1)
+        csv_all = pd.merge(csv_all, csv, 'inner', on= 'SEQN')
+
+    train_data = select_feature(csv_all, symbol_list)
+    train_data = filter_data(train_data)
+    train_data, target_data = align_data_with_target(train_data, target_data)
+
+    columns = train_data.columns
+    contents, noresults = label_handler.symbols_to_contents(columns)
+    train_data.columns = contents
+    if noresults:
+        train_data = train_data.drop(noresults, axis= 1)
+
+    train_data = process_nan(train_data)
+    return train_data, target_data
+
 ## TEST ##
 def test_get_sleep():
     data = get_2015_sleep_data(target = 'SLQ120')
@@ -201,24 +240,17 @@ def test_get_questionnaire():
     label_handler = LabelHandler('data/2015-2016/Questionnaire.txt')
     cat = label_handler.get_categories()[1]
     symbols = label_handler.get_symbols_by_category(cat)
-    # symbols = []
+    symbols = []
 
     target_data = get_2015_sleep_data(target= 'SLQ050')
     train_data, target_data = get_2015_Questionnaire_data(target_data, symbols)
     print(train_data)
-    print(target_data)
+    # print(target_data)
 
 def test_get_demorgraphics():
     target_data = get_2015_sleep_data(target= 'SLQ050')
     train_data, target_data = get_2015_Demorgraphics_data(target_data)
     
-    print(train_data.columns)
-    print(train_data.head())
-    
-def test_get_dietary():
-    target_data = get_2015_sleep_data(target= 'SLQ050')
-    train_data, target_data = get_2015_Dietary_data(target_data)
-
     print(train_data.columns)
     print(train_data.head())
 
@@ -239,5 +271,11 @@ def test_get_laboratory():
     #     print(' ---------- ')
     print(train_data)
 
+def test_get_all():
+    target_data = get_2015_sleep_data(target= 'SLQ050')
+    train_data, target_data = get_2015_all(target_data)
+    
+    print(train_data.head())
+
 if __name__ == '__main__':
-    test_get_laboratory()
+    test_get_all()

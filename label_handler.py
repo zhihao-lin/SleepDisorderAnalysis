@@ -2,8 +2,12 @@ import numpy as np
 import pandas as pd
 
 class LabelHandler():
-    def __init__(self, path):
+    def __init__(self, path= None):
         self.main_categories = {}
+        if path:
+            self.read(path)
+
+    def read(self, path):
         category_name = None
         file = open(path, 'r')
         for line in file:
