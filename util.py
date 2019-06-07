@@ -214,13 +214,6 @@ def test_get_demorgraphics():
     
     print(train_data.columns)
     print(train_data.head())
-    
-def test_get_dietary():
-    target_data = get_2015_sleep_data(target= 'SLQ050')
-    train_data, target_data = get_2015_Dietary_data(target_data)
-
-    print(train_data.columns)
-    print(train_data.head())
 
 def test_get_examination():
     target_data = get_2015_sleep_data(target= 'SLQ050')
