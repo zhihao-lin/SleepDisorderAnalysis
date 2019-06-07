@@ -37,10 +37,7 @@ def filter_data(csv, column_threshold= 0.5, row_threshold= 0.5):
 
 def align_data_with_target(train_data, target_data):
     target = target_data.columns[1]
-    print(train_data.head())
-    print(target_data.head())
     all_data = pd.merge(train_data, target_data, how= 'inner', on= 'SEQN')
-    print(all_data.head())
     train_data = all_data.drop(target, axis= 1)
     target_data = all_data[target]
     return train_data, target_data
@@ -139,8 +136,11 @@ def get_2015_Demorgraphics_data(target_data, symbol_list= [],
     columns = train_data.columns
     contents, noresults = label_handler.symbols_to_contents(columns)
     train_data.columns = contents
-    train_data = train_data.drop(noresults, axis= 1)
+    if noresults:
+        train_data = train_data.drop(noresults, axis= 1)
 
+    train_data = process_nan(train_data)
+    return train_data, target_data
 
 ## TEST ##
 def test_get_sleep():
@@ -161,8 +161,10 @@ def test_get_questionnaire():
 def test_get_demorgraphics():
     target_data = get_2015_sleep_data(target= 'SLQ050')
     train_data, target_data = get_2015_Demorgraphics_data(target_data)
+    
+    print(train_data.columns)
     print(train_data.head())
-    print(target_data.head())
+    
 
 def test_get_dietary():
     pass
