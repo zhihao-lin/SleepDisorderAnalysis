@@ -13,5 +13,14 @@ def extract_sleep_data():
     questionnaire = questionnaire.drop(sleep_label, 1)
     questionnaire.to_csv('Questionnaire_clean.csv')
 
+def remove_sleep_data():
+    paths = ['Demographics.csv', 'Examination.csv', 'Laboratory.csv']
+    sleep_label = ['Unnamed: 0', 'SLQ300', 'SLQ310', 'SLD012', 'SLQ030', 'SLQ040', 'SLQ050', 'SLQ120']
+
+    for path in paths: 
+        csv = pd.read_csv(path)
+        csv = csv.drop(sleep_label, 1)
+        csv.to_csv(path)
+    
 if __name__ == '__main__':
-    extract_sleep_data()
+    remove_sleep_data()
