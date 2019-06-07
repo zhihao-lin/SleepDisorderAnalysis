@@ -1,0 +1,2038 @@
+= Acculturation (ACQ_I) 
+ACQBOX1 - CHECK ITEM
+ACD011A - Speak English at home - NHW or NHB
+ACD011B - Speak Spanish at home - NHW or NHB
+ACD011C - Speak other language at home -NHW or NHB
+ACD040 - Language(s) spoken at home - Hispanics
+ACD110 - Language(s) spoken at home - Asians
+= Alcohol Use (ALQ_I)
+ALQ101 - Had at least 12 alcohol drinks/1 yr?
+ALQ110 - Had at least 12 alcohol drinks/lifetime?
+ALQ120Q - How often drink alcohol over past 12 mos
+ALQ120U - # days drink alcohol per wk, mo, yr
+ALQ130 - Avg # alcoholic drinks/day - past 12 mos
+ALQ141Q - # days have 4/5 drinks - past 12 mos
+ALQ141U - # days per week, month, year?
+ALQ151 - Ever have 4/5 or more drinks every day?
+ALQ160 - # days have 4/5 or more drinks in 2 hrs
+= Audiometry (AUQ_I)
+AUQ054 - General condition of hearing
+AUQ055 - CHECK ITEM
+AUQ060 - Hear a whisper from across a quiet room?
+AUQ070 - Hear normal voice across a quiet room?
+AUQ080 - Hear a shout from across a quiet room?
+AUQ090 - Hear if spoken loudly to in better ear?
+AUQ100 - Difficult follow conversation if noise
+AUQ110 - Hearing cause frustration when talking?
+AUQ136 - Ever had 3 or more ear infections?
+AUQ138 - Ever had tube placed in ear?
+AUQ137 - CHECK ITEM
+AUQ144 - Last time hearing tested by specialist?
+AUQ146 - Ever worn hearing aid/cochlear implant?
+AUD148 - Hearing aid or Cochlear implant?
+AUQ152 - Past year how often worn hearing aid?
+AUQ390 - CHECK ITEM
+AUQ154 - Ever used assistive listening devices?
+AUQ191 - Ears ringing, roaring, buzzing past year
+AUQ250 - How long bothered by ringing, roaring
+AUQ255 - In past yr how often had ringing/roaring
+AUQ260 - Bothered by ringing after loud sounds?
+AUQ270 - Bothered by ringing when going to sleep
+AUQ280 - How much of a problem is ringing?
+AUQ300 - Ever used firearms for any reason?
+AUQ310 - How many total rounds ever fired?
+AUQ320 - Wear hearing protection when shooting?
+AUQ331 - Ever had a job exposure to loud noise?
+AUQ340 - How long exposed to loud noise at work?
+AUQ350 - Ever exposed to very loud noise at work?
+AUQ361 - How long exposed to very loud noise?
+AUQ370 - Had off-work exposure to loud noise?
+AUQ381 - Past year: worn hearing protection?
+= Blood Pressure & Cholesterol (BPQ_I)
+BPQ020 - Ever told you had high blood pressure
+BPQ030 - Told had high blood pressure - 2+ times
+BPD035 - Age told had hypertension
+BPQ040A - Taking prescription for hypertension
+BPQ050A - Now taking prescribed medicine for HBP
+BPQ080 - Doctor told you - high cholesterol level
+BPQ060 - Ever had blood cholesterol checked
+BPQ070 - When blood cholesterol last checked
+BPQ090D - Told to take prescriptn for cholesterol
+BPQ100D - Now taking prescribed medicine
+= Cardiovascular Health (CDQ_I)
+CDQ001 - SP ever had pain or discomfort in chest
+CDQ002 - SP get it walking uphill or in a hurry
+CDQ003 - During an ordinary pace on level ground
+CDQ003A - CHECK ITEM
+CDQ004 - If so does SP continue or slow down
+CDQ005 - Does standing relieve pain/discomfort
+CDQ006 - How soon is the pain relieved
+CDQ009A - Pain in right arm
+CDQ009B - Pain in right chest
+CDQ009C - Pain in neck
+CDQ009D - Pain in upper sternum
+CDQ009E - Pain in lower sternum
+CDQ009F - Pain in left chest
+CDQ009G - Pain in left arm
+CDQ009H - Pain in epigastric area
+CDQ008 - Severe pain in chest more than half hour
+CDQ010 - Shortness of breath on stairs/inclines
+= Consumer Behavior (CBQ_I)
+CBD071 - Money spent at supermarket/grocery store
+CBD091 - Money spent on nonfood items
+CBD111 - Money spent on food at other stores
+CBD121 - Money spent on eating out
+CBD131 - Money spent on carryout/delivered 
+= Current Health Status (HSQ_I)
+HSD010 - General health condition
+HSQ500 - SP have head cold or chest cold
+HSQ510 - SP have stomach or intestinal illness?
+HSQ520 - SP have flu, pneumonia, ear infection?
+HSQ571 - SP donated blood in past 12 months?
+HSQ580 - How long ago was last blood donation?
+HSQ590 - Blood ever tested for HIV virus?
+HSAQUEX - Source of Health Status Data
+= Dermatology (DEQ_I)
+DED031 - Skin reaction to sun after non-exposure
+DEQ034A - Stay in the shade?
+DEQ034C - Wear a long sleeved shirt
+DEQ034D - Use sunscreen?
+DEQ038G - In past yr did you have sunburn?
+DEQ038Q - # of times in past yr you had a sunburn
+DED120 - Minutes outdoors 9am - 5pm work day
+DED125 - Minutes outdoors 9am - 5pm not work day
+= Diabetes (DIQ_I)
+DIQ010 - Doctor told you have diabetes
+DID040 - Age when first told you had diabetes
+DIQ159 - CHECK ITEM
+DIQ160 - Ever told you have prediabetes
+DIQ170 - Ever told have health risk for diabetes
+DIQ172 - Feel could be at risk for diabetes
+DIQ175A - Family history
+DIQ175B - Overweight
+DIQ175C - Age
+DIQ175D - Poor diet
+DIQ175E - Race
+DIQ175F - Had a baby weighed over 9 lbs. at birth
+DIQ175G - Lack of physical activity
+DIQ175H - High blood pressure
+DIQ175I - High blood sugar
+DIQ175J - High cholesterol
+DIQ175K - Hypoglycemic
+DIQ175L - Extreme hunger
+DIQ175M - Tingling/numbness in hands or feet
+DIQ175N - Blurred vision
+DIQ175O - Increased fatigue
+DIQ175P - Anyone could be at risk
+DIQ175Q - Doctor warning
+DIQ175R - Other, specify
+DIQ175S - Gestational diabetes
+DIQ175T - Frequent urination
+DIQ175U - Thirst
+DIQ175V - Craving for sweet/eating a lot of sugar
+DIQ175W - Medication
+DIQ175X - Polycystic ovarian syndrome
+DIQ180 - Had blood tested past three years
+DIQ050 - Taking insulin now
+DID060 - How long taking insulin
+DIQ060U - Unit of measure (month/year)
+DIQ065 - CHECK ITEM
+DIQ070 - Take diabetic pills to lower blood sugar
+DIQ229 - CHECK ITEM
+DIQ230 - How long ago saw a diabetes specialist
+DIQ240 - Is there one Dr you see for diabetes
+DID250 - Past year how many times seen doctor
+DID260 - How often check blood for glucose/sugar
+DIQ260U - Unit of measure (day/week/month/year)
+DIQ275 - Past year Dr checked for A1C
+DIQ280 - What was your last A1C level
+DIQ291 - What does Dr say A1C should be
+DIQ295 - CHECK ITEM
+DIQ300S - What was your recent SBP
+DIQ300D - What was your recent DBP
+DID310S - What does Dr say SBP should be
+DID310D - What does Dr say DBP should be
+DID320 - What was most recent LDL number
+DID330 - What does Dr say LDL should be
+DID341 - Past year times Dr check feet for sores
+DID350 - How often do you check your feet
+DIQ350U - Unit of measure (day/week/month/year)
+DIQ360 - Last time had pupils dilated for exam
+DIQ080 - Diabetes affected eyes/had retinopathy
+= Diet Behavior & Nutrition (DBQ_I)
+DBQ010 - Ever breastfed or fed breastmilk
+DBD030 - Age stopped breastfeeding(days)
+DBD041 - Age first fed formula(days)
+DBD050 - Age stopped receiving formula(days)
+DBD055 - Age started other than breastmilk/fomula
+DBD061 - Age first fed milk(days)
+DBQ073A - Type of milk first fed - whole milk
+DBQ073B - Type of milk first fed - 2% milk
+DBQ073C - Type of milk first fed - 1% milk
+DBQ073D - Type of milk first fed - fat free milk
+DBQ073E - Type of milk first fed - soy milk
+DBQ073U - Type of milk first fed - other
+DBD085 - CHECK ITEM
+DBQ700 - How healthy is the diet
+DBQ197 - Past 30 day milk product consumption
+DBQ223A - You drink whole or regular milk
+DBQ223B - You drink 2% fat milk
+DBQ223C - You drink 1% fat milk
+DBQ223D - You drink fat free/skim milk
+DBQ223E - You drink soy milk
+DBQ223U - You drink another type of milk
+DBD225 - CHECK ITEM
+DBQ229 - Regular milk use 5 times per week
+DBQ235A - How often drank milk age 5-12
+DBQ235B - How often drank milk age 13-17
+DBQ235C - How often drank milk age 18-35
+DBD265a - CHECK ITEM
+DBQ301 - Community/Government meals delivered
+DBQ330 - Eat meals at Community/Senior center
+DBD355 - CHECK ITEM
+DBQ360 - Attend kindergarten thru high school
+DBQ370 - School serves school lunches
+DBD381 - # of times/week get school lunch
+DBQ390 - School lunch free, reduced or full price
+DBQ400 - School serve complete breakfast each day
+DBD411 - # of times/week get school breakfast
+DBQ421 - School breakfast free/reduced/full price
+DBQ422 - CHECK ITEM
+DBQ424 - Summer program meal free/reduced price
+DBD895 - # of meals not home prepared
+DBD900 - # of meals from fast food or pizza place
+DBD905 - # of ready-to-eat foods in past 30 days
+DBD910 - # of frozen meals/pizza in past 30 days
+DBQ715a - CHECK ITEM
+CBQ596 - Heard of My Plate
+CBQ606 - Looked up My Plate on internet
+CBQ611 - Tried My Plate plan
+CBQ505 - Eat at fast food/pizza places
+CBQ535 - Saw nutrition info on fast food menu
+CBQ540 - Used nutrition info to choose fast foods
+CBQ545 - Would use fast food nutrition info
+CBQ550 - Eat at restaurants w/ waiter
+CBQ552 - Is it a chain-restaurant?
+CBQ580 - Saw nutrition info on restaurant menu
+CBQ585 - Used nutrition info in restaurant
+CBQ590 - Would use restaurant nutrition info
+= Disability (DLQ_I)
+DLQ010 - Have serious difficulty hearing?
+DLQ020 - Have serious difficulty seeing?
+DLQ040 - Have serious difficulty concentrating?
+DLQ050 - Have serious difficulty walking?
+DLQ060 - Have difficulty dressing or bathing?
+DLQ080 - Have difficulty doing errands alone?
+DLQ090 - CHECK ITEM
+DLQ100 - How often do you feel worried, anxious?
+DLQ110 - Take medication for these feelings?
+DLQ120 - CHECK ITEM
+DLQ130 - How worried or anxious were you?
+DLQ140 - How often do you feel depressed?
+DLQ150 - Take medication for depression?
+DLQ160 - CHECK ITEM
+DLQ170 - How depressed did you feel?
+= Drug Use (DUQ_I)
+DUQ200 - Ever used marijuana or hashish
+DUQ210 - Age when first tried marijuana
+DUQ211 - Used marijuana every month for a year?
+DUQ213 - Age started regularly using marijuana
+DUQ215Q - Time since last used marijuana regularly
+DUQ215U - Time since used marijuana regularly/unit
+DUQ217 - How often would you use marijuana?
+DUQ219 - How many joints or pipes smoke in a day?
+DUQ220Q - Last time used marijuana or hashish
+DUQ220U - Last time used marijuana or hashish/unit
+DUQ230 - # days used marijuana or hashish/month
+DUQ240 - Ever used cocaine/heroin/methamphetamine
+DUQ250 - Ever use any form of cocaine
+DUQ260 - Age first used cocaine
+DUQ270Q - Last time you used cocaine, in any form
+DUQ270U - Last time you used cocaine/unit
+DUQ272 - # of time you used cocaine
+DUQ280 - # of days used cocaine/month
+DUQ290 - Ever used heroin
+DUQ300 - Age first used heroin
+DUQ310Q - Last time used heroin
+DUQ310U - Last time used heroin/unit
+DUQ320 - # of days used heroin/month
+DUQ330 - Ever used methamphetamine
+DUQ340 - Age first used methamphetamine
+DUQ350Q - Last time used methamphetamine
+DUQ350U - Last time used methamphetamine/unit
+DUQ352 - # times used methamphetamine
+DUQ360 - # days used methamphetamine/month
+DUQ370 - Ever use a needle to inject illegal drug
+DUQ380A - Drugs injected - Cocaine
+DUQ380B - Drugs injected - Heroin
+DUQ380C - Drugs injected - Methamphetamine
+DUQ380D - Drugs injected - Steroids
+DUQ380E - Drugs injected - Any other drugs
+DUQ390 - Age first injected drugs
+DUQ400Q - Last time injected drugs
+DUQ400U - Last time injected drugs/unit
+DUQ410 - # times injected drugs/lifetime
+DUQ420 - How often did you inject drugs
+DUQ426 - CHECK ITEM
+DUQ430 - Ever been in rehabilitation program
+= Early Childhood (ECQ_I)
+ECD010 - Mother's age when born
+ECQ020 - Mother smoked when pregnant
+ECD070A - Weight at birth, pounds
+ECD070B - Weight at birth, ounces
+ECQ075 - CHECK ITEM
+ECQ080 - Weight more/less than 5.5 lbs
+ECQ090 - Weight more/less than 9.0 lbs
+ECQ095 - CHECK ITEM
+WHQ030E - How do you consider your child's weight
+MCQ080E - Your child was overweight
+ECQ150 - Help your child control weight
+= Health Insurance (HIQ_I)
+HIQ011 - Covered by health insurance
+HIQ031A - Covered by private insurance
+HIQ031B - Covered by Medicare
+HIQ031C - Covered by Medi-Gap
+HIQ031D - Covered by Medicaid
+HIQ031E - Covered by SCHIP
+HIQ031F - Covered by military health care
+HIQ031G - Covered by Indian Health Service
+HIQ031H - Covered by state-sponsored health plan
+HIQ031I - Covered by other government insurance
+HIQ031J - Covered by single service plan
+HIQ031AA - No coverage of any type
+HIQ065 - CHECK ITEM
+HIQ259 - CHECK ITEM
+HIQ260 - Have Medicare?
+HIQ105 - Insurance card available or not
+HIQ269 - CHECK ITEM
+HIQ270 - Do plans cover prescriptions?
+HIQ210 - Time when no insurance in past year?
+= Hepatitis (HEQ_I)
+HEQ010 - Ever told you have Hepatitis B?
+HEQ020 - Ever prescribed meds treat Hepatitis B?
+HEQ030 - Ever told you have Hepatitis C?
+HEQ040 - Ever prescribed meds treat Hepatitis C?
+= Hospital Utilization & Access to Care (HUQ_I)
+HUQ010 - General health condition
+HUQ015 - CHECK ITEM
+HUQ020 - Health now compared with 1 year ago
+HUQ030 - Routine place to go for healthcare
+HUQ041 - Type place most often go for healthcare
+HUQ051 - #times receive healthcare over past year
+HUQ061 - How long since last healthcare visit
+HUQ071 - Overnight hospital patient in last year
+HUD080 - #times overnite hospital patient/last yr
+HUQ085 - CHECK ITEM
+HUQ090 - Seen mental health professional/past yr
+= Housing Characteristics (HOQ_I)
+HOD050 - Number of rooms in home
+HOQ065 - Home owned, bought, rented, other
+= Immunization (IMQ_I)
+IMQ011 - Received Hepatitis A vaccine
+IMQ020 - Received Hepatitis B 3 dose series
+IMQ050 - CHECK ITEM
+IMQ060 - Received HPV vaccine (Females)
+IMQ070 - Received HPV vaccine (Males)
+IMD080 - Which HPV vaccine received (Females)?
+IMQ090 - Age first dose HPV
+IMQ100 - Received HPV, # of doses
+= Income (INQ_I)
+INQ020 - Income from wages/salaries
+INQ012 - Income from self employment
+INQ030 - Income from Social Security or RR
+INQ060 - Income from other disability pension
+INQ080 - Income from retirement/survivor pension
+INQ090 - Income from Supplemental Security Income
+INQ132 - Income from state/county cash assistance
+INQ140 - Income from interest/dividends or rental
+INQ150 - Income from other sources
+IND235 - Monthly family income
+INDFMMPI - Family monthly poverty level index
+INDFMMPC - Family monthly poverty level category
+INQ300 - Family has savings more than $20,000
+IND310 - Total savings/cash assets for the family
+INQ320 - How do you get to the grocery store?
+= Kidney Conditions - Urology (KIQ_U_I)
+KIQ022 - Ever told you had weak/failing kidneys
+KIQ025 - Received dialysis in past 12 months
+KIQ026 - Ever had kidney stones?
+KIQ029 - Pass kidney stone in past 12 months?
+KIQ005 - How often have urinary leakage
+KIQ010 - How much urine lose each time?
+KIQ042 - Leak urine during physical activities
+KIQ430 - How frequently does this occur?
+KIQ044 - Urinated before reaching the toilet
+KIQ450 - How frequently does this occur?
+KIQ046 - Leak urine during nonphysical activities
+KIQ470 - How frequently does this occur?
+KIQ048A - CHECK ITEM
+KIQ050 - How much did urine leakage bother you
+KIQ052 - How much were daily activities affected
+KIQ480 - How many times urinate in night?
+= Medical Conditions (MCQ_I)
+MCQ010 - Ever been told you have asthma
+MCQ025 - Age when first had asthma
+MCQ035 - Still have asthma
+MCQ040 - Had asthma attack in past year
+MCQ050 - Emergency care visit for asthma/past yr
+AGQ030 - Did SP have episode of hay fever/past yr
+MCQ053 - Taking treatment for anemia/past 3 mos
+MCQ080 - Doctor ever said you were overweight
+MCQ092 - Ever receive blood transfusion
+MCD093 - Year receive blood transfusion
+MCQ149 - Menstrual periods started yet?
+MCQ151 - Age at first menstrual period
+MCQ160a - Doctor ever said you had arthritis
+MCQ180a - Age when told you had arthritis
+MCQ195 - Which type of arthritis was it?
+MCQ160n - Doctor ever told you that you had gout?
+MCQ180n - Age when told you had gout.
+MCQ160b - Ever told had congestive heart failure
+MCQ180b - Age when told you had heart failure
+MCQ160c - Ever told you had coronary heart disease
+MCQ180c - Age when told had coronary heart disease
+MCQ160d - Ever told you had angina/angina pectoris
+MCQ180d - Age when told you had angina pectoris
+MCQ160e - Ever told you had heart attack
+MCQ180e - Age when told you had heart attack
+MCQ160f - Ever told you had a stroke
+MCQ180f - Age when told you had a stroke
+MCQ160g - Ever told you had emphysema
+MCQ180g - Age when told you had emphysema
+MCQ160m - Ever told you had thyroid problem
+MCQ170m - Do you still have thyroid problem
+MCQ180m - Age when told you had thyroid problem
+MCQ160k - Ever told you had chronic bronchitis
+MCQ170k - Do you still have chronic bronchitis
+MCQ180k - Age when told you had chronic bronchitis
+MCQ160l - Ever told you had any liver condition
+MCQ170l - Do you still have a liver condition
+MCQ180l - Age when told you had a liver condition
+MCQ160o - Ever told you had COPD?
+MCQ203 - Ever been told you have jaundice?
+MCQ206 - Age when told you have jaundice?
+MCQ220 - Ever told you had cancer or malignancy
+MCQ230a - What kind of cancer
+MCQ230b - What kind of cancer
+MCQ230c - What kind of cancer
+MCQ230d - What kind of cancer
+MCQ240a - Age when bladder cancer first diagnosed
+MCQ240aa - Age testicular cancer first diagnosed
+MCQ240b - Age when blood cancer first diagnosed
+MCQ240bb - Age when thyroid cancer first diagnosed
+MCQ240c - Age when bone cancer first diagnosed
+MCQ240cc - Age when uterine cancer first diagnosed
+MCQ240d - Age when brain cancer first diagnosed
+MCQ240dd - Age other type of cancer first diagnosed
+MCQ240dk - How old when cancer first diagnosed?
+MCQ240e - Age when breast cancer first diagnosed
+MCQ240f - Age when cervical cancer first diagnosed
+MCQ240g - Age when colon cancer first diagnosed
+MCQ240h - Age esophageal cancer first diagnosed
+MCQ240i - Age gallbladder cancer first diagnosed
+MCQ240j - Age when kidney cancer first diagnosed
+MCQ240k - Age larynx/windpipe cancer diagnosed
+MCQ240l - Age when leukemia first diagnosed
+MCQ240m - Age when liver cancer first diagnosed
+MCQ240n - Age when lung cancer first diagnosed
+MCQ240o - Age lymphoma/Hodgkins' diagnosed
+MCQ240p - Age when melanoma first diagnosed
+MCQ240q - Age mouth\tongue\lip cancer diagnosed
+MCQ240r - Age nervous system cancer diagnosed
+MCQ240s - Age when ovarian cancer first diagnosed
+MCQ240t - Age pancreatic cancer first diagnosed
+MCQ240u - Age prostate cancer first diagnosed
+MCQ240v - Age when rectal cancer first diagnosed
+MCQ240w - Age non-melanoma skin cancer diagnosed
+MCQ240x - Age unknown skin cancer first diagnosed
+MCQ240y - Age soft tissue cancer first diagnosed
+MCQ240z - Age stomach cancer first diagnosed
+MCQ300a - Close relative had heart attack?
+MCQ300b - Close relative had asthma?
+MCQ300c - Close relative had diabetes?
+MCQ365a - Doctor told you to lose weight
+MCQ365b - Doctor told you to exercise
+MCQ365c - Doctor told you to reduce salt in diet
+MCQ365d - Doctor told you to reduce fat/calories
+MCQ370a - Are you now controlling or losing weight
+MCQ370b - Are you now increasing exercise
+MCQ370c - Are you now reducing salt in diet
+MCQ370d - Are you now reducing fat in diet
+OSQ230 - Any metal objects inside your body?
+= Mental Health - Depression Screener (DPQ_I)
+DPQ010 - Have little interest in doing things
+DPQ020 - Feeling down, depressed, or hopeless
+DPQ030 - Trouble sleeping or sleeping too much
+DPQ040 - Feeling tired or having little energy
+DPQ050 - Poor appetite or overeating
+DPQ060 - Feeling bad about yourself
+DPQ070 - Trouble concentrating on things
+DPQ080 - Moving or speaking slowly or too fast
+DPQ090 - Thought you would be better off dead
+DPQ100 - Difficulty these problems have caused
+= Occupation (OCQ_I)
+OCD150 - Type of work done last week
+OCQ180 - Hours worked last week at all jobs
+OCQ210 - Usually work 35 or more hours per week
+OCQ260 - Description of job/work situation
+OCD270 - Number of months working in the main job
+OCQ600 - How often wear protective hearing device
+OCQ610 - How many days/mo. exposed to loud noise
+OCQ630 - How many hrs a day exposed to loud noise
+OCQ640 - Days per mo. exposed to very loud noise
+OCQ660 - Hours per day exposed to very loud noise
+OCQ380 - Main reason did not work last week
+OCD390G - Kind of work you have done the longest
+OCD395 - Duration of longest job (months)
+= Oral Health (OHQ_I)
+OHQ030 - When did you last visit a dentist
+OHQ033 - Main reason for last dental visit
+OHQ770 - Past yr need dental but couldn't get it
+OHQ780A - Could not afford the cost
+OHQ780B - Did not want to spend the money
+OHQ780C - Insurance did not cover procedures
+OHQ780D - Dental office is too far away
+OHQ780E - Office not open at convenient time
+OHQ780F - Another dentist recommended not doing it
+OHQ780G - Afraid or do not like dentists
+OHQ780H - Unable to take time off from work
+OHQ780I - Too busy
+OHQ780J - Expected dental problems to go away
+OHQ780K - Other reason could not get dental care
+OHQ550 - CHECK ITEM
+OHQ555G - Age started brushing teeth
+OHQ555Q - Age started brushing teeth
+OHQ555U - Age started brushing teeth
+OHQ560G - Age started using toothpaste
+OHQ560Q - Age started using toothpaste
+OHQ560U - Age started using toothpaste
+OHQ566 - Received Rx fluoride drops or tablets?
+OHQ571Q - Age started taking prescription fluoride
+OHQ571U - Age started taking prescription fluoride
+OHQ576G - Age stopped taking prescription fluoride
+OHQ576Q - Age stopped taking prescription fluoride
+OHQ576U - Age stopped taking prescription fluoride
+OHQ592 - CHECK ITEM
+OHQ610 - Told benefits of giving up cigarettes
+OHQ612 - Told benefits of checking blood sugar
+OHQ614 - Told importance of checking for cancer
+OHQ616 - CHECK ITEM
+OHQ620 - How often last yr had aching in mouth?
+OHQ640 - Last yr had diff w/ job because of mouth
+OHQ680 - Last yr embarrassed because of mouth
+OHQ835 - Do you think you might have gum disease?
+OHQ845 - Rate the health of your teeth and gums
+OHQ846 - CHECK ITEM
+OHQ848G - # times you brush your teeth in 1 day?
+OHQ848Q - # times you brush your teeth in 1 day?
+OHQ849 - How much toothpaste do you use?
+OHQ850 - Ever had treatment for gum disease?
+OHQ860 - Ever been told of bone loss around teeth
+OHQ870 - How many days use dental floss/device
+OHQ880 - Oral cancer exam where Dr pulls tonge
+OHQ895 - When did you have oral/mouth cancer exam
+OHQ900 - What type of prof performed oral exam
+= Physical Activity (PAQ_I)
+PAQ605 - Vigorous work activity
+PAQ610 - Number of days vigorous work
+PAD615 - Minutes vigorous-intensity work
+PAQ620 - Moderate work activity
+PAQ625 - Number of days moderate work
+PAD630 - Minutes moderate-intensity work
+PAQ635 - Walk or bicycle
+PAQ640 - Number of days walk or bicycle
+PAD645 - Minutes walk/bicycle for transportation
+PAQ650 - Vigorous recreational activities
+PAQ655 - Days vigorous recreational activities
+PAD660 - Minutes vigorous recreational activities
+PAQ665 - Moderate recreational activities
+PAQ670 - Days moderate recreational activities
+PAD675 - Minutes moderate recreational activities
+PAD680 - Minutes sedentary activity
+PAQ706 - Days physically active at least 60 min.
+PAQ710 - Hours watch TV or videos past 30 days
+PAQ715 - Hours use computer past 30 days
+PAQ722 - Any physical activities past 7 days
+PAQ724a - Physical activity aerobics
+PAQ724b - Physical activity baseball
+PAQ724c - Physical activity basketball
+PAQ724d - Physical activity bike riding
+PAQ724e - Physical activity cheerleading
+PAQ724f - Physical activity dance
+PAQ724g - Physical activity field hockey
+PAQ724h - Physical activity football
+PAQ724i - Physical activity golf
+PAQ724j - Physical activity gymnastics
+PAQ724k - Physical activity hiking
+PAQ724l - Physical activity ice hockey
+PAQ724m - Physical activity ice skating
+PAQ724n - Physical activity jumping rope
+PAQ724o - Physical activity lacrosse
+PAQ724p - Physical activity martial arts
+PAQ724q - Physical activity playing games
+PAQ724r - Physical activity roller blading
+PAQ724s - Physical activity running
+PAQ724t - Physical activity scooter riding
+PAQ724u - Physical activity skateboarding
+PAQ724v - Physical activity soccer
+PAQ724w - Physical activity swimming
+PAQ724x - Physical activity tennis
+PAQ724y - Physical activity track & field
+PAQ724z - Physical activity volleyball
+PAQ724aa - Physical activity walking
+PAQ724ab - Physical activity wrestling
+PAQ724ac - Physical activity frisbee
+PAQ724ad - Physical activity backyard games
+PAQ724ae - Physical activity trampoline
+PAQ724af - Physical activity horseback riding
+PAQ724cm - Physical activity other
+PAQ731 - Days played active video games
+PAD733 - Minutes play active video games
+PAQ677 - Past wk # days cardiovascular exercise
+PAQ678 - Past wk # days strengthened muscles
+PAQ740 - Use school facilities at lunch
+PAQ742 - Use school facilities for physical activ
+PAQ744 - Have PE during school days?
+PAQ746 - How often do you have PE or gym?
+PAQ748 - How long is the PE or gym class?
+PAQ755 - Participate in school sports?
+PAQ759a - Participate in baseball
+PAQ759b - Participate in basketball
+PAQ759c - Participate in bocce ball
+PAQ759d - Participate in cheerleading
+PAQ759e - Participate in football
+PAQ759f - Participate in golf
+PAQ759g - Participate in gymnastics
+PAQ759h - Participate in hockey
+PAQ759i - Participate in lacrosse
+PAQ759j - Participate in soccer
+PAQ759k - Participate in swimming/diving
+PAQ759l - Participate in tennis
+PAQ759m - Participate in track and field
+PAQ759n - Participate in volleyball
+PAQ759o - Participate in wrestling
+PAQ759p - Participate in other specify
+PAQ759q - Participate in dance
+PAQ759r - Participate in frisbee
+PAQ759s - Participate in running
+PAQ759t - Participate in trampoline
+PAQ759u - Participate in martial arts
+PAQ762 - Do you have recess during school?
+PAQ764 - How often do you have recess?
+PAQ766 - How long is the recess period?
+PAQ679 - How much exercise for good health
+PAQ750 - Enjoy participating in PE or recess
+PAQ770 - Receive physical fitness award past yr
+PAQ772a - Fitness award Fitnessgram
+PAQ772b - Fitness award President's Challenge
+PAQ772c - Fitness award other specify
+PFQ020 - Crawl, walk, run, play limitations
+PFQ030 - Long term impairment/health problem
+PFQ032 - CHECK ITEM
+PFQ033 - Impairment requiring special equipment
+PFQ035A - CHECK ITEM
+PFQ041 - Receive Special Ed or Early Intervention
+PFQ049 - Limitations keeping you from working
+PFQ051 - Limited in amount of work you can do
+PFQ054 - Need special equipment to walk
+PFQ057 - Experience confusion/memory problems
+PFQ058 - CHECK ITEM
+PFQ059 - Physical, mental, emotional limitations
+PFQ059A - CHECK ITEM
+PFQ061A - Managing money difficulty
+PFQ061B - Walking for a quarter mile difficulty
+PFQ061C - Walking up ten steps difficulty
+PFQ061D - Stooping, crouching, kneeling difficulty
+PFQ061E - Lifting or carrying difficulty
+PFQ061F - House chore difficulty
+PFQ061G - Preparing meals difficulty
+PFQ061H - Walking between rooms on same floor
+PFQ061I - Standingup from armless chair difficulty
+PFQ061J - Getting in and out of bed difficulty
+PFQ061K - Using fork, knife, drinking from cup
+PFQ061L - Dressing yourself difficulty
+PFQ061M - Standing for long periods difficulty
+PFQ061N - Sitting for long periods difficulty
+PFQ061O - Reaching up over head difficulty
+PFQ061P - Grasp/holding small objects difficulty
+PFQ061Q - Going out to movies, events difficulty
+PFQ061R - Attending social event difficulty
+PFQ061S - Leisure activity at home difficulty
+PFQ061T - Push or pull large objects difficulty
+PFQ066A - CHECK ITEM
+PFQ063A - Health problems causing difficulty
+PFQ063B - Health problems causing difficulty
+PFQ063C - Health problems causing difficulty
+PFQ063D - Health problems causing difficulty
+PFQ063E - Health problems causing difficulty
+PFQ090 - Require special healthcare equipment
+= Prescription Medications (RXQ_RX_I)
+RXDUSE - Taken prescription medicine, past month
+RXDDRUG - Generic drug name
+RXDDRGID - Generic drug code
+RXQSEEN - Medicine container seen by interviewer
+RXDDAYS - Number of days taken medicine
+RXDRSC1 - ICD-10-CM code 1
+RXDRSC2 - ICD-10-CM code 2
+RXDRSC3 - ICD-10-CM code 3
+RXDRSD1 - ICD-10-CM code 1 description
+RXDRSD2 - ICD-10-CM code 2 description
+RXDRSD3 - ICD-10-CM code 3 description
+RXDCOUNT - Number of prescription medicines taken
+= Preventive Aspirin Use (RXQASA_I)
+RXQ510 - Dr told to take daily low-dose aspirin?
+RXQ515 - Followed advice, took low-dose aspirin?
+RXQ520 - Taking low-dose aspirin on your own?
+RXQ525G - Schedule/frequency of aspirin use
+RXQ525Q - Another ASA schedule: number of doses
+RXQ525U - Another ASA schedule: frequency of doses
+RXD530 - Aspirin dose in milligrams (mg)
+= Reproductive Health (RHQ_I)
+RHQ010 - Age when first menstrual period occurred
+RHQ020 - Age range at first menstrual period
+RHQ031 - Had regular periods in past 12 months
+RHD043 - Reason not having regular periods
+RHQ060 - Age at last menstrual period
+RHQ070 - Age range at last menstrual period
+RHQ074 - Tried for a year to become pregnant?
+RHQ076 - Seen a DR b/c unable to become pregnant?
+RHQ078 - Ever treated for a pelvic infection/PID?
+RHQ131 - Ever been pregnant?
+RHD143 - Are you pregnant now?
+RHQ160 - How many times have been pregnant?
+RHQ162 - During pregnancy, told you have diabetes
+RHQ163 - Age told you had diabetes while pregnant
+RHQ166 - How many vaginal deliveries?
+RHQ169 - How many cesarean deliveries?
+RHQ172 - Any babies weigh 9 lbs or more?
+RHD173 - Age when delivered baby 9 lbs or more?
+RHQ171 - How many deliveries live birth result?
+RHD180 - Age at first live birth
+RHD190 - Age at last live birth
+RHQ197 - How many months ago have baby?
+RHQ200 - Now breastfeeding a child?
+RHD280 - Had a hysterectomy?
+RHQ291 - Age when had hysterectomy
+RHQ305 - Had both ovaries removed?
+RHQ332 - Age when both ovaries removed
+RHQ420 - Ever taken birth control pills?
+RHQ540 - Ever use female hormones?
+RHQ542A - Hormone pills used
+RHQ542B - Hormone patches used
+RHQ542C - Hormone cream/suppository/injection used
+RHQ542D - Other form of female hormone used
+RHQ554 - Use hormone pills w/estrogen only
+RHQ560Q - How long taking estrogen-only pills?
+RHQ560U - Unit of measure: months, years
+RHQ570 - Used estrogen/progestin combo pills
+RHQ576Q - How long taking estrogen/progestin?
+RHQ576U - Unit of measure: months, years
+RHQ580 - Used estrogen-only patches?
+RHQ586Q - How long using estrogen only patches?
+RHQ586U - Unit of measure: months, years
+RHQ596 - Used estrogen/progestin combo patches?
+RHQ602Q - How long use estrogen/progestin patch
+RHQ602U - Unit of measure: months, years
+= Sexual Behavior (SXQ_I)
+SXD021 - Ever had vaginal, anal, or oral sex (B)
+SXQ800 - Ever had vaginal sex with a woman (M)
+SXQ803 - Ever performed oral sex on a woman (M)
+SXQ806 - Ever had anal sex with a woman (M)
+SXQ809 - Ever had any sex w/man: anal, oral (M)
+SXD862 - CHECK ITEM
+SXQ700 - Ever had vaginal sex with a man (F)
+SXQ703 - Ever performed oral sex on a man (F)
+SXQ706 - Ever had anal sex with a man (F)
+SXQ709 - Ever had any kind of sex w/woman (F)
+SXQ762 - CHECK ITEM
+SXD031 - How old when first had sex (B)
+SXD801 - CHECK ITEM
+SXD171 - # female sex partners/lifetime (M)
+SXD815 - CHECK ITEM
+SXD510 - # female sex partners/year (M)
+SXQ821 - CHECK ITEM
+SXQ824 - # female vaginal sex partners/life (M)
+SXQ827 - # female vaginal sex partners/year (M)
+SXQ830 - CHECK ITEM
+SXD633 - Age first performed oral sex w/woman (B)
+SXQ636 - # female performed oral sex/lifetime (B)
+SXQ639 - # female performed oral sex/year (B)
+SXQ868 - CHECK ITEM
+SXD642 - Performed oral sex new female/days (B)
+SXQ833 - CHECK ITEM
+SXQ410 - # men anal/oral sex partners/lifetime(M)
+SXQ875 - CHECK ITEM
+SXQ550 - # men anal/oral sex partners/year (M)
+SXQ836 - # men anal sex partners/lifetime (M)
+SXQ839 - CHECK ITEM
+SXQ841 - # men anal sex partners/year (M)
+SXQ853 - Ever performed oral sex on a man (M)
+SXD847 - CHECK ITEM
+SXD621 - How old when first had oral sex (B)
+SXQ624 - # male oral sex partners/lifetime (B)
+SXQ850 - CHECK ITEM
+SXQ627 - # male oral sex partners/year (B)
+SXQ765 - CHECK ITEM
+SXQ865 - CHECK ITEM
+SXD630 - Last perform oral sex new male/days (B)
+SXD844 - CHECK ITEM
+SXD744 - CHECK ITEM
+SXQ845 - CHECK ITEM
+SXQ645 - Use protection when perform oral sex (B)
+SXD871 - CHECK ITEM
+SXQ648 - Had sex with new partner/year (B)
+SXQ859 - CHECK ITEM
+SXQ610 - # times had vaginal or anal sex/year (B)
+SXD245 - CHECK ITEM
+SXQ251 - # times had sex without condom/year (B)
+SXD856 - CHECK ITEM
+SXQ590 - # sex partners 5 years older/year (B)
+SXQ600 - # sex partners 5 years younger/year (B)
+SXD001 - CHECK ITEM
+SXD002 - CHECK ITEM
+SXD101 - # male sex partners/lifetime (F)
+SXD715 - CHECK ITEM
+SXD450 - # male sex partners/year (F)
+SXQ721 - CHECK ITEM
+SXQ724 - # male vaginal sex partners/lifetime (F)
+SXQ727 - # male vaginal sex partners/year (F)
+SXQ730 - CHECK ITEM
+SXD733 - CHECK ITEM
+SXQ130 - # female sex partners/lifetime (F)
+SXQ490 - # female sex partners/year (F)
+SXQ741 - Ever performed oral sex on a woman (F)
+SXQ768 - CHECK ITEM
+SXQ747 - CHECK ITEM
+SXD771 - CHECK ITEM
+SXQ759 - CHECK ITEM
+SXD750 - CHECK ITEM
+SXQ753 - Ever told by MD, you had HPV (F)
+SXQ260 - MD ever told you had genital herpes (B)
+SXQ265 - MD ever told you had genital warts (B)
+SXQ267 - Age when told you had genital warts (B)
+SXQ270 - MD ever told you had gonorrhea (B)
+SXQ272 - MD ever told you had chlamydia (B)
+SXQ280 - Circumcised or uncircumcised? (M)
+SXQ295 - Describe sexual identity (F)
+SXQ296 - Describe sexual identity (M)
+= Sleep Disorders (SLQ_I)
+SLQ300 - Usual sleep time on weekdays or workdays
+SLQ310 - Usual wake time on weekdays or workdays
+SLD012 - Sleep hours
+SLQ030 - How often do you snore?
+SLQ040 - How often do you snort or stop breathing
+SLQ050 - Ever told doctor had trouble sleeping?
+SLQ120 - How often feel overly sleepy during day?
+= Smoking - Cigarette Use (SMQ_I)
+SMQ020 - Smoked at least 100 cigarettes in life
+SMD030 - Age started smoking cigarettes regularly
+SMQ040 - Do you now smoke cigarettes?
+SMQ050Q - How long since quit smoking cigarettes
+SMQ050U - Unit of measure (day/week/month/year)
+SMD055 - Age last smoked cigarettes regularly
+SMD057 - # cigarettes smoked per day when quit
+SMQ078 - How soon after waking do you smoke
+SMD641 - # days smoked cigs during past 30 days
+SMD650 - Avg # cigarettes/day during past 30 days
+SMD093 - May I please see the pack of cigarettes
+SMDUPCA - Cig 12-digit Universal Product Code-UPC
+SMD100BR - Cigarette Brand/sub-brand
+SMD100FL - Cigarette Filter type
+SMD100MN - Cigarette Menthol indicator
+SMD100LN - Cigarette Length
+SMD100TR - FTC Tar Content
+SMD100NI - FTC Nicotine Content
+SMD100CO - FTC Carbon Monoxide Content
+SMQ621 - Cigarettes smoked in entire life
+SMD630 - Age first smoked whole cigarette
+SMQ661 - Brand of cigarettes smoked past 30 days
+SMQ665A - Marlboro variety
+SMQ665B - Camel variety
+SMQ665C - Newport variety
+SMQ665D - Other brand
+SMQ670 - Tried to quit smoking
+SMQ848 - # times stopped smoking cigarettes
+SMQ852Q - How long were you able to stop smoking
+SMQ852U - Unit of measure (day/week/month/year)
+SMQ925 - Ever smoked a cigarette even 1 time?
+SMQ930 - Age smoked first sigarette
+SMQ935 - Do you now smoke cigarettes?
+SMQ080 - # days smoked cigs during past 30 days
+SMQ890 - Ever smoked a cigar even 1 time?
+SMQ895 - How many days smoked a cigar?
+SMQ900 - Ever used an e-cigarette?
+SMQ905 - How many days used an e-cigarette?
+SMQ910 - Ever used smokeless tobacco?
+SMQ915 - How many days used smokeless tobacco?
+SMAQUEX2 - Questionnaire Mode Flag
+= Smoking - Household Smokers (SMQFAM_I)
+SMD460 - # of people who live here smoke tobacco?
+SMD470 - # of people who smoke inside this home?
+SMD480 - In past week # days person smoked inside
+= Smoking - Recent Tobacco Use (SMQRTU_I)
+SMQ681 - Smoked tobacco last 5 days?
+SMQ690A - Used last 5 days - Cigarettes
+SMQ710 - # days smoked cigarettes last 5 days
+SMQ720 - # cigarettes smoked per day
+SMQ725 - When did resp. smoke last cigarette?
+SMQ690B - Used last 5 days - Pipes
+SMQ740 - # days smoked pipe over last 5 days
+SMQ690C - Used last 5 days - Cigars
+SMQ770 - # days smoked cigars over last 5 days
+SMQ690G - Used last 5 days - Hookah, water pipes
+SMQ845 - # days smoked water pipe last 5 days
+SMQ690H - Used last 5 days - E-cigarettes
+SMQ849 - # days smoked e-cigarette last 5 days
+SMQ851 - Used smokeless tobacco last 5 days?
+SMQ690D - Used last 5 days - Chewing tobacco
+SMQ800 - # days used chewing tobacco last 5 day
+SMQ690E - Used last 5 days - Snuff
+SMQ817 - # days used snuff over last 5 days
+SMQ690I - Used last 5 days - Snus
+SMQ857 - # days used snus over last 5 days
+SMQ690J - Used last 5 days - Dissolvables
+SMQ861 - # days used dissolvable over last 5 days
+SMQ863 - Used nicotine replacement last 5 days?
+SMQ690F - Used last 5 days - Patch, gum, other
+SMQ830 - # days used nicotine quit smoking aids?
+SMQ840 - When last used nicotine quit smoking aid
+SMDANY - Used any tobacco product last 5 days?
+SMAQUEX - Questionnaire Mode Flag
+= Smoking - Secondhand Smoke Exposure (SMQSHS_I)
+SMQ856 - Last 7-d worked at job not at home?
+SMQ858 - Last 7-d at job someone smoked indoors?
+SMQ860 - Last 7-d spent time in a restaurant?
+SMQ862 - Last 7-d at rest someone smoked indoors?
+SMQ864 - CHECK ITEM
+SMQ866 - Last 7-d spent time in a bar?
+SMQ868 - Last 7-d in bar someone smoked indoors?
+SMQ870 - Last 7-d rode in a car?
+SMQ872 - Last 7-d someone smoked in car?
+SMQ874 - Last 7-d spent time in another home?
+SMQ876 - Last 7-d in home someone smoked indoors?
+SMQ878 - Last 7-d in other indoor area?
+SMQ880 - Last 7-d in other indoor someone smoked?
+SMAQUEX - Questionnaire Mode Flag
+= Weight History (WHQ_I)
+WHD010 - Current self-reported height (inches)
+WHD020 - Current self-reported weight (pounds)
+WHQ030 - How do you consider your weight
+WHQ040 - Like to weigh more, less or same
+WHD050 - Self-reported weight - 1 yr ago (pounds)
+WHQ055 - CHECK ITEM
+WHQ060 - Weight change intentional
+WHQ070 - Tried to lose weight in past year
+WHD080A - Ate less to lose weight
+WHD080B - Switched to foods with lower calories
+WHD080C - Ate less fat to lose weight
+WHD080D - Exercised to lose weight
+WHD080E - Skipped meals
+WHD080F - Ate diet foods or products
+WHD080G - Used a liquid diet formula
+WHD080H - Joined a weight loss program
+WHD080I - Took prescription diet pills
+WHD080J - Took non-RX suppl. to lose weight
+WHD080K - Took laxatives or vomited
+WHD080M - Drank a lot of water
+WHD080N - Followed a special diet
+WHD080O - Ate fewer carbohydrates
+WHD080P - Started to smoke or began to smoke again
+WHD080Q - Ate more fruits, vegetables, salads
+WHD080R - Changed eating habits
+WHD080S - Ate less sugar, candy, sweets
+WHD080T - Ate less junk food or fast food
+WHD080U - Had weight loss surgery to lose weight
+WHD080L - Other
+WHQ225 - Times lost 10 lbs or more to lose weight
+WHQ105 - CHECK ITEM
+WHD110 - Self-reported weight-10 yrs ago (pounds)
+WHQ115A - CHECK ITEM
+WHD120 - Self-reported weight-age 25 (pounds)
+WHQ125 - CHECK ITEM
+WHD130 - Self-reported height - age 25 (inches)
+WHD140 - Self-reported greatest weight (pounds)
+WHQ150 - Age when heaviest weight
+WHQ190 - Have you ever had wt loss surgery?
+WHQ200 - Age when you had wt loss surgery
+= Weight History - Youth (WHQMEC_I)
+WHQ030M - How do you consider your weight
+WHQ500 - Trying to do about weight
+WHQ520 - How often tried to lose weight
+
+= Albumin & Creatinine - Urine (ALB_CR_I)
+URXUMA - Albumin, urine (ug/mL)
+URDUMALC - Albumin, urine comment code
+URXUMS - Albumin, urine (mg/L)
+URXUCR - Creatinine, urine (mg/dL)
+URDUCRLC - Creatinine, urine comment code
+URXCRS - Creatinine, urine (umol/L)
+URDACT - Albumin creatinine ratio (mg/g)
+= Apolipoprotein B (APOB_I)
+WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+LBXAPB - Apolipoprotein (B) (mg/dL)
+LBDAPBSI - Apolipoprotein (B) (g/L)
+= Aromatic Diamines - Urine (UADM_I)
+WTSA2YR - Subsample A Weights
+URX4TDA - 2,4-Diaminotoluene (4TDA) (ng/mL)
+URD4DALC - 2,4-Diaminotoluene (4TDA) Comment Code
+URX6TDA - 2,6-Diaminotoluene (6TDA) (ng/mL)
+URD6DALC - 2,6-Diaminotoluene (6TDA) Comment Code
+URX4MDA - 4MDA (ng/mL)
+URD4MALC - 4MDA Comment Code
+URX5NDA - 1,5-Diaminonaphthalene (5NDA) (ng/mL)
+URD5NALC - 5NDA Comment Code
+URXPPDA - p-Phenylenediamine (PPDA) (ng/mL)
+URDPDALC - p-Phenylenediamine (PPDA) Comment Code
+= Arsenic - Total - Urine - Special Sample (Subsample) (UTASS_I)
+WTFSM - Two year smoking weights
+URXUAS - Urinary arsenic, total (ug/L)
+= Arsenic - Total - Urine (UTAS_I)
+WTSA2YR - Subsample A weights
+URXUAS - Urinary arsenic, total (ug/L)
+= Arsenic - Total - Urine (UTAS_I)
+WTSA2YR - Subsample A weights
+URXUAS - Urinary arsenic, total (ug/L)
+= Blood Lead, Cadmium, Total Mercury, Selenium & Manganese - Blood (PBCD_I)
+WTSH2YR - Blood metal weights
+LBXBPB - Blood lead (ug/dL)
+LBDBPBSI - Blood lead (umol/L)
+LBDBPBLC - Blood lead comment code
+LBXBCD - Blood cadmium (ug/L)
+LBDBCDSI - Blood cadmium (umol/L)
+LBDBCDLC - Blood cadmium comment code
+LBXTHG - Blood mercury, total (ug/L)
+LBDTHGSI - Blood mercury, total (umol/L)
+LBDTHGLC - Blood mercury, total comment code
+LBXBSE - Blood selenium (ug/L)
+LBDBSESI - Blood selenium (umol/L)
+LBDBSELC - Blood selenium comment code
+LBXBMN - Blood manganese (ug/L)
+LBDBMNSI - Blood manganese (umol/L)
+LBDBMNLC - Blood manganese comment code
+= Mercury: Inorganic, Ethyl and Methyl – Blood (IHGEM_I)
+WTSH2YR - Blood metal weights
+LBXIHG - Mercury, inorganic (ug/L)
+LBDIHGSI - Mercury, inorganic (umol/L)
+LBDIHGLC - Mercury, inorganic comment code
+LBXBGE - Mercury, ethyl (ug/L)
+LBDBGELC - Mercury, ethyl comment code
+LBXBGM - Mercury, methyl (ug/L)
+LBDBGMLC - Mercury, methyl comment code
+= Chlamydia - Urine (CHLMDA_I)
+URXUCL - Chlamydia, Urine
+= Cholesterol - High-Density Lipoprotein (HDL) (HDL_I)
+LBDHDD - Direct HDL-Cholesterol (mg/dL)
+LBDHDDSI - Direct HDL-Cholesterol (mmol/L)
+= Cholesterol - Low - Density Lipoprotein (LDL) & Triglycerides (TRIGLY_I)
+WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+LBXTR - Triglyceride (mg/dL)
+LBDTRSI - Triglyceride (mmol/L)
+LBDLDL - LDL-cholesterol (mg/dL)
+LBDLDLSI - LDL-cholesterol (mmol/L)
+= Cholesterol - Total (TCHOL_I)
+LBXTC - Total Cholesterol (mg/dL)
+LBDTCSI - Total Cholesterol (mmol/L)
+= Chromium & Cobalt (CRCO_I)
+LBXBCR - Chromium (ug/L)
+LBDBCRSI - Chromium (nmol/L)
+LBDBCRLC - Chromium comment code
+LBXBCO - Cobalt (ug/L)
+LBDBCOSI - Cobalt (nmol/L)
+LBDBCOLC - Cobalt comment code
+= Complete Blood Count with 5-Part Differential - Whole Blood (CBC_I)
+LBXWBCSI - White blood cell count (1000 cells/uL)
+LBXLYPCT - Lymphocyte percent (%)
+LBXMOPCT - Monocyte percent (%)
+LBXNEPCT - Segmented neutrophils percent (%)
+LBXEOPCT - Eosinophils percent (%)
+LBXBAPCT - Basophils percent (%)
+LBDLYMNO - Lymphocyte number (1000 cells/uL)
+LBDMONO - Monocyte number (1000 cells/uL)
+LBDNENO - Segmented neutrophils num (1000 cell/uL)
+LBDEONO - Eosinophils number (1000 cells/uL)
+LBDBANO - Basophils number (1000 cells/uL)
+LBXRBCSI - Red blood cell count (million cells/uL)
+LBXHGB - Hemoglobin (g/dL)
+LBXHCT - Hematocrit (%)
+LBXMCVSI - Mean cell volume (fL)
+LBXMCHSI - Mean Cell Hgb Conc. (g/dL)
+LBXMCH - Mean cell hemoglobin (pg)
+LBXRDW - Red cell distribution width (%)
+LBXPLTSI - Platelet count (1000 cells/uL)
+LBXMPSI - Mean platelet volume (fL)
+= Copper, Selenium & Zinc - Serum (CUSEZN_I)
+WTSA2YR - Subsample A weights
+LBXSCU - Serum Copper (ug/dL)
+LBDSCUSI - Serum Copper (umol/L)
+LBXSSE - Serum Selenium (ug/L)
+LBDSSESI - Serum Selenium (umol/L)
+LBXSZN - Serum Zinc (ug/dL)
+LBDSZNSI - Serum Zinc (umol/L)
+= Cotinine and Hydroxycotinine - Serum (COT_I)
+LBXCOT - Cotinine, Serum (ng/mL)
+LBDCOTLC - Cotinine, Serum Comment Code
+LBXHCT - Hydroxycotinine, Serum (ng/mL)
+LBDHCTLC - Hydroxycotinine, Serum Comment Code
+= Fasting Questionnaire (FASTQX_I)
+PHQ020 - Coffee or tea with cream or sugar?
+PHACOFHR - Coffee/tea fast time (hours)
+PHACOFMN - Coffee/tea fast time (minutes)
+PHQ030 - Alcohol, such as beer, wine, or liquor?
+PHAALCHR - Alcohol fast time (hours)
+PHAALCMN - Alcohol fast time (minutes)
+PHQ040 - Gum, mints, lozenges or cough drops
+PHAGUMHR - Gum, mints cough drops fast time (hours)
+PHAGUMMN - Gum, mints, cough fast time (minutes)
+PHQ050 - Antacids, laxatives, or anti-diarrheals?
+PHAANTHR - Antacids, laxatives fast time (hours)
+PHAANTMN - Antacids, laxatives fast time (minutes)
+PHQ060 - Dietary supplements?
+PHASUPHR - Dietary supplements fast time (hours)
+PHASUPMN - Dietary supplements fast time (minutes)
+PHAFSTHR - Total length of "food fast," hours
+PHAFSTMN - Total length of "food fast," minutes
+PHDSESN - Session in which SP was examined
+= Fluoride - Plasma (FLDEP_I)
+LBDPFL - Fluoride, plasma (umol/L) average 2
+= Fluoride - Water (FLDEW_I)
+LBDWFL - Fluoride, water (mg/L) average 2 values
+= Folate - RBC (FOLATE_I)
+LBDRFO - RBC folate (ng/mL)
+LBDRFOSI - RBC folate (nmol/L)
+= Folate Forms - Total & Individual - Serum (FOLFMS_I)
+LBDFOTSI - Serum total folate (nmol/L)
+LBDFOT - Serum total folate (ng/mL)
+LBXSF1SI - 5-Methyl-tetrahydrofolate (nmol/L)
+LBDSF1LC - 5-Methyl-tetrahydrofolate cmt
+LBXSF2SI - Folic acid (nmol/L)
+LBDSF2LC - Folic acid cmt
+LBXSF3SI - 5-Formyl-tetrahydrofolate (nmol/L)
+LBDSF3LC - 5-Formyl-tetrahydrofolate cmt
+LBXSF4SI - Tetrahydrofolate (nmol/L)
+LBDSF4LC - Tetrahydrofolate cmt
+LBXSF5SI - 5,10-Methenyl-tetrahydrofolate (nmol/L)
+LBDSF5LC - 5,10-Methenyl-tetrahydrofolate cmt
+LBXSF6SI - Mefox oxidation product (nmol/L)
+LBDSF6LC - Mefox oxidation product cmt
+= Glycohemoglobin (GHB_I)
+LBXGH - Glycohemoglobin (%)
+= Hepatitis A (HEPA_I)
+LBXHA - Hepatitis A antibody
+= Hepatitis B: Core antibody, Surface antigen, and Hepatitis D antibody (HEPBD_I)
+LBXHBC - Hepatitis B core antibody
+LBDHBG - Hepatitis B surface antigen
+LBDHD - Hepatitis D (anti-HDV)
+= Hepatitis B: Surface Antibody (HEPB_S_I)
+LBXHBS - Hepatitis B Surface Antibody
+= Hepatitis C: RNA (HCV-RNA) and Hepatitis C Genotype (HEPC_I)
+LBXHCR - Hepatitis C RNA
+LBXHCG - Hepatitis C Genotype
+= Hepatitis E: IgG & IgM Antibodies (HEPE_I)
+LBDHEG - Hepatitis E IgG (anti-HEV)
+LBDHEM - Hepatitis E IgM (anti-HEV)
+= Herpes Simplex Virus Type-1 & Type-2 (HSV_I)
+LBXHE1 - Herpes Simplex Virus Type 1
+LBXHE2 - Herpes Simplex Virus Type 2
+= HIV Antibody Test (HIV_I)
+LBXHIVC - HIV-1, 2 Combo Test
+LBXHIV1 - HIV-1
+LBXHIV2 - HIV-2
+LBXHNAT - HIV Confirmatory Test
+= Human Papillomavirus (HPV) - Oral Rinse (ORHPV_I)
+ORXGH - HPV High Globulin Band result
+ORXGL - HPV Low Globulin Band result
+ORXH06 - HPV Type 6
+ORXH11 - HPV Type 11
+ORXH16 - HPV Type 16
+ORXH18 - HPV Type 18
+ORXH26 - HPV Type 26
+ORXH31 - HPV Type 31
+ORXH33 - HPV Type 33
+ORXH35 - HPV Type 35
+ORXH39 - HPV Type 39
+ORXH40 - HPV Type 40
+ORXH42 - HPV Type 42
+ORXH45 - HPV Type 45
+ORXH51 - HPV Type 51
+ORXH52 - HPV Type 52
+ORXH53 - HPV Type 53
+ORXH54 - HPV Type 54
+ORXH55 - HPV Type 55
+ORXH56 - HPV Type 56
+ORXH58 - HPV Type 58
+ORXH59 - HPV Type 59
+ORXH61 - HPV Type 61
+ORXH62 - HPV Type 62
+ORXH64 - HPV Type 64
+ORXH66 - HPV Type 66
+ORXH67 - HPV Type 67
+ORXH68 - HPV Type 68
+ORXH69 - HPV Type 69
+ORXH70 - HPV Type 70
+ORXH71 - HPV Type 71
+ORXH72 - HPV Type 72
+ORXH73 - HPV Type 73
+ORXH81 - HPV Type 81
+ORXH82 - HPV Type 82
+ORXH83 - HPV Type 83
+ORXH84 - HPV Type 84
+ORXHPC - HPV CP 6108
+ORXHPI - HPV Type IS39
+ORXHPV - Oral HPV Result
+= Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Cobas High-Risk (HPVSWC_I)
+LBXHP2C - Cobas HPV Swab High Risk
+= Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Linear Array (HPVSWR_I)
+LBDRPCR - Roche HPV linear array summary result
+LBDRHP - Roche LA high positive globin control
+LBDRLP - Roche LA low positive globin control
+LBDR06 - HPV type 6
+LBDR11 - HPV type 11
+LBDR16 - HPV type 16
+LBDR18 - HPV type 18
+LBDR26 - HPV type 26
+LBDR31 - HPV type 31
+LBDR33 - HPV type 33
+LBDR35 - HPV type 35
+LBDR39 - HPV type 39
+LBDR40 - HPV type 40
+LBDR42 - HPV type 42
+LBDR45 - HPV type 45
+LBDR51 - HPV type 51
+LBDR52 - HPV type 52
+LBDR53 - HPV type 53
+LBDR54 - HPV type 54
+LBDR55 - HPV type 55
+LBDR56 - HPV type 56
+LBDR58 - HPV type 58
+LBDR59 - HPV type 59
+LBDR61 - HPV type 61
+LBDR62 - HPV type 62
+LBDR64 - HPV type 64
+LBDR66 - HPV type 66
+LBDR67 - HPV type 67
+LBDR68 - HPV type 68
+LBDR69 - HPV type 69
+LBDR70 - HPV type 70
+LBDR71 - HPV type 71
+LBDR72 - HPV type 72
+LBDR73 - HPV type 73
+LBDR81 - HPV type 81
+LBDR82 - HPV type 82
+LBDR83 - HPV type 83
+LBDR84 - HPV type 84
+LBDR89 - HPV type 89
+LBDRPI - HPV type IS39
+= Neonicotinoids - Urine - Surplus (SSNEON_I)
+WTSB2YR - Subsample B weights
+SSIMID - Imidacloprid (ug/L)
+SSIMIDLC - Imidacloprid (ug/L) Cmt code
+SSACET - Acetamiprid (ug/L)
+SSACETLC - Acetamiprid (ug/L) Cmt code
+SSCLOT - Clothianidin (ug/L)
+SSCLOTLC - Clothianidin (ug/L) Cmt code
+SSTHIA - Thiacloprid (ug/L)
+SSTHIALC - Thiacloprid (ug/L) Cmt code
+SSOHIM - 5-Hydroxyimidacloprid (ug/L)
+SSOHIMLC - 5-Hydroxyimidacloprid (ug/L)Cmt code
+SSAND - N-Desmethylacetamiprid (ug/L)
+SSANDLC - N-Desmethylacetamiprid (ug/L) Cmt code
+= Insulin (INS_I)
+WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+LBXIN - Insulin (uU/mL)
+LBDINSI - Insulin (pmol/L)
+LBDINLC - Insulin Comment Code
+PHAFSTHR - Total length of 'food fast', hours
+PHAFSTMN - Total length of 'food fast', minutes
+= Iodine - Urine (UIO_I)
+WTSA2YR - Subsample A weights
+URXUIO - Iodine, urine (ng/mL)
+URDUIOLC - Iodine, urine comment code
+= Mercury - Urine (UHG_I)
+WTSA2YR - Subsample A weights
+URXUHG - Urine Mercury (ng/mL)
+URDUHGLC - Mercury, Urine Comment Code
+= Metals - Urine (UM_I)
+WTSA2YR - Subsample A weights
+URXUBA - Barium, urine (ug/L)
+URDUBALC - Urinary Barium Comment Code
+URXUCD - Cadmium, urine (ug/L)
+URDUCDLC - Urinary Cadmium Comment Code
+URXUCO - Cobalt, urine (ug/L)
+URDUCOLC - Urinary Cobalt Comment Code
+URXUCS - Cesium, urine (ug/L)
+URDUCSLC - Urinary Cesium Comment Code
+URXUMO - Molybdenum, urine (ug/L)
+URDUMOLC - Urinary Molybdenum Comment Code
+URXUMN - Manganese, urine (ug/L)
+URDUMNLC - Urinary Mn Comment Code
+URXUPB - Lead, urine (ug/L)
+URDUPBLC - Urinary Lead Comment Code
+URXUSB - Antimony, urine (ug/L)
+URDUSBLC - Urinary Antimony Comment Code
+URXUSN - Tin, urine (ug/L)
+URDUSNLC - USN Comment Code
+URXUSR - Strontium, urine (ug/L)
+URDUSRLC - USR Comment Code
+URXUTL - Thallium, urine (ug/L)
+URDUTLLC - Urinary Thallium Comment Code
+URXUTU - Tungsten, urine (ug/L)
+URDUTULC - Urinary Tungsten Comment Code
+URXUUR - Uranium, urine (ug/L)
+URDUURLC - Urinary Uranium Comment Code
+= Metals - Urine - Special Sample (Subsample) (UMS_I)
+WTFSM - Two year smoking weights
+URXUBA - Barium, urine (ug/L)
+URDUBALC - Urinary Barium Comment Code
+URXUCD - Cadmium, urine (ug/L)
+URDUCDLC - Urinary Cadmium Comment Code
+URXUCO - Cobalt, urine (ug/L)
+URDUCOLC - Urinary Cobalt Comment Code
+URXUCS - Cesium, urine (ug/L)
+URDUCSLC - Urinary Cesium Comment Code
+URXUMO - Molybdenum, urine (ug/L)
+URDUMOLC - Urinary Molybdenum Comment Code
+URXUMN - Manganese, urine (ug/L)
+URDUMNLC - Urinary Mn Comment Code
+URXUPB - Lead, urine (ug/L)
+URDUPBLC - Urinary Lead Comment Code
+URXUSB - Antimony, urine (ug/L)
+URDUSBLC - Urinary Antimony Comment Code
+URXUSN - Tin, urine (ug/L)
+URDUSNLC - USN Comment Code
+URXUSR - Strontium, urine (ug/L)
+URDUSRLC - USR Comment Code
+URXUTL - Thallium, urine (ug/L)
+URDUTLLC - Urinary Thallium Comment Code
+URXUTU - Tungsten, urine (ug/L)
+URDUTULC - Urinary Tungsten Comment Code
+URXUUR - Uranium, urine (ug/L)
+URDUURLC - Urinary Uranium Comment Code
+= Mono-2-ethyl-5-hydroxyhexyl terephthalate, mono-2-ethyl-5-carboxypentyl terephthalate, and monooxoisononyl phthalate - Urine (Surplus) (SSMHHT_I)
+WTSB2YR - Subsample B weights
+SSMHHT - Mono2ethyl5hydroxyhexyl terephth (ug/L)
+SSMHHTL - Mono2ethy-5hydroxyhexyl terephth cmt cd
+SSECPT - Mono2ethyl5carboxypentyl terephth (ug/L)
+SSECPTL - Mono2ethyl5carboxypentyl terephth cmt cd
+SSMONP - Monooxoisononyl phthalate (ug/L)
+SSMONPL - Monooxoisononyl phthalate cmt cd
+= Oral Glucose Tolerance Test (OGTT_I)
+WTSOG2YR - OGTT Subsample MEC Weight
+LBXGLT - Two Hour Glucose (OGTT) (mg/dL)
+LBDGLTSI - Two Hour Glucose (OGTT) (mmol/L)
+GTDSCMMN - Glucose challenge Administer Time in min
+GTDDR1MN - Time from fast glucose & challenge(min)
+GTDBL2MN - Time from fasting glucose & OGTT (min)
+GTDDR2MN - Time from glucose challenge & OGTT(min)
+GTXDRANK - Amount of glucose challenge drank
+GTDCODE - Incomplete OGTT Comment Code
+= Perfluoroalkyl and Polyfluoroalkyl (PFAS_I)
+LBXPFDE - Perfluorodecanoic acid (ng/mL)
+LBDPFDEL - Perfluorodecanoic acid Comment Code
+LBXPFHS - Perfluorohexane sulfonic acid (ng/mL)
+LBDPFHSL - Perfluorohexane sulfonic acid Comt Code
+LBXMPAH - 2-(N-methyl-PFOSA)acetic acid (ng/mL)
+LBDMPAHL - 2-(N-methyl-PFOSA) acetic acid Comt Code
+LBXPFNA - Perfluorononanoic acid (ng/mL)
+LBDPFNAL - Perfluorononanoic acid Comment Code
+LBXPFUA - Perfluoroundecanoic acid (ng/mL)
+LBDPFUAL - Perfluoroundecanoic acid Comment Code
+LBXPFDO - Perfluorododecanoic acid (ng/mL)
+LBDPFDOL - Perfluorododecanoic acid comment
+LBXNFOA - n-perfluorooctanoic acid (ng/mL)
+LBDNFOAL - n-perfluorooctanoic acid Comment Code
+LBXBFOA - Br. perfluorooctanoic acid iso (ng/mL)
+LBDBFOAL - Br. perfluorooctanoic acid iso Comt Code
+LBXNFOS - n-perfluorooctane sulfonic acid (ng/mL)
+LBDNFOSL - n-perfluorooctane sulfonic Comt Code
+LBXMFOS - Sm-PFOS (ng/mL)
+LBDMFOSL - Sm-PFOS Comment Code
+= Personal Care and Consumer Product Chemicals and Metabolites (EPHPP_I)
+WTSB2YR - Subsample B weights
+URXBP3 - Urinary Benzophenone-3 (ng/mL)
+URDBP3LC - Urinary Benzophenone-3 Comment Code
+URXBPH - Urinary Bisphenol A (ng/mL)
+URDBPHLC - Urinary Bisphenol A Comment Code
+URXBPF - Urinary Bisphenol F (ng/mL)
+URDBPFLC - Urinary Bisphenol F Comment Code
+URXBPS - Urinary Bisphenol S (ng/mL)
+URDBPSLC - Urinary Bisphenol S Comment Code
+URXTLC - Urinary Triclocarban (ng/mL)
+URDTLCLC - Urinary Triclocarban Comment Code
+URXTRS - Urinary Triclosan (ng/mL)
+URDTRSLC - Urinary Triclosan Comment Code
+URXBUP - Butyl paraben (ng/mL)
+URDBUPLC - Butyl paraben Comment Code
+URXEPB - Ethyl paraben (ng/mL)
+URDEPBLC - Ethyl paraben Comment Code
+URXMPB - Methyl paraben (ng/mL)
+URDMPBLC - Methyl paraben Comment Code
+URXPPB - Propyl paraben (ng/mL)
+URDPPBLC - Propyl paraben Comment Code
+URX14D - 2,5-dichlorophenol (ng/mL)
+URD14DLC - 2,5-dichlorophenol Comment Code
+URXDCB - 2,4-dichlorophenol (ng/mL)
+URDDCBLC - 2,4-dichlorophenol Comment Code
+= Phthalates and Plasticizers Metabolites - Urine (PHTHTE_I)
+WTSB2YR - Environmental B 2-year weights
+URXCNP - Mono(carboxynonyl) Phthalate (ng/mL)
+URDCNPLC - Mono(carboxynonyl) Phthalate cmt code
+URXCOP - Mono(carboxyoctyl) Phthalate (ng/mL)
+URDCOPLC - Mono(carboxyoctyl) phthalate cmt code
+URXECP - MECP phthalate (ng/mL)
+URDECPLC - MECP phthalate comment code
+URXHIBP - MHIBP phthalate (ng/mL)
+URDHIBLC - MHIBP phthalate Comment Code
+URXMBP - Mono-n-butyl phthalate (ng/mL)
+URDMBPLC - Mono-n-butyl phthalate comment code
+URXMC1 - Mono-(3-carboxypropyl) phthalate (ng/mL)
+URDMC1LC - Mono-(3-carboxypropyl) phthalate cmt
+URXMCOH - MCOCH phthalate (ng/mL)
+URDMCOLC - MCOCH phthalate Comment Code
+URXMEP - Mono-ethyl phthalate (ng/mL)
+URDMEPLC - Mono-ethyl phthalate comment code
+URXMHBP - Mono-3-hydroxy-n-butyl phthalate (ng/mL)
+URDMHBLC - MHBP phthalate Comment Code
+URXMHH - MEHP phthalate (ng/mL)
+URDMHHLC - MEHP phthalate comment code
+URXMHNC - MHNCH (ng/mL)
+URDMCHLC - MHNCH comment code
+URXMHP - Mono-(2-ethyl)-hexyl phthalate (ng/mL)
+URDMHPLC - Mono-(2-ethyl)-hexyl phthalate cmt code
+URXMIB - Mono-isobutyl phthalate (ng/mL)
+URDMIBLC - Mono-isobutyl phthalate comment code
+URXMNP - Mono-isononyl phthalate (ng/mL)
+URDMNPLC - Mono-isononyl phthalate comment code
+URXMOH - MEOH phthalate (ng/mL)
+URDMOHLC - MEOH phthalate comment code
+URXMZP - Mono-benzyl phthalate (ng/mL)
+URDMZPLC - Mono-benzyl phthalate comment code
+= Plasma Fasting Glucose (GLU_I)
+WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+LBXGLU - Fasting Glucose (mg/dL)
+LBDGLUSI - Fasting Glucose (mmol/L)
+= Pregnancy Test - Urine (UCPREG_I)
+URXPREG - Urine Pregnancy Result
+= Sex Steroid Hormone - Serum (TST_I)
+LBXTST - Testosterone, total (ng/dL)
+LBDTSTLC - Testosterone comment code
+LBXEST - Estradiol (pg/mL)
+LBDESTLC - Estradiol Comment Code
+LBXSHBG - SHBG (nmol/L)
+LBDSHGLC - SHBG Comment Code
+= Speciated Arsenics - Urine - Special Sample (Subsample) (UASS_I)
+WTFSM - Two year smoking weights
+URXUAS3 - Urinary Arsenous acid (ug/L)
+URDUA3LC - Urinary Arsenous acid comment code
+URXUAS5 - Urinary Arsenic acid (ug/L)
+URDUA5LC - Urinary Arsenic acid comment code
+URXUAB - Urinary Arsenobetaine (ug/L)
+URDUABLC - Urinary Arsenobetaine comment code
+URXUAC - Urinary Arsenocholine (ug/L)
+URDUACLC - Urinary Arsenocholine comment code
+URXUDMA - Urinary Dimethylarsinic acid (ug/L)
+URDUDALC - Urinary Dimethylarsonic acid coment code
+URXUMMA - Urinary Monomethylacrsonic acid (ug/L)
+URDUMMAL - Urinary MMA acid comment code
+= Speciated Arsenics - Urine (UAS_I)
+WTSA2YR - Subsample A weights
+URXUAS3 - Urinary Arsenous acid (ug/L)
+URDUA3LC - Urinary Arsenous acid comment code
+URXUAS5 - Urinary Arsenic acid (ug/L)
+URDUA5LC - Urinary Arsenic acid comment code
+URXUAB - Urinary Arsenobetaine (ug/L)
+URDUABLC - Urinary Arsenobetaine comment code
+URXUAC - Urinary Arsenocholine (ug/L)
+URDUACLC - Urinary Arsenocholine comment code
+URXUDMA - Urinary Dimethylarsinic acid (ug/L)
+URDUDALC - Urinary Dimethylarsonic acid comment
+URXUMMA - Urinary Monomethylacrsonic acid (ug/L)
+URDUMMAL - Urinary Monomethylacrsonic acid comment
+= Standard Biochemistry Profile (BIOPRO_I)
+LBXSAL - Albumin, refrigerated serum (g/dL)
+LBDSALSI - Albumin, refrigerated serum (g/L)
+LBXSAPSI - Alkaline Phosphatase (ALP) (IU/L)
+LBXSASSI - Aspartate Aminotransferase (AST) (IU/L)
+LBXSATSI - Alanine Aminotransferase (ALT) (IU/L)
+LBXSBU - Blood Urea Nitrogen (mg/dL)
+LBDSBUSI - Blood Urea Nitrogen (mmol/L)
+LBXSC3SI - Bicarbonate (mmol/L)
+LBXSCA - Total Calcium (mg/dL)
+LBDSCASI - Total Calcium (mmol/L)
+LBXSCH - Cholesterol, refrigerated serum (mg/dL)
+LBDSCHSI - Cholesterol, refrigerated serum (mmol/L)
+LBXSCK - Creatine Phosphokinase (CPK) (IU/L)
+LBXSCLSI - Chloride (mmol/L)
+LBXSCR - Creatinine, refrigerated serum (mg/dL)
+LBDSCRSI - Creatinine, refrigerated serum (umol/L)
+LBXSGB - Globulin (g/dL)
+LBDSGBSI - Globulin (g/L)
+LBXSGL - Glucose, refrigerated serum (mg/dL)
+LBDSGLSI - Glucose, refrigerated serum (mmol/L)
+LBXSGTSI - Gamma Glutamyl Transferase (GGT) (U/L)
+LBXSIR - Iron, refrigerated serum (ug/dL)
+LBDSIRSI - Iron, refrigerated serum (umol/L)
+LBXSKSI - Potassium (mmol/L)
+LBXSLDSI - Lactate Dehydrogenase (LDH) (U/L)
+LBXSNASI - Sodium (mmol/L)
+LBXSOSSI - Osmolality (mmol/Kg)
+LBXSPH - Phosphorus (mg/dL)
+LBDSPHSI - Phosphorus (mmol/L)
+LBXSTB - Total Bilirubin (mg/dL)
+LBDSTBSI - Total Bilirubin (umol/L)
+LBXSTP - Total Protein (g/dL)
+LBDSTPSI - Total Protein (g/L)
+LBXSTR - Triglycerides, refrig serum (mg/dL)
+LBDSTRSI - Triglycerides, refrig serum (mmol/L)
+LBXSUA - Uric acid (mg/dL)
+LBDSUASI - Uric acid (umol/L)
+= Trichomonas - Urine (TRICH_I)
+URXUTRI - Trichomonas, Urine
+= Urine Flow Rate (UCFLOW_I)
+URXVOL1 - The volume of urine collection #1 (mL)
+URDFLOW1 - Urine #1 Flow Rate (mL/min)
+URDTIME1 - Minutes b/w last urination & urine # 1
+URXVOL2 - The volume of urine collection #2 (mL)
+URDFLOW2 - Urine #2 Flow Rate (mL/min)
+URDTIME2 - Minutes b/w urine # 1 & urine # 2
+URXVOL3 - The volume of urine collection #3 (mL)
+URDFLOW3 - Urine #3 Flow Rate (mL/min)
+URDTIME3 - Minutes b/w urine # 2 & urine # 3
+= Volatile Organic Compound (VOC) Metabolites - Urine (UVOC_I)
+WTSA2YR - Subsample A Weights
+URX1DC - N-acel-S-(1,2-dichlorovinl)-L-cys(ng/mL)
+URD1DCLC - N-acel-S-(1,2-dichlorovinl)-L-cys comt
+URX2DC - N-acel-S-(2,2-dichlorvinyl)-L-cys(ng/mL)
+URD2DCLC - N-acel-S-(2,2-dichlorvinyl)-L-cys comt
+URX2MH - 2-methylhippuric acid (ng/mL)
+URD2MHLC - 2-methylhippuric acid comment code
+URX34M - 3-methipurc acd & 4-methipurc acd(ng/mL)
+URD34MLC - 3-methipurc acd & 4-methipurc acid comt
+URXAAM - N-ace-S-(2-carbamoylethyl)-L-cys(ng/mL)
+URDAAMLC - N-ace-S-(2-carbamoylethyl)-L-cys comt
+URXAMC - N-ace-S-(N-methlcarbamoyl)-L-cys(ng/mL)
+URDAMCLC - N-ace-S-(N-methlcarbamoyl)-L-cys comt
+URXATC - 2-amnothiazolne-4-carbxylic acid(ng/mL)
+URDATCLC - 2-amnothiazolne-4-carbxylic acid comt
+URXBMA - N-acetyl-S-(benzyl)-L-cysteine(ng/mL)
+URDBMALC - N-acetyl-S-(benzyl)-L-cysteine comt
+URXBPM - N-acetyl-S-(n-propyl)-L-cysteine(ng/mL)
+URDBPMLC - N-acetyl-S-(n-propyl)-L-cysteine comt
+URXCEM - N-acetyl-S-(2-carbxyethyl)-L-cys(ng/mL)
+URDCEMLC - N-acetyl-S-(2-carbxyethyl)-L-cys comt
+URXCYHA - CYHA cysteine (ng/mL)
+URDCYALC - CYHA cysteine comment code
+URXCYM - N-acetyl-S-(2-cyanoethyl)-L-cyst(ng/mL)
+URDCYMLC - N-acetyl-S-(2-cyanoethyl)-L-cyst comt
+URXDHB - N-ace-S-(3,4-dihidxybutl)-L-cys(ng/mL)
+URDDHBLC - N-ace-S-(3,4-dihidxybutl)-L-cys comt
+URXDPM - N-ace-S-(dimethylphenyl)-L-cys(ng/mL)
+URDDPMLC - N-ace-S-(dimethylphenyl)-L-cys comt
+URXGAM - N-ac-S-(2-carbmo-2-hydxel)-L-cys(ng/mL)
+URDGAMLC - N-ac-S-(2-carbmo-2-hydxel)-L-cys comt
+URXHEM - N-ace-S-(2-hydroxyethyl)-L-cys(ng/mL)
+URDHEMLC - N-ace-S-(2-hydroxyethyl)-L-cys comt
+URXHP2 - N-ace-S-(2-hydroxypropyl)-L-cys(ng/mL)
+URDHP2LC - N-ace-S-(2-hydroxypropyl)-L-cys comt
+URXHPM - N-ace-S-(3-hydroxypropyl)-L-cys(ng/mL)
+URDHPMLC - N-ace-S-(3-hydroxypropyl)-L-cys comt
+URXIPM1 - IPM1 cysteine (ng/mL)
+URDPM1LC - IPM1 cysteine comment code
+URXIPM3 - IPM3 cysteine (ng/mL)
+URDPM3LC - IPM3 cysteine comment code
+URXMAD - Mandelic acid(ng/mL)
+URDMADLC - Mandelic acid comment code
+URXMB1 - N-A-S-(1-hydrxmet)-2-Prpn)-L-cys(ng/mL)
+URDMB1LC - N-A-S-(1-hydrxmet)-2-Prpn)-L-cys comt
+URXMB2 - N-Ac-S-(2-hydrxy-3-butenyl)-L-cys(ng/mL)
+URDMB2LC - N-Ac-S-(2-hydrxy-3-butenyl)-L-cys comt
+URXMB3 - N-A-S-(4-hydrxy-2-butenyl)-L-cys(ng/mL)
+URDMB3LC - N-A-S-(4-hydrxy-2-butenyl)-L-cys comt
+URXPHE - N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)
+URDPHELC - N-ace-S-(phenl-2-hydxyetl)-L-cys comt
+URXPHG - Phenylglyoxylic acid(ng/mL)
+URDPHGLC - Phenylglyoxylic acid comment code
+URXPMA - N-acetyl-S-(phenyl)-L-cysteine(ng/mL)
+URDPMALC - N-acetyl-S-(phenyl)-L-cysteine comt
+URXPMM - N-A-S-(3-hydrxprpl-1-metl)-L-cys(ng/mL)
+URDPMMLC - N-A-S-(3-hydrxprpl-1-metl)-L-cys comt
+URXTCV - N-acetyl-S-(trichlorovinyl)-L-cys(ng/mL)
+URDTCVLC - N-acetyl-S-(trichlorovinyl)-L-cys comt
+= Volatile Organic Compound (VOC) Metabolites - Urine - Special Sample (UVOCS_I)
+WTFSM - Two Year Smoking Weights
+URX1DC - N-acel-S-(1,2-dichlorovinl)-L-cys(ng/mL)
+URD1DCLC - N-acel-S-(1,2-dichlorovinl)-L-cys comt
+URX2DC - N-acel-S-(2,2-dichlorvinyl)-L-cys(ng/mL)
+URD2DCLC - N-acel-S-(2,2-dichlorvinyl)-L-cys comt
+URX2MH - 2-methylhippuric acid (ng/mL)
+URD2MHLC - 2-methylhippuric acid comment code
+URX34M - 3-methipurc acd & 4-methipurc acd(ng/mL)
+URD34MLC - 3-methipurc acd & 4-methipurc acid comt
+URXAAM - N-ace-S-(2-carbamoylethyl)-L-cys(ng/mL)
+URDAAMLC - N-ace-S-(2-carbamoylethyl)-L-cys comt
+URXAMC - N-ace-S-(N-methlcarbamoyl)-L-cys(ng/mL)
+URDAMCLC - N-ace-S-(N-methlcarbamoyl)-L-cys comt
+URXATC - 2-amnothiazolne-4-carbxylic acid(ng/mL)
+URDATCLC - 2-amnothiazolne-4-carbxylic acid comt
+URXBMA - N-acetyl-S-(benzyl)-L-cysteine(ng/mL)
+URDBMALC - N-acetyl-S-(benzyl)-L-cysteine comt
+URXBPM - N-acetyl-S-(n-propyl)-L-cysteine(ng/mL)
+URDBPMLC - N-acetyl-S-(n-propyl)-L-cysteine comt
+URXCEM - N-acetyl-S-(2-carbxyethyl)-L-cys(ng/mL)
+URDCEMLC - N-acetyl-S-(2-carbxyethyl)-L-cys comt
+URXCYHA - CYHA cysteine (ng/mL)
+URDCYALC - CYHA cysteine comment code
+URXCYM - N-acetyl-S-(2-cyanoethyl)-L-cyst(ng/mL)
+URDCYMLC - N-acetyl-S-(2-cyanoethyl)-L-cyst comt
+URXDHB - N-ace-S-(3,4-dihidxybutl)-L-cys(ng/mL)
+URDDHBLC - N-ace-S-(3,4-dihidxybutl)-L-cys comt
+URXDPM - N-ace-S-(dimethylphenyl)-L-cys(ng/mL)
+URDDPMLC - N-ace-S-(dimethylphenyl)-L-cys comt
+URXGAM - N-ac-S-(2-carbmo-2-hydxel)-L-cys(ng/mL)
+URDGAMLC - N-ac-S-(2-carbmo-2-hydxel)-L-cys comt
+URXHEM - N-ace-S-(2-hydroxyethyl)-L-cys(ng/mL)
+URDHEMLC - N-ace-S-(2-hydroxyethyl)-L-cys comt
+URXHP2 - N-ace-S-(2-hydroxypropyl)-L-cys(ng/mL)
+URDHP2LC - N-ace-S-(2-hydroxypropyl)-L-cys comt
+URXHPM - N-ace-S-(3-hydroxypropyl)-L-cys(ng/mL)
+URDHPMLC - N-ace-S-(3-hydroxypropyl)-L-cys comt
+URXIPM1 - IPM1 cysteine (ng/mL)
+URDPM1LC - IPM1 cysteine comment code
+URXIPM3 - IPM3 cysteine (ng/mL)
+URDPM3LC - IPM3 cysteine comment code
+URXMAD - Mandelic acid(ng/mL)
+URDMADLC - Mandelic acid comment code
+URXMB1 - N-A-S-(1-hydrxmet)-2-Prpn)-L-cys(ng/mL)
+URDMB1LC - N-A-S-(1-hydrxmet)-2-Prpn)-L-cys comt
+URXMB2 - N-Ac-S-(2-hydrxy-3-butenyl)-L-cys(ng/mL)
+URDMB2LC - N-Ac-S-(2-hydrxy-3-butenyl)-L-cys comt
+URXMB3 - N-A-S-(4-hydrxy-2-butenyl)-L-cys(ng/mL)
+URDMB3LC - N-A-S-(4-hydrxy-2-butenyl)-L-cys comt
+URXPHE - N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)
+URDPHELC - N-ace-S-(phenl-2-hydxyetl)-L-cys comt
+URXPHG - Phenylglyoxylic acid(ng/mL)
+URDPHGLC - Phenylglyoxylic acid comment code
+URXPMA - N-acetyl-S-(phenyl)-L-cysteine(ng/mL)
+URDPMALC - N-acetyl-S-(phenyl)-L-cysteine comt
+URXPMM - N-A-S-(3-hydrxprpl-1-metl)-L-cys(ng/mL)
+URDPMMLC - N-A-S-(3-hydrxprpl-1-metl)-L-cys comt
+URXTCV - N-acetyl-S-(trichlorovinyl)-L-cys(ng/mL)
+URDTCVLC - N-acetyl-S-(trichlorovinyl)-L-cys comt
+= Volatile Organic Compounds and Trihalomethanes/MTBE - Blood (VOCWB_I)
+WTSVOC2Y - VOC Subsample Weight
+LBX2DF - Blood 2,5-Dimethylfuran (ng/mL)
+LBD2DFLC - Blood 2,5-Dimethylfuran Comment Code
+LBX4CE - Blood 1,1,1,2-Tetrachloroethane (ng/mL)
+LBD4CELC - Blood 1,1,1,2-Tetrachloroethane Cmt Code
+LBXV06 - Blood Hexane (ng/mL)
+LBDV06LC - Blood Hexane Comment Code
+LBXV07N - Blood Heptane (ng/mL)
+LBDV07LC - Blood Heptane Comment Code
+LBXV08N - Blood Octane (ng/mL)
+LBDV08LC - Blood Octane Comment Code
+LBXV1D - Blood 1,2-Dichlorobenzene (ng/mL)
+LBDV1DLC - Blood 1,2-Dichlorobenzene Comment Code
+LBXV2A - Blood 1,2-Dichloroethane (ng/mL)
+LBDV2ALC - Blood 1,2-Dichloroethane Comment Code
+LBXV3B - Blood 1,3-Dichlorobenzene (ng/mL)
+LBDV3BLC - Blood 1,3-Dichlorobenzene Comment Code
+LBXV4C - Blood Tetrachloroethene (ng/mL)
+LBDV4CLC - Blood Tetrachloroethene Comment Code
+LBXVBF - Blood Bromoform (ng/mL)
+LBDVBFLC - Blood Bromoform Comment Code
+LBXVBM - Blood Bromodichloromethane (ng/mL)
+LBDVBMLC - Blood Bromodichloromethane Comment Code
+LBXVBZ - Blood Benzene (ng/mL)
+LBDVBZLC - Blood Benzene Comment Code
+LBXVBZN - Blood Benzonitrile (ng/mL)
+LBDVZBLC - Blood Benzonitrile Comment Code
+LBXVC6 - Blood Cyclohexane (ng/mL)
+LBDVC6LC - Blood Cyclohexane Comment Code
+LBXVCB - Blood Chlorobenzene (ng/mL)
+LBDVCBLC - Blood Chlorobenzene Comment Code
+LBXVCF - Blood Chloroform (ng/mL)
+LBDVCFLC - Blood Chloroform Comment Code
+LBXVCM - Blood Dibromochloromethane (ng/mL)
+LBDVCMLC - Blood Dibromochloromethane Comment Code
+LBXVCT - Blood Carbon Tetrachloride (ng/mL)
+LBDVCTLC - Blood Carbon Tetrachloride Comment Code
+LBXVDB - Blood 1,4-Dichlorobenzene (ng/mL)
+LBDVDBLC - Blood 1,4-Dichlorobenzene Comment Code
+LBXVDE - Blood 1,2-Dibromoethane (ng/mL)
+LBDVDELC - Blood 1,2-Dibromoethane Comment Code
+LBXVDEE - Blood Diethyl Ether (ng/mL)
+LBDVEELC - Blood Diethyl Ether Comment Code
+LBXVDX - Blood 1,4-Dioxane (ng/mL)
+LBDVDXLC - Blood 1,4-Dioxane Comment Code
+LBXVEA - Blood Ethyl Acetate (ng/mL)
+LBDVEALC - Blood Ethyl Acetate Comment Code
+LBXVEB - Blood Ethylbenzene (ng/mL)
+LBDVEBLC - Blood Ethylbenzene Comment Code
+LBXVEC - Blood Chloroethane (ng/mL)
+LBDVECLC - Blood Chloroethane Comment Code
+LBXVFN - Blood Furan (ng/mL)
+LBDVFNLC - Blood Furan Comment Code
+LBXVIBN - Blood Isobutyronitrile (ng/mL)
+LBDVIBLC - Blood Isobutyronitrile Comment Code
+LBXVIPB - Blood Isopropylbenzene (ng/mL)
+LBDVIPLC - Blood Isopropylbenzene Comment Code
+LBXVMC - Blood Methylene Chloride (ng/mL)
+LBDVMCLC - Blood Methylene Chloride Comment Code
+LBXVME - Blood MTBE (ng/mL)
+LBDVMELC - Blood MTBE Comment Code
+LBXVMCP - Blood Methylcyclopentane (ng/mL)
+LBDVMPLC - Blood Methylcyclopentane Comment Code
+LBXVNB - Blood Nitrobenzene (ng/mL)
+LBDVNBLC - Blood Nitrobenzene Comment Code
+LBXVOX - Blood o-Xylene (ng/mL)
+LBDVOXLC - Blood o-Xylene Comment Code
+LBXVTC - Blood Trichloroethene (ng/mL)
+LBDVTCLC - Blood Trichloroethene Comment Code
+LBXVTE - Blood 1,1,1-Trichloroethane (ng/mL)
+LBDVTELC - Blood 1,1,1-Trichloroethane Comment Code
+LBXVTFT - Blood aaa-Trifluorotoluene (ng/mL)
+LBDVFTLC - Blood aaa-Trifluorotoluene Comment Code
+LBXVTHF - Blood Tetrahydrofuran (ng/mL)
+LBDVHTLC - Blood Tetrahydrofuran Comment Code
+LBXVTO - Blood Toluene (ng/mL)
+LBDVTOLC - Blood Toluene Comment Code
+LBXVTP - Blood 1,2,3-Trichloropropane (ng/mL)
+LBDVTPLC - Blood 1,2,3-Trichloropropane Comt Code
+LBXVVB - Blood Vinyl Bromide (ng/mL)
+LBDVVBLC - Blood Vinyl Bromide Comment Code
+LBXVXY - Blood m-/p-Xylene (ng/mL)
+LBDVXYLC - Blood m-/p-Xylene Comment Code
+= Volatile Organic Compounds and Trihalomethanes/MTBE – Blood – Special Sample (VOCWBS_I)
+WTSVS2YR - VOC Smoking Subsample Weight
+LBX2DF - Blood 2,5-Dimethylfuran (ng/mL)
+LBD2DFLC - Blood 2,5-Dimethylfuran Comment Code
+LBX4CE - Blood 1,1,1,2-Tetrachloroethane (ng/mL)
+LBD4CELC - Blood 1,1,1,2-Tetrachloroethane Cmt Code
+LBXV06 - Blood Hexane (ng/mL)
+LBDV06LC - Blood Hexane Comment Code
+LBXV07N - Blood Heptane (ng/mL)
+LBDV07LC - Blood Heptane Comment Code
+LBXV08N - Blood Octane (ng/mL)
+LBDV08LC - Blood Octane Comment Code
+LBXV1D - Blood 1,2-Dichlorobenzene (ng/mL)
+LBDV1DLC - Blood 1,2-Dichlorobenzene Comment Code
+LBXV2A - Blood 1,2-Dichloroethane (ng/mL)
+LBDV2ALC - Blood 1,2-Dichloroethane Comment Code
+LBXV3B - Blood 1,3-Dichlorobenzene (ng/mL)
+LBDV3BLC - Blood 1,3-Dichlorobenzene Comment Code
+LBXV4C - Blood Tetrachloroethene (ng/mL)
+LBDV4CLC - Blood Tetrachloroethene Comment Code
+LBXVBF - Blood Bromoform (ng/mL)
+LBDVBFLC - Blood Bromoform Comment Code
+LBXVBM - Blood Bromodichloromethane (ng/mL)
+LBDVBMLC - Blood Bromodichloromethane Comment Code
+LBXVBZ - Blood Benzene (ng/mL)
+LBDVBZLC - Blood Benzene Comment Code
+LBXVBZN - Blood Benzonitrile (ng/mL)
+LBDVZBLC - Blood Benzonitrile Comment Code
+LBXVC6 - Blood Cyclohexane (ng/mL)
+LBDVC6LC - Blood Cyclohexane Comment Code
+LBXVCB - Blood Chlorobenzene (ng/mL)
+LBDVCBLC - Blood Chlorobenzene Comment Code
+LBXVCF - Blood Chloroform (ng/mL)
+LBDVCFLC - Blood Chloroform Comment Code
+LBXVCM - Blood Dibromochloromethane (ng/mL)
+LBDVCMLC - Blood Dibromochloromethane Comment Code
+LBXVCT - Blood Carbon Tetrachloride (ng/mL)
+LBDVCTLC - Blood Carbon Tetrachloride Comment Code
+LBXVDB - Blood 1,4-Dichlorobenzene (ng/mL)
+LBDVDBLC - Blood 1,4-Dichlorobenzene Comment Code
+LBXVDE - Blood 1,2-Dibromoethane (ng/mL)
+LBDVDELC - Blood 1,2-Dibromoethane Comment Code
+LBXVDEE - Blood Diethyl Ether (ng/mL)
+LBDVEELC - Blood Diethyl Ether Comment Code
+LBXVDX - Blood 1,4-Dioxane (ng/mL)
+LBDVDXLC - Blood 1,4-Dioxane Comment Code
+LBXVEA - Blood Ethyl Acetate (ng/mL)
+LBDVEALC - Blood Ethyl Acetate Comment Code
+LBXVEB - Blood Ethylbenzene (ng/mL)
+LBDVEBLC - Blood Ethylbenzene Comment Code
+LBXVEC - Blood Chloroethane (ng/mL)
+LBDVECLC - Blood Chloroethane Comment Code
+LBXVFN - Blood Furan (ng/mL)
+LBDVFNLC - Blood Furan Comment Code
+LBXVIBN - Blood Isobutyronitrile (ng/mL)
+LBDVIBLC - Blood Isobutyronitrile Comment Code
+LBXVIPB - Blood Isopropylbenzene (ng/mL)
+LBDVIPLC - Blood Isopropylbenzene Comment Code
+LBXVMC - Blood Methylene Chloride (ng/mL)
+LBDVMCLC - Blood Methylene Chloride Comment Code
+LBXVME - Blood MTBE (ng/mL)
+LBDVMELC - Blood MTBE Comment Code
+LBXVMCP - Blood Methylcyclopentane (ng/mL)
+LBDVMPLC - Blood Methylcyclopentane Comment Code
+LBXVNB - Blood Nitrobenzene (ng/mL)
+LBDVNBLC - Blood Nitrobenzene Comment Code
+LBXVOX - Blood o-Xylene (ng/mL)
+LBDVOXLC - Blood o-Xylene Comment Code
+LBXVTC - Blood Trichloroethene (ng/mL)
+LBDVTCLC - Blood Trichloroethene Comment Code
+LBXVTE - Blood 1,1,1-Trichloroethane (ng/mL)
+LBDVTELC - Blood 1,1,1-Trichloroethane Comment Code
+LBXVTFT - Blood aaa - Trifluorotoluene (ng/mL)
+LBDVFTLC - Blood aaa -Trifluorotoluene Comment Code
+LBXVTHF - Blood Tetrahydrofuran (ng/mL)
+LBDVHTLC - Blood Tetrahydrofuran Comment Code
+LBXVTO - Blood Toluene (ng/mL)
+LBDVTOLC - Blood Toluene Comment Code
+LBXVTP - Blood 1,2,3-Trichloropropane (ng/mL)
+LBDVTPLC - Blood 1,2,3-Trichloropropane Comt Code
+LBXVVB - Blood Vinyl Bromide (ng/mL)
+LBDVVBLC - Blood Vinyl Bromide Comment Code
+LBXVXY - Blood m-/p-Xylene (ng/mL)
+LBDVXYLC - Blood m-/p-Xylene Comment Code
+
+= Blood Pressure (BPX_I)
+PEASCCT1 - Blood Pressure Comment
+BPXCHR - 60 sec HR (30 sec HR * 2)
+BPAARM - Arm selected
+BPACSZ - Coded cuff size
+BPXPLS - 60 sec. pulse (30 sec. pulse * 2)
+BPXPULS - Pulse regular or irregular?
+BPXPTY - Pulse type
+BPXML1 - MIL: maximum inflation levels (mm Hg)
+BPXSY1 - Systolic: Blood pres (1st rdg) mm Hg
+BPXDI1 - Diastolic: Blood pres (1st rdg) mm Hg
+BPAEN1 - Enhancement used first reading
+BPXSY2 - Systolic: Blood pres (2nd rdg) mm Hg
+BPXDI2 - Diastolic: Blood pres (2nd rdg) mm Hg
+BPAEN2 - Enhancement used second reading
+BPXSY3 - Systolic: Blood pres (3rd rdg) mm Hg
+BPXDI3 - Diastolic: Blood pres (3rd rdg) mm Hg
+BPAEN3 - Enhancement used third reading
+BPXSY4 - Systolic: Blood pres (4th rdg) mm Hg
+BPXDI4 - Diastolic: Blood pres (4th rdg) mm Hg
+BPAEN4 - Enhancement used fourth reading
+= Body Measures (BMX_I)
+BMDSTATS - Body Measures Component Status Code
+BMXWT - Weight (kg)
+BMIWT - Weight Comment
+BMXRECUM - Recumbent Length (cm)
+BMIRECUM - Recumbent Length Comment
+BMXHEAD - Head Circumference (cm)
+BMIHEAD - Head Circumference Comment
+BMXHT - Standing Height (cm)
+BMIHT - Standing Height Comment
+BMXBMI - Body Mass Index (kg/m**2)
+BMDBMIC - BMI Category - Children/Youth
+BMXLEG - Upper Leg Length (cm)
+BMILEG - Upper Leg Length Comment
+BMXARML - Upper Arm Length (cm)
+BMIARML - Upper Arm Length Comment
+BMXARMC - Arm Circumference (cm)
+BMIARMC - Arm Circumference Comment
+BMXWAIST - Waist Circumference (cm)
+BMIWAIST - Waist Circumference Comment
+BMXSAD1 - Sagittal Abdominal Diameter 1st (cm)
+BMXSAD2 - Sagittal Abdominal Diameter 2nd (cm)
+BMXSAD3 - Sagittal Abdominal Diameter 3rd (cm)
+BMXSAD4 - Sagittal Abdominal Diameter 4th (cm)
+BMDAVSAD - Average Sagittal Abdominal Diameter (cm)
+BMDSADCM - Sagittal Abdominal Diameter Comment
+= Fluorosis - Clinical (FLXCLN_I)
+FCX02DI - Fluorosis DI: #2
+FCX03DI - Fluorosis DI: #3
+FCX04DI - Fluorosis DI: #4
+FCX05DI - Fluorosis DI: #5
+FCX06DI - Fluorosis DI: #6
+FCX07DI - Fluorosis DI: #7
+FCX08DI - Fluorosis DI: #8
+FCX09DI - Fluorosis DI: #9
+FCX10DI - Fluorosis DI: #10
+FCX11DI - Fluorosis DI: #11
+FCX12DI - Fluorosis DI: #12
+FCX13DI - Fluorosis DI: #13
+FCX14DI - Fluorosis DI: #14
+FCX15DI - Fluorosis DI: #15
+FCX18DI - Fluorosis DI: #18
+FCX19DI - Fluorosis DI: #19
+FCX20DI - Fluorosis DI: #20
+FCX21DI - Fluorosis DI: #21
+FCX22DI - Fluorosis DI: #22
+FCX23DI - Fluorosis DI: #23
+FCX24DI - Fluorosis DI: #24
+FCX25DI - Fluorosis DI: #25
+FCX26DI - Fluorosis DI: #26
+FCX27DI - Fluorosis DI: #27
+FCX28DI - Fluorosis DI: #28
+FCX29DI - Fluorosis DI: #29
+FCX30DI - Fluorosis DI: #30
+FCX31DI - Fluorosis DI: #31
+= Oral Health - Dentition (OHXDEN_I)
+OHDEXSTS - Overall Oral Health Exam Status
+OHDDESTS - Dentition Status Code
+OHXIMP - Dental Implant: yes / no?
+OHX01TC - Tooth Count: #1
+OHX02TC - Tooth Count: #2
+OHX03TC - Tooth Count: #3
+OHX04TC - Tooth Count: #4
+OHX05TC - Tooth Count: #5
+OHX06TC - Tooth Count: #6
+OHX07TC - Tooth Count: #7
+OHX08TC - Tooth Count: #8
+OHX09TC - Tooth Count: #9
+OHX10TC - Tooth Count: #10
+OHX11TC - Tooth Count: #11
+OHX12TC - Tooth Count: #12
+OHX13TC - Tooth Count: #13
+OHX14TC - Tooth Count: #14
+OHX15TC - Tooth Count: #15
+OHX16TC - Tooth Count: #16
+OHX17TC - Tooth Count: #17
+OHX18TC - Tooth Count: #18
+OHX19TC - Tooth Count: #19
+OHX20TC - Tooth Count: #20
+OHX21TC - Tooth Count: #21
+OHX22TC - Tooth Count: #22
+OHX23TC - Tooth Count: #23
+OHX24TC - Tooth Count: #24
+OHX25TC - Tooth Count: #25
+OHX26TC - Tooth Count: #26
+OHX27TC - Tooth Count: #27
+OHX28TC - Tooth Count: #28
+OHX29TC - Tooth Count: #29
+OHX30TC - Tooth Count: #30
+OHX31TC - Tooth Count: #31
+OHX32TC - Tooth Count: #32
+OHX02CTC - Coronal Caries: Tooth Count #2
+OHX03CTC - Coronal Caries: Tooth Count #3
+OHX04CTC - Coronal Caries: Tooth Count #4
+OHX05CTC - Coronal Caries: Tooth Count #5
+OHX06CTC - Coronal Caries: Tooth Count #6
+OHX07CTC - Coronal Caries: Tooth Count #7
+OHX08CTC - Coronal Caries: Tooth Count #8
+OHX09CTC - Coronal Caries: Tooth Count #9
+OHX10CTC - Coronal Caries: Tooth Count #10
+OHX11CTC - Coronal Caries: Tooth Count #11
+OHX12CTC - Coronal Caries: Tooth Count #12
+OHX13CTC - Coronal Caries: Tooth Count #13
+OHX14CTC - Coronal Caries: Tooth Count #14
+OHX15CTC - Coronal Caries: Tooth Count #15
+OHX18CTC - Coronal Caries: Tooth Count #18
+OHX19CTC - Coronal Caries: Tooth Count #19
+OHX20CTC - Coronal Caries: Tooth Count #20
+OHX21CTC - Coronal Caries: Tooth Count #21
+OHX22CTC - Coronal Caries: Tooth Count #22
+OHX23CTC - Coronal Caries: Tooth Count #23
+OHX24CTC - Coronal Caries: Tooth Count #24
+OHX25CTC - Coronal Caries: Tooth Count #25
+OHX26CTC - Coronal Caries: Tooth Count #26
+OHX27CTC - Coronal Caries: Tooth Count #27
+OHX28CTC - Coronal Caries: Tooth Count #28
+OHX29CTC - Coronal Caries: Tooth Count #29
+OHX30CTC - Coronal Caries: Tooth Count #30
+OHX31CTC - Coronal Caries: Tooth Count #31
+OHX02CSC - Coronal Caries: Surface condition #2
+OHX03CSC - Coronal Caries: Surface condition #3
+OHX04CSC - Coronal Caries: Surface condition #4
+OHX05CSC - Coronal Caries: Surface condition #5
+OHX06CSC - Coronal Caries: Surface condition #6
+OHX07CSC - Coronal Caries: Surface condition #7
+OHX08CSC - Coronal Caries: Surface condition #8
+OHX09CSC - Coronal Caries: Surface condition #9
+OHX10CSC - Coronal Caries: Surface condition #10
+OHX11CSC - Coronal Caries: Surface condition #11
+OHX12CSC - Coronal Caries: Surface condition #12
+OHX13CSC - Coronal Caries: Surface condition #13
+OHX14CSC - Coronal Caries: Surface condition #14
+OHX15CSC - Coronal Caries: Surface condition #15
+OHX18CSC - Coronal Caries: Surface condition #18
+OHX19CSC - Coronal Caries: Surface condition #19
+OHX20CSC - Coronal Caries: Surface condition #20
+OHX21CSC - Coronal Caries: Surface condition #21
+OHX22CSC - Coronal Caries: Surface condition #22
+OHX23CSC - Coronal Caries: Surface condition #23
+OHX24CSC - Coronal Caries: Surface condition #24
+OHX25CSC - Coronal Caries: Surface condition #25
+OHX26CSC - Coronal Caries: Surface condition #26
+OHX27CSC - Coronal Caries: Surface condition #27
+OHX28CSC - Coronal Caries: Surface condition #28
+OHX29CSC - Coronal Caries: Surface condition #29
+OHX30CSC - Coronal Caries: Surface condition #30
+OHX31CSC - Coronal Caries: Surface condition #31
+OHXRCAR - Root caries
+OHXRCARO - Other non-carious root lesion
+OHXRRES - Root caries restoration
+OHXRRESO - Other non-carious root restoration
+OHX02SE - Dental Sealants: #2
+OHX03SE - Dental Sealants: #3
+OHX04SE - Dental Sealants: #4
+OHX05SE - Dental Sealants: #5
+OHX07SE - Dental Sealants: #7
+OHX10SE - Dental Sealants: #10
+OHX12SE - Dental Sealants: #12
+OHX13SE - Dental Sealants: #13
+OHX14SE - Dental Sealants: #14
+OHX15SE - Dental Sealants: #15
+OHX18SE - Dental Sealants: #18
+OHX19SE - Dental Sealants: #19
+OHX20SE - Dental Sealants: #20
+OHX21SE - Dental Sealants: #21
+OHX28SE - Dental Sealants: #28
+OHX29SE - Dental Sealants: #29
+OHX30SE - Dental Sealants: #30
+OHX31SE - Dental Sealants: #31
+= Oral Health - Recommendation of Care (OHXREF_I)
+OHDEXSTS - Overall Oral Health Exam Status
+OHDRCSTS - Recommendation Care Status Code
+OHAREC - Overall recommendation for care
+OHAROCDT - Decayed teeth
+OHAROCGP - Gum disease/problem
+OHAROCOH - Oral hygiene
+OHAROCCI - Impression of soft tissue condition
+OHAROCDE - Denture/Partial Denture/Plates
+OHARNF - No significant findings
+OHAROTH - Some other finding (specify w/referral)
+OHAPOS - Was participant exam position recumbent
+
+= Demographic Variables and Sample Weights (DEMO_I)
+SDDSRVYR - Data release cycle
+RIDSTATR - Interview/Examination status
+RIAGENDR - Gender
+RIDAGEYR - Age in years at screening
+RIDAGEMN - Age in months at screening - 0 to 24 mos
+RIDRETH1 - Race/Hispanic origin
+RIDRETH3 - Race/Hispanic origin w/ NH Asian
+RIDEXMON - Six month time period
+RIDEXAGM - Age in months at exam - 0 to 19 years
+DMQMILIZ - Served active duty in US Armed Forces
+DMQADFC - Served in a foreign country
+DMDBORN4 - Country of birth
+DMDCITZN - Citizenship status
+DMDYRSUS - Length of time in US
+DMDEDUC3 - Education level - Children/Youth 6-19
+DMDEDUC2 - Education level - Adults 20+
+DMDMARTL - Marital status
+RIDEXPRG - Pregnancy status at exam
+SIALANG - Language of SP Interview
+SIAPROXY - Proxy used in SP Interview?
+SIAINTRP - Interpreter used in SP Interview?
+FIALANG - Language of Family Interview
+FIAPROXY - Proxy used in Family Interview?
+FIAINTRP - Interpreter used in Family Interview?
+MIALANG - Language of MEC Interview
+MIAPROXY - Proxy used in MEC Interview?
+MIAINTRP - Interpreter used in MEC Interview?
+AIALANGA - Language of ACASI Interview
+DMDHHSIZ - Total number of people in the Household
+DMDFMSIZ - Total number of people in the Family
+DMDHHSZA - # of children 5 years or younger in HH
+DMDHHSZB - # of children 6-17 years old in HH
+DMDHHSZE - # of adults 60 years or older in HH
+DMDHRGND - HH ref person's gender
+DMDHRAGE - HH ref person's age in years
+DMDHRBR4 - HH ref person's country of birth
+DMDHREDU - HH ref person's education level
+DMDHRMAR - HH ref person's marital status
+DMDHSEDU - HH ref person's spouse's education level
+WTINT2YR - Full sample 2 year interview weight
+WTMEC2YR - Full sample 2 year MEC exam weight
+SDMVPSU - Masked variance pseudo-PSU
+SDMVSTRA - Masked variance pseudo-stratum
+INDHHIN2 - Annual household income
+INDFMIN2 - Annual family income
+INDFMPIR - Ratio of family income to poverty

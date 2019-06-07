@@ -30,8 +30,10 @@ for f in files_xpt:
 
     data2 = pd.read_sas(f)
     print(f,data2.shape)
+    print(data2.columns)
     # merge by "SEQN" of sleep data
     sleep_data = pd.merge(sleep_data,data2,how='left',on='SEQN')
+    
 
 print(sleep_data.head())
 print("data.shape",sleep_data.shape)
