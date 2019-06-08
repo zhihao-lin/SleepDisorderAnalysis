@@ -8,6 +8,10 @@ from analyze import *
 from label_handler import LabelHandler
 import os
 
+import xgboost as xgb
+from Hyperparameter_search import *
+import sys
+
 def main(mode):
     
     #load LabelHandler
@@ -72,6 +76,7 @@ def main(mode):
     
     os.makedirs(path, exist_ok=True)
     f = open(path+'acc.txt', 'w')
+    print("Model selected:",mode)
 
     #train
     for cat in category:
@@ -82,11 +87,20 @@ def main(mode):
                     if cat in label_handlers[i].get_categories():
                         feature_selected = label_handlers[i].get_symbols_by_category(cat)
                         _index = i 
-            print('feature_selected: ',feature_selected)
+            print('feature_selected:\n',feature_selected)
             target_data = get_2015_sleep_data(target= 'SLQ050')
             target_feature = label_handler.get_content_by_symbol('SLQ050')
 
             train_data, target_data = get_2015_all(target_data, feature_selected)
+            
+            # origin target_data distribution:
+            # 2    4492
+            # 1    1599
+            # 9       4
+
+            target_data = target_data-1
+            target_data[target_data==8] = 1
+            print("Target distribution:\n",target_data.value_counts())
 
             x_train, x_valid, y_train, y_valid = train_test_split(train_data, target_data, test_size = .2, random_state=0) 
             model = RandomForestClassifier(n_estimators= 20, max_depth=10, random_state= 0)
@@ -94,21 +108,33 @@ def main(mode):
             train_score = model.score(x_train, y_train)
             valid_score = model.score(x_valid, y_valid)
             print('================================')
+            print('Random Forest ... ...')
             print('Target feature:', target_feature)
             print('Training score: ', train_score)
-            print('Training score: ', valid_score)
+            print('Testing score: ', valid_score)
             print('=======analyze=======')
-            generate_tree_png(model.estimators_[0], train_data.columns, target_feature,path+cat+'/tree.png')
-            permutation_importance(model, x_valid, y_valid, path+cat+'/permutation_importance.csv')
+
+            y_pred_quant = model.predict_proba(x_valid)[:, 1]
+            y_pred = model.predict(x_valid)
+            confusion_matrix(y_valid, y_pred)
+            auc_score = plot_ROC(y_valid, y_pred_quant, "./")
+            
+            print('================================')
+            print('XGBoost + Hyperparameter_searching ... ...')
+            model = xgb.XGBClassifier()
+            model = Hyperparameter_searching(model, train_data, target_data)
+            #generate_tree_png(model.estimators_[0], train_data.columns, target_feature,path+cat+'/tree.png')
+            #permutation_importance(model, x_valid, y_valid, path+cat+'/permutation_importance.csv')
             #partial_dependence_plot('Avg # alcoholic drinks/day - past 12 mos', model, x_valid, data.columns,'../analyze_files/partial_dependence_plot.png')
-            shap_plot(model, x_valid, path+cat+'/')
+            #shap_plot(model, x_valid, path+cat+'/')
             f.write('================================'+"\n")
             f.write('Target feature:'+str(target_feature)+"\n")
             f.write(cat+"\n")
             f.write('feature_selected:'+str(feature_selected)+"\n")
             f.write('--------------------------------'+"\n")
             f.write('Training score: '+str(train_score)+"\n")
-            f.write('Training score: '+str(valid_score)+"\n")
+            f.write('Testing score: '+str(valid_score)+"\n")
+            f.write('Auc score: '+str(auc_score)+"\n")
             
         except Exception as e: 
             f.write('########Warn########'+"\n")
@@ -118,7 +144,7 @@ def main(mode):
         continue
 
 if __name__ == '__main__':
-    main(mode = 5) 
+    main(mode = int(sys.argv[1])) 
     #mode = 0 :select all
     #mode = 1 :every category
     #mode = 2 :choose mode1 mean(SHAP value) > 0.25 

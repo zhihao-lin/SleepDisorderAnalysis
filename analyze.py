@@ -67,3 +67,48 @@ def shap_plot(model, X_test, path):
     plt.savefig(path+'shap_plot_3.png', bbox_inches='tight')
     print('generate '+path+'shap_plot_3.png')
     plt.close()
+
+
+#   Add confusion_matrix(sensitivity, specificity) & ROC &AUC
+
+from sklearn.metrics import confusion_matrix as cfm
+from sklearn.metrics import roc_curve, auc 
+
+def confusion_matrix(y_valid, y_pred):
+    confusion_matrix = cfm(y_valid, y_pred)
+    sensitivity = confusion_matrix[0,0]/(confusion_matrix[0,0]+confusion_matrix[1,0])
+    specificity = confusion_matrix[1,1]/(confusion_matrix[1,1]+confusion_matrix[0,1])
+    print("sensitivity = {}/({}+{}) = {}".format(confusion_matrix[0,0],
+    confusion_matrix[0,0],
+    confusion_matrix[1,0],
+    sensitivity))
+    print("specificity = {}/({}+{}) = {}".format(confusion_matrix[1,1],
+    confusion_matrix[1,1],
+    confusion_matrix[0,1],
+    specificity))
+    # return confusion_matrix, sensitivity, specificity
+
+def plot_ROC(y_valid, y_pred_quant, path):
+    fpr, tpr, thresholds = roc_curve(y_valid, y_pred_quant)
+
+    fig, ax = plt.subplots()
+    ax.plot(fpr, tpr)
+    ax.plot([0, 1], [0, 1], transform=ax.transAxes, ls="--", c=".3")
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.0])
+    plt.rcParams['font.size'] = 12
+    plt.title('ROC curve for diabetes classifier')
+    plt.xlabel('False Positive Rate (1 - Specificity)')
+    plt.ylabel('True Positive Rate (Sensitivity)')
+    plt.grid(True)
+    plt.savefig(path+'ROC', bbox_inches='tight')
+    plt.close()
+    print("Auc:",auc(fpr, tpr))
+    return auc(fpr, tpr)
+"""     
+    0.90 - 1.00 = excellent
+    0.80 - 0.90 = good
+    0.70 - 0.80 = fair
+    0.60 - 0.70 = poor
+    0.50 - 0.60 = fail """
+
