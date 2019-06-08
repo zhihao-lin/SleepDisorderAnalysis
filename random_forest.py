@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 from util import *
 from analyze import *
 from label_handler import LabelHandler
@@ -104,9 +104,11 @@ def main(mode):
 
             x_train, x_valid, y_train, y_valid = train_test_split(train_data, target_data, test_size = .2, random_state=0) 
             model = RandomForestClassifier(n_estimators= 20, max_depth=10, random_state= 0)
+            
             model.fit(x_train, y_train)
             train_score = model.score(x_train, y_train)
             valid_score = model.score(x_valid, y_valid)
+
             print('================================')
             print('Random Forest ... ...')
             print('Target feature:', target_feature)
@@ -117,7 +119,12 @@ def main(mode):
             y_pred_quant = model.predict_proba(x_valid)[:, 1]
             y_pred = model.predict(x_valid)
             confusion_matrix(y_valid, y_pred)
+            # single time validation
             auc_score = plot_ROC(y_valid, y_pred_quant, "./")
+
+            # k-fold validation (cv=5)->5-fold
+            print("Cross validation (Auc): ",cross_val_score(model, train_data,
+            target_data, cv=5, scoring='roc_auc').mean())
             
             print('================================')
             print('XGBoost + Hyperparameter_searching ... ...')

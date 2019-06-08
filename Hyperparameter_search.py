@@ -27,11 +27,13 @@ def Hyperparameter_searching(xgb_model, X, y):
     params = {
         'gamma': uniform(0, 0.5),
         'n_estimators': range(80, 200, 4),
-        'max_depth': range(2, 13, 1),
         'learning_rate': np.linspace(0.01, 2, 20),
+        'max_depth': range(2, 13, 1),
+        'min_child_weight': range(1, 9, 1),
         'subsample': np.linspace(0.7, 0.9, 20),
         'colsample_bytree': np.linspace(0.5, 0.98, 10),
-        'min_child_weight': range(1, 9, 1)
+        'reg_alpha': [0.05, 0.1, 1, 2, 3], 
+        'reg_lambda': [0.05, 0.1, 1, 2, 3]
     }
     scoring_function = 'roc_auc'
 
@@ -41,7 +43,7 @@ def Hyperparameter_searching(xgb_model, X, y):
     # default 3-fold cross validation,
 
     search = RandomizedSearchCV(xgb_model, param_distributions=params,
-                                random_state=42, n_iter=200, verbose=1, cv=3, scoring=scoring_function, n_jobs=-1, return_train_score=True)
+                                random_state=42, n_iter=500, verbose=1, cv=3, scoring=scoring_function, n_jobs=-1, return_train_score=True)
     search.fit(X, y)
 
     # display n_top model

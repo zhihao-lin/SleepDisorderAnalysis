@@ -110,7 +110,7 @@ def get_2015_sleep_data(csv= 'data_preprocess/Sleep.csv',
     columns = data.columns
     contents, noresults = label_handler.symbols_to_contents(columns)
     data.columns = contents
-    print(contents)
+    
     # Convert time : e.g. b'23:00' -> -60
     data[contents[1]] = normalize_time(data[contents[1]])
     data[contents[2]] = normalize_time(data[contents[2]])
