@@ -151,7 +151,6 @@ def get_2015_sleep_data(target,
         data = data[data[target] != 9]
         data[target][data[target] < 3] = 0
         data[target][data[target]>= 3] = 1
-
     return data
 
 def get_2015_Questionnaire_data(target_data, symbol_list= [],
