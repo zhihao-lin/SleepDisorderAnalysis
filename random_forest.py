@@ -15,7 +15,7 @@ import sys
 def main(mode):
     
     #load LabelHandler
-    label_handler = LabelHandler('data/2015-2016/Questionnaire.txt')
+    label_handler =  get_all_handler()
     
     #different mode
     
@@ -26,15 +26,7 @@ def main(mode):
         feature_selected = []  
     elif mode == 1:
         path = '../analyze_mode_1/'
-        label_handler_names = ['data/2015-2016/Questionnaire.txt',
-                      'data/2015-2016/Demographics.txt',
-                      'data/2015-2016/Examination.txt',
-                      'data/2015-2016/Laboratory.txt']
-        label_handlers = []
-        category = []
-        for label_handler_name in label_handler_names:
-            label_handlers.append(LabelHandler(label_handler_name))
-            category = category + label_handlers[-1].get_categories()
+        category = label_handler.get_categories()
         feature_selected = []  
 
     elif mode == 2:
@@ -48,9 +40,9 @@ def main(mode):
     elif mode == 3:
         path = '../analyze_mode_3/'
         category=['']
-        feature_selected = ['HUQ051','DPQ030','PFQ049','DLQ140',
+        feature_selected = ['HUQ051','PFQ049','DLQ140',
                             'DLQ150','HUQ090','CDQ001','PFQ051',
-                            'WHD050','BPQ070','DIQ170']
+                            'WHD050','BPQ070','DIQ170']#,'DPQ030'
     elif mode == 4:
         path = '../analyze_mode_4/'
         category=['']
@@ -67,11 +59,12 @@ def main(mode):
     elif mode == 5:
         path = '../analyze_mode_5/'
         category=['']
-        feature_selected = ['PFQ051','DLQ150','HUQ051','MCQ160a','HUQ090','MCQ365a',
+        feature_selected = ['PFQ051','DLQ150','HUQ051','HUQ090',
                             'MCQ080','RIDAGEYR','DPQ040','CDQ010','BPQ020',
                             'CDQ001','LBXBCO','BPQ070','OCD390G','PFQ054',
-                            'LBXBCR'
-        ]
+                           
+        ]#'MCQ160a','MCQ365a', 'LBXBCR'
+
 #make ../analyze_mode_x & acc.txt
     
     os.makedirs(path, exist_ok=True)
@@ -83,10 +76,7 @@ def main(mode):
         try:
             os.makedirs(path+cat, exist_ok=True)
             if mode == 1:
-                for i in range(len(label_handlers)):
-                    if cat in label_handlers[i].get_categories():
-                        feature_selected = label_handlers[i].get_symbols_by_category(cat)
-                        _index = i 
+                feature_selected = label_handler.get_symbols_by_category(cat)
             print('feature_selected:\n',feature_selected)
             target_data = get_2015_sleep_data(target= 'SLQ050')
             target_feature = label_handler.get_content_by_symbol('SLQ050')
@@ -98,8 +88,6 @@ def main(mode):
             # 1    1599
             # 9       4
 
-            target_data = target_data-1
-            target_data[target_data==8] = 1
             print("Target distribution:\n",target_data.value_counts())
 
             x_train, x_valid, y_train, y_valid = train_test_split(train_data, target_data, test_size = .2, random_state=0) 
@@ -119,7 +107,7 @@ def main(mode):
             y_pred_quant = model.predict_proba(x_valid)[:, 1]
             y_pred = model.predict(x_valid)
             confusion_matrix(y_valid, y_pred)
-            # single time validation
+            # single time validation      
             auc_score = plot_ROC(y_valid, y_pred_quant, "./")
 
             # k-fold validation (cv=5)->5-fold
@@ -138,6 +126,9 @@ def main(mode):
             f.write('Target feature:'+str(target_feature)+"\n")
             f.write(cat+"\n")
             f.write('feature_selected:'+str(feature_selected)+"\n")
+            contents,_ = label_handler.symbols_to_contents(feature_selected)
+            for i,content in enumerate(contents) :
+                f.write(feature_selected[i]+' : '+content+"\n")
             f.write('--------------------------------'+"\n")
             f.write('Training score: '+str(train_score)+"\n")
             f.write('Testing score: '+str(valid_score)+"\n")
