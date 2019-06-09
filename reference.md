@@ -9,5 +9,10 @@
 * [Decision Tree](https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052)
 * [One Feature Attribution method to Rule them all: Shapley Values](https://towardsdatascience.com/one-feature-attribution-method-to-supposedly-rule-them-all-shapley-values-f3e04534983d)
 * [Feature importances with forest of trees](https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html)
+* [Eli5 Doc](https://eli5.readthedocs.io/en/latest/overview.html)
+* [PDPBox - github](https://github.com/SauceCat/PDPbox)
 * [sklearn -RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 * [Using XGBoost with Scikit-learn](https://www.kaggle.com/stuarthallows/using-xgboost-with-scikit-learn)
+
+* [Towards Data Science - CatBoost vs. Light GBM vs. XGBoost](https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db)
+* [Understanding AUC - ROC Curve](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)

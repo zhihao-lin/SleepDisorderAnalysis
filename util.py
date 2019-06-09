@@ -39,8 +39,8 @@ def filter_data(csv, column_threshold= 0.5, row_threshold= 0.5):
             drop_rows.append(index)
     csv = csv.drop(drop_rows, axis = 0)
 
-    print('Dropped column: {}/{}'.format(len(drop_columns), raw_shape[1]))
-    print('Dropped row: {}/{}'.format(len(drop_rows), raw_shape[0]))
+    # print('Dropped column: {}/{}'.format(len(drop_columns), raw_shape[1]))
+    # print('Dropped row: {}/{}'.format(len(drop_rows), raw_shape[0]))
     return csv
 
 def align_data_with_target(train_data, target_data):
@@ -57,8 +57,8 @@ def process_nan(csv):
         try:
             possible_values = np.unique(csv[feature][~np.isnan(csv[feature])])
         except:
-            print(' == Fail to process follow ==')
-            print(csv[feature][:10])
+            # print(' == Fail to process follow ==')
+            # print(csv[feature][:10])
             features_to_discard.append(feature)
             continue
 
@@ -95,25 +95,63 @@ def normalize_time(raw_array):
             normalized.append(time_diff)
     return normalized
 
-def get_2015_sleep_data(csv= 'data_preprocess/Sleep.csv', 
-                        label= 'data/2015-2016/Questionnaire.txt', target= None):
+# Sleep data :
+# SLQ300 - Usual sleep time on weekdays or workdays
+# SLQ310 - Usual wake time on weekdays or workdays
+# SLD012 - Sleep hours
+# SLQ030 - How often do you snore?
+# SLQ040 - How often do you snort or stop breathing
+# SLQ050 - Ever told doctor had trouble sleeping?
+# SLQ120 - How often feel overly sleepy during day?
+def get_2015_sleep_data(target,
+                        csv= 'data_preprocess/Sleep.csv', 
+                        label= 'data/2015-2016/Questionnaire.txt', ):
     
     data = pd.read_csv(csv)
     label_handler = LabelHandler(label)
     data = data.drop('Unnamed: 0', 1)
     
-    if target:
-        data = data[['SEQN', target]]
-        data = filter_data(data, 1, 0)
+    if target == 'all':
+        columns = data.columns
+        contents, noresults = label_handler.symbols_to_contents(columns)
+        data.columns = contents
+    
+        # Convert time : e.g. b'23:00' -> -60
+        data[contents[1]] = normalize_time(data[contents[1]])
+        data[contents[2]] = normalize_time(data[contents[2]])
         return data
 
-    columns = data.columns
-    contents, noresults = label_handler.symbols_to_contents(columns)
-    data.columns = contents
+    data = data[['SEQN', target]]
+    data = filter_data(data, 1, 0)
+
+    if target == 'SLQ300' or  target == 'SLQ310':
+        data[target] = normalize_time(data[target])
     
-    # Convert time : e.g. b'23:00' -> -60
-    data[contents[1]] = normalize_time(data[contents[1]])
-    data[contents[2]] = normalize_time(data[contents[2]])
+    elif target == 'SLD012':
+        pass
+    
+    elif target == 'SLQ030':
+        data = data[data[target] != 7]
+        data = data[data[target] != 9]
+        data[target][data[target] < 2] = 0
+        data[target][data[target] >=2] = 1
+
+    elif target == 'SLQ040':
+        data = data[data[target] != 7]
+        data = data[data[target] != 9]
+        data[target][data[target] == 0] = 0
+        data[target][data[target] > 0] = 1
+
+    elif target == 'SLQ050':
+        data = data[data[target] != 9]
+        data[target][data[target] == 1] = 1
+        data[target][data[target] == 2] = 0
+
+    elif target == 'SLQ120':
+        data = data[data[target] != 9]
+        data[target][data[target] < 3] = 0
+        data[target][data[target]>= 3] = 1
+
     return data
 
 def get_2015_Questionnaire_data(target_data, symbol_list= [],
@@ -232,10 +270,6 @@ def get_2015_all(target_data, symbol_list= []):
     return train_data, target_data
 
 ## TEST ##
-def test_get_sleep():
-    data = get_2015_sleep_data(target = 'SLQ120')
-    print(data)
-
 def test_get_questionnaire():
     label_handler = LabelHandler('data/2015-2016/Questionnaire.txt')
     cat = label_handler.get_categories()[1]
@@ -277,5 +311,19 @@ def test_get_all():
     
     print(train_data.head())
 
+def test_get_sleep():
+    target = 'SLQ120'
+    data = get_2015_sleep_data(target = target)
+    data = np.array(data[target])
+    size = len(data)
+    distinct = np.unique(data)
+    parts = []
+    for d in distinct:
+        p = np.sum(data == d) / size
+        parts.append(p)
+    
+    print(distinct)
+    print(parts)
+
 if __name__ == '__main__':
-    test_get_all()
+    test_get_sleep()
