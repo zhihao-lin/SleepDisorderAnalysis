@@ -334,4 +334,4 @@ def test_get_sleep():
     print(parts)
 
 if __name__ == '__main__':
-    test_get_sleep()
+    test_get_all()

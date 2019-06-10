@@ -41,7 +41,9 @@ def clean(path):
 def main():
     paths = ['Questionnaire.csv', 'Demographics.csv', 'Examination.csv', 'Laboratory.csv']
     for path in paths:
-        clean(path)
-    
+        csv = pd.read_csv(path)
+        csv = csv.drop(['Unnamed: 0', 'Unnamed: 0.1'], 1)
+        csv.to_csv(path)
+        
 if __name__ == '__main__':
     main()

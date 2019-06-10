@@ -64,15 +64,20 @@ def analyze_by_category():
     for error in error_messages:
         print(error)
 
-def test_performance():
-    target = 'DPQ030'
+def analyze_features():
+    target = 'SLQ050'
     model = model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
     DPQ030_categories = ['Cardiovascular Health (CDQ_I)', 'Current Health Status (HSQ_I)', 'Disability (DLQ_I)', 'Hospital Utilization & Access to Care (HUQ_I)',
                         'Medical Conditions (MCQ_I)', 'Mental Health - Depression Screener (DPQ_I)']
     
+    SLQ050_categories = ['Audiometry (AUQ_I)', 'Blood Pressure & Cholesterol (BPQ_I)', 'Cardiovascular Health (CDQ_I)', 'Diabetes (DIQ_I)',
+                        'Disability (DLQ_I)', 'Hospital Utilization & Access to Care (HUQ_I)', 'Income (INQ_I)', 'Medical Conditions (MCQ_I)',
+                        'Mental Health - Depression Screener (DPQ_I)', 'Physical Activity (PAQ_I)', 'Weight History (WHQ_I)', 
+                        'Demographic Variables and Sample Weights (DEMO_I)', 'Standard Biochemistry Profile (BIOPRO_I)']
 
     label_handler = get_all_handler()
-    symbols = label_handler.get_symbols_by_categories(DPQ030_categories)
+    symbols = label_handler.get_symbols_by_categories(SLQ050_categories)
+    symbols = []
     target_data = get_2015_sleep_data(target)
     train_data, target_data = get_2015_all(target_data, symbols)
     evaluate(model, train_data, target_data)
@@ -83,7 +88,7 @@ def test_performance():
         print(f)
 
 def main():
-    test_performance()
+    analyze_features()
 
 def test():
     handler = get_all_handler()

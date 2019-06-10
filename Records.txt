@@ -72,46 +72,7 @@ Standard Biochemistry Profile (BIOPRO_I) | ACC: 0.6092493401401979 | AUC: 0.5651
 Trichomonas - Urine (TRICH_I) | ACC: 0.6184848146126218 | AUC: 0.5013091564263579
 Urine Flow Rate (UCFLOW_I) | ACC: 0.6015248961670453 | AUC: 0.49193369775508
 Volatile Organic Compounds and Trihalomethanes/MTBE – Blood – Special Sample (VOCWBS_I) | ACC: 0.6053076394965506 | AUC: 0.49241551258687216
-============== Errors  ===============
-Acculturation (ACQ_I) | Error: Found array with 0 feature(s) (shape=(4128, 0)) while a minimum of 1 is required.
-Early Childhood (ECQ_I) | Error: No objects to concatenate
-Prescription Medications (RXQ_RX_I) | Error: No objects to concatenate
-Reproductive Health (RHQ_I) | Error: No objects to concatenate
-Sleep Disorders (SLQ_I) | Error: No objects to concatenate
-Weight History - Youth (WHQMEC_I) | Error: No objects to concatenate
-Fluorosis - Clinical (FLXCLN_I) | Error: No objects to concatenate
-Apolipoprotein B (APOB_I) | Error: No objects to concatenate
-Aromatic Diamines - Urine (UADM_I) | Error: No objects to concatenate
-Arsenic - Total - Urine - Special Sample (Subsample) (UTASS_I) | Error: No objects to concatenate
-Arsenic - Total - Urine (UTAS_I) | Error: No objects to concatenate
-Blood Lead, Cadmium, Total Mercury, Selenium & Manganese - Blood (PBCD_I) | Error: No objects to concatenate
-Mercury: Inorganic, Ethyl and Methyl – Blood (IHGEM_I) | Error: No objects to concatenate
-Chlamydia - Urine (CHLMDA_I) | Error: No objects to concatenate
-Cholesterol - Low - Density Lipoprotein (LDL) & Triglycerides (TRIGLY_I) | Error: No objects to concatenate
-Copper, Selenium & Zinc - Serum (CUSEZN_I) | Error: No objects to concatenate
-Fluoride - Plasma (FLDEP_I) | Error: No objects to concatenate
-Fluoride - Water (FLDEW_I) | Error: No objects to concatenate
-Herpes Simplex Virus Type-1 & Type-2 (HSV_I) | Error: No objects to concatenate
-Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Cobas High-Risk (HPVSWC_I) | Error: No objects to concatenate
-Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Linear Array (HPVSWR_I) | Error: No objects to concatenate
-Neonicotinoids - Urine - Surplus (SSNEON_I) | Error: No objects to concatenate
-Insulin (INS_I) | Error: No objects to concatenate
-Iodine - Urine (UIO_I) | Error: No objects to concatenate
-Mercury - Urine (UHG_I) | Error: No objects to concatenate
-Metals - Urine (UM_I) | Error: No objects to concatenate
-Metals - Urine - Special Sample (Subsample) (UMS_I) | Error: No objects to concatenate
-Mono-2-ethyl-5-hydroxyhexyl terephthalate, mono-2-ethyl-5-carboxypentyl terephthalate, and monooxoisononyl phthalate - Urine (Surplus) (SSMHHT_I) | Error: No objects to concatenate
-Oral Glucose Tolerance Test (OGTT_I) | Error: No objects to concatenate
-Perfluoroalkyl and Polyfluoroalkyl (PFAS_I) | Error: No objects to concatenate
-Personal Care and Consumer Product Chemicals and Metabolites (EPHPP_I) | Error: No objects to concatenate
-Phthalates and Plasticizers Metabolites - Urine (PHTHTE_I) | Error: No objects to concatenate
-Plasma Fasting Glucose (GLU_I) | Error: No objects to concatenate
-Pregnancy Test - Urine (UCPREG_I) | Error: No objects to concatenate
-Speciated Arsenics - Urine - Special Sample (Subsample) (UASS_I) | Error: No objects to concatenate
-Speciated Arsenics - Urine (UAS_I) | Error: No objects to concatenate
-Volatile Organic Compound (VOC) Metabolites - Urine (UVOC_I) | Error: No objects to concatenate
-Volatile Organic Compound (VOC) Metabolites - Urine - Special Sample (UVOCS_I) | Error: No objects to concatenate
-Volatile Organic Compounds and Trihalomethanes/MTBE - Blood (VOCWB_I) | Error: No objects to concatenate
+
 
 --------------------------------------------------------------------------
 Target : SLQ050
@@ -176,42 +137,3 @@ Standard Biochemistry Profile (BIOPRO_I) | ACC: 0.7343772012584536 | AUC: 0.6290
 Trichomonas - Urine (TRICH_I) | ACC: 0.7423692256657247 | AUC: 0.4973077236722013
 Urine Flow Rate (UCFLOW_I) | ACC: 0.7348181669406081 | AUC: 0.4895554833184218
 Volatile Organic Compounds and Trihalomethanes/MTBE – Blood – Special Sample (VOCWBS_I) | ACC: 0.7368318734176423 | AUC: 0.5076799860406342
-============== Errors  ===============
-Early Childhood (ECQ_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Prescription Medications (RXQ_RX_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Reproductive Health (RHQ_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Sleep Disorders (SLQ_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Weight History - Youth (WHQMEC_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Fluorosis - Clinical (FLXCLN_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Apolipoprotein B (APOB_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Aromatic Diamines - Urine (UADM_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Arsenic - Total - Urine - Special Sample (Subsample) (UTASS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Arsenic - Total - Urine (UTAS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Blood Lead, Cadmium, Total Mercury, Selenium & Manganese - Blood (PBCD_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Mercury: Inorganic, Ethyl and Methyl – Blood (IHGEM_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Chlamydia - Urine (CHLMDA_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Cholesterol - Low - Density Lipoprotein (LDL) & Triglycerides (TRIGLY_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Copper, Selenium & Zinc - Serum (CUSEZN_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Fluoride - Plasma (FLDEP_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Fluoride - Water (FLDEW_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Herpes Simplex Virus Type-1 & Type-2 (HSV_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Cobas High-Risk (HPVSWC_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Linear Array (HPVSWR_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Neonicotinoids - Urine - Surplus (SSNEON_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Insulin (INS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Iodine - Urine (UIO_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Mercury - Urine (UHG_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Metals - Urine (UM_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Metals - Urine - Special Sample (Subsample) (UMS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Mono-2-ethyl-5-hydroxyhexyl terephthalate, mono-2-ethyl-5-carboxypentyl terephthalate, and monooxoisononyl phthalate - Urine (Surplus) (SSMHHT_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Oral Glucose Tolerance Test (OGTT_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Perfluoroalkyl and Polyfluoroalkyl (PFAS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Personal Care and Consumer Product Chemicals and Metabolites (EPHPP_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Phthalates and Plasticizers Metabolites - Urine (PHTHTE_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Plasma Fasting Glucose (GLU_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Pregnancy Test - Urine (UCPREG_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Speciated Arsenics - Urine - Special Sample (Subsample) (UASS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Speciated Arsenics - Urine (UAS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Volatile Organic Compound (VOC) Metabolites - Urine (UVOC_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Volatile Organic Compound (VOC) Metabolites - Urine - Special Sample (UVOCS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
-Volatile Organic Compounds and Trihalomethanes/MTBE - Blood (VOCWB_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
