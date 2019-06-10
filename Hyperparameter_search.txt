@@ -1,0 +1,148 @@
+Model selected: 2
+feature_selected:
+ ['ALQ130', 'ALQ151', 'BPQ080', 'BPQ020', 'BPQ070', 'CDQ001', 'CDQ010', 'CBD091', 'CBD121', 'HUQ010', 'HSQ590', 'DED120', 'DIQ180', 'DIQ170', 'DLQ150', 'DLQ140', 'DUQ200', 'HIQ270', 'HUQ051', 'HUQ090', 'INQ030', 'MCQ160a', 'DPQ030', 'DPQ040', 'DPQ020', 'PFQ051', 'PFQ049', 'SXD031', 'SMQ858', 'SMQ856', 'WHQ150', 'WHD050']
+Warn: Symbol SEQN cant be found
+Target distribution:
+ 0    4400
+1    1583
+Name: SLQ050, dtype: int64
+================================
+Random Forest ... ...
+Target feature: Ever told doctor had trouble sleeping?
+Training score:  0.8750522356874216
+Testing score:  0.7827903091060986
+=======analyze=======
+sensitivity = 823/(823+205) = 0.8005836575875487
+specificity = 114/(114+55) = 0.6745562130177515
+Auc: 0.7755478752651009
+Cross validation (Auc):  0.7748456132724442
+================================
+XGBoost + Hyperparameter_searching ... ...
+Fitting 3 folds for each of 1500 candidates, totalling 4500 fits
+
+
+Hyperparameter searching
+Model with rank: 1
+Mean validation score(roc_auc): 0.792 (std: 0.005)
+Parameters: {'max_depth': 8, 'reg_alpha': 0.1, 'reg_lambda': 1, 'gamma': 0.3380978731782696, 'colsample_bytree': 0.5533333333333333, 'learning_rate': 0.01, 'n_estimators': 116, 'subsample': 0.7444444444444445, 'min_child_weight': 2}
+
+Model with rank: 2
+Mean validation score(roc_auc): 0.791 (std: 0.003)
+Parameters: {'max_depth': 6, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'gamma': 0.4226127790803699, 'colsample_bytree': 0.6066666666666667, 'learning_rate': 0.01, 'n_estimators': 176, 'subsample': 0.7222222222222222, 'min_child_weight': 8}
+
+Model with rank: 3
+Mean validation score(roc_auc): 0.791 (std: 0.003)
+Parameters: {'max_depth': 2, 'reg_alpha': 3, 'reg_lambda': 3, 'gamma': 0.31383443857940435, 'colsample_bytree': 0.6066666666666667, 'learning_rate': 0.11473684210526315, 'n_estimators': 112, 'subsample': 0.7444444444444445, 'min_child_weight': 1}
+
+Warn: Symbol SEQN cant be found
+Model selected: 3
+feature_selected:
+ ['HUQ051', 'PFQ049', 'DLQ140', 'DLQ150', 'HUQ090', 'CDQ001', 'PFQ051', 'WHD050', 'BPQ070', 'DIQ170']
+Warn: Symbol SEQN cant be found
+Target distribution:
+ 0    4492
+1    1599
+Name: SLQ050, dtype: int64
+================================
+Random Forest ... ...
+Target feature: Ever told doctor had trouble sleeping?
+Training score:  0.8530377668308703
+Testing score:  0.771123872026251
+=======analyze=======
+sensitivity = 835/(835+232) = 0.7825679475164011
+specificity = 105/(105+47) = 0.6907894736842105
+Auc: 0.7849825390096691
+Cross validation (Auc):  0.7741542840802957
+================================
+XGBoost + Hyperparameter_searching ... ...
+Fitting 3 folds for each of 1500 candidates, totalling 4500 fits
+
+
+Hyperparameter searching
+Model with rank: 1
+Mean validation score(roc_auc): 0.781 (std: 0.006)
+Parameters: {'learning_rate': 0.11473684210526315, 'colsample_bytree': 0.6066666666666667, 'subsample': 0.7444444444444445, 'n_estimators': 112, 'min_child_weight': 1, 'max_depth': 2, 'reg_lambda': 3, 'gamma': 0.31383443857940435, 'reg_alpha': 3}
+
+Model with rank: 2
+Mean validation score(roc_auc): 0.781 (std: 0.005)
+Parameters: {'learning_rate': 0.11473684210526315, 'colsample_bytree': 0.6599999999999999, 'subsample': 0.7222222222222222, 'n_estimators': 180, 'min_child_weight': 6, 'max_depth': 2, 'reg_lambda': 1, 'gamma': 0.19178369550364605, 'reg_alpha': 1}
+
+Model with rank: 3
+Mean validation score(roc_auc): 0.780 (std: 0.005)
+Parameters: {'learning_rate': 0.11473684210526315, 'colsample_bytree': 0.98, 'subsample': 0.8555555555555556, 'n_estimators': 168, 'min_child_weight': 7, 'max_depth': 2, 'reg_lambda': 3, 'gamma': 0.4487152049094421, 'reg_alpha': 1}
+
+Warn: Symbol SEQN cant be found
+Model selected: 4
+feature_selected:
+ ['URDACT', 'ALQ130', 'ALQ151', 'BPXSY2', 'BPQ080', 'BPQ020', 'BPQ070', 'BMXWAIST', 'CDQ010', 'CDQ001', 'LBXTC', 'LBXRDW', 'CBD091', 'CBD121', 'LBXCOT', 'LBDHCTLC', 'HSD010', 'HSQ590', 'RIDAGEYR', 'DED120', 'DIQ180', 'DIQ170', 'DLQ150', 'DLQ050', 'DLQ110', 'DUQ200', 'PHDSESN', 'PHQ050', 'PHQ060', 'LBDRFOSI', 'LBXGH', 'HIQ270', 'HEQ010', 'HEQ030', 'LBXHA', 'LBXHBC', 'LBDHBG', 'LBXHCR', 'LBDHEG', 'LBXHIVC', 'HUQ051', 'HUQ090', 'HOD050', 'HOQ065', 'ORXHPI', 'ORXH16', 'INQ030', 'MCQ160a', 'DPQ020', 'DPQ040', 'PFQ051', 'PFQ049', 'RXQ510', 'LBXEST', 'LBXTST', 'SXD031', 'SMQ020', 'SMQ858', 'URXUTRI', 'WHQ150', 'WHD110']
+Warn: Symbol SEQN cant be found
+Target distribution:
+ 0    4463
+1    1583
+Name: SLQ050, dtype: int64
+================================
+Random Forest ... ...
+Target feature: Ever told doctor had trouble sleeping?
+Training score:  0.8833746898263027
+Testing score:  0.78099173553719
+=======analyze=======
+sensitivity = 840/(840+218) = 0.7939508506616257
+specificity = 105/(105+47) = 0.6907894736842105
+Auc: 0.77460113577265
+Cross validation (Auc):  0.770059047416795
+================================
+XGBoost + Hyperparameter_searching ... ...
+Fitting 3 folds for each of 1500 candidates, totalling 4500 fits
+
+
+Hyperparameter searching
+Model with rank: 1
+Mean validation score(roc_auc): 0.793 (std: 0.006)
+Parameters: {'reg_alpha': 0.1, 'reg_lambda': 0.1, 'n_estimators': 176, 'learning_rate': 0.01, 'gamma': 0.4226127790803699, 'colsample_bytree': 0.6066666666666667, 'min_child_weight': 8, 'max_depth': 6, 'subsample': 0.7222222222222222}
+
+Model with rank: 2
+Mean validation score(roc_auc): 0.792 (std: 0.007)
+Parameters: {'reg_alpha': 3, 'reg_lambda': 3, 'n_estimators': 112, 'learning_rate': 0.11473684210526315, 'gamma': 0.31383443857940435, 'colsample_bytree': 0.6066666666666667, 'min_child_weight': 1, 'max_depth': 2, 'subsample': 0.7444444444444445}
+
+Model with rank: 3
+Mean validation score(roc_auc): 0.792 (std: 0.006)
+Parameters: {'reg_alpha': 3, 'reg_lambda': 0.1, 'n_estimators': 84, 'learning_rate': 0.11473684210526315, 'gamma': 0.4641862759903959, 'colsample_bytree': 0.5533333333333333, 'min_child_weight': 2, 'max_depth': 2, 'subsample': 0.8111111111111111}
+
+Warn: Symbol SEQN cant be found
+Model selected: 5
+feature_selected:
+ ['PFQ051', 'DLQ150', 'HUQ051', 'HUQ090', 'MCQ080', 'RIDAGEYR', 'DPQ040', 'CDQ010', 'BPQ020', 'CDQ001', 'LBXBCO', 'BPQ070', 'OCD390G', 'PFQ054']
+Warn: Symbol SEQN cant be found
+Target distribution:
+ 0    4492
+1    1599
+Name: SLQ050, dtype: int64
+================================
+Random Forest ... ...
+Target feature: Ever told doctor had trouble sleeping?
+Training score:  0.8550903119868637
+Testing score:  0.7883511074651354
+=======analyze=======
+sensitivity = 836/(836+212) = 0.7977099236641222
+specificity = 125/(125+46) = 0.7309941520467836
+Auc: 0.7867000410451026
+Cross validation (Auc):  0.770347820861676
+================================
+XGBoost + Hyperparameter_searching ... ...
+Fitting 3 folds for each of 1500 candidates, totalling 4500 fits
+
+
+Hyperparameter searching
+Model with rank: 1
+Mean validation score(roc_auc): 0.782 (std: 0.008)
+Parameters: {'reg_alpha': 0.1, 'min_child_weight': 8, 'gamma': 0.4226127790803699, 'reg_lambda': 0.1, 'n_estimators': 176, 'colsample_bytree': 0.6066666666666667, 'learning_rate': 0.01, 'max_depth': 6, 'subsample': 0.7222222222222222}
+
+Model with rank: 2
+Mean validation score(roc_auc): 0.782 (std: 0.008)
+Parameters: {'reg_alpha': 1, 'min_child_weight': 7, 'gamma': 0.11261995116762313, 'reg_lambda': 0.1, 'n_estimators': 164, 'colsample_bytree': 0.5533333333333333, 'learning_rate': 0.01, 'max_depth': 5, 'subsample': 0.7}
+
+Model with rank: 3
+Mean validation score(roc_auc): 0.782 (std: 0.008)
+Parameters: {'reg_alpha': 3, 'min_child_weight': 7, 'gamma': 0.3276412048458291, 'reg_lambda': 3, 'n_estimators': 168, 'colsample_bytree': 0.9266666666666666, 'learning_rate': 0.01, 'max_depth': 9, 'subsample': 0.7666666666666666}
+
+Warn: Symbol SEQN cant be found
