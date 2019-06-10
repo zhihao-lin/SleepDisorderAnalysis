@@ -39,6 +39,12 @@ class LabelHandler():
         symbols = list(self.main_categories[category])
         return symbols
 
+    def get_symbols_by_categories(self, categories):
+        symbols = []
+        for category in categories:
+            symbols += list(self.main_categories[category])
+        return symbols
+
     def get_contents_by_category(self, category):
         contents = list(self.main_categories[category].values())
         return contents
