@@ -103,6 +103,7 @@ def normalize_time(raw_array):
 # SLQ040 - How often do you snort or stop breathing
 # SLQ050 - Ever told doctor had trouble sleeping?
 # SLQ120 - How often feel overly sleepy during day?
+# DPQ030 - Trouble sleeping or sleeping too much
 def get_2015_sleep_data(target,
                         csv= 'data_preprocess/Sleep.csv', 
                         label= 'data/2015-2016/Questionnaire.txt', ):
@@ -151,7 +152,17 @@ def get_2015_sleep_data(target,
         data = data[data[target] != 9]
         data[target][data[target] < 3] = 0
         data[target][data[target]>= 3] = 1
+
+    elif target == 'DPQ030':
+        data = data[data[target] != 7]
+        data = data[data[target] != 9]
+        data[target][data[target] == 0] = 0
+        data[target][data[target] > 0] = 1
+
     return data
+
+    
+        
 
 def get_2015_Questionnaire_data(target_data, symbol_list= [],
                                 csv= 'data_preprocess/Questionnaire.csv', 
@@ -311,7 +322,7 @@ def test_get_all():
     print(train_data.head())
 
 def test_get_sleep():
-    target = 'SLQ120'
+    target = 'DPQ030'
     data = get_2015_sleep_data(target = target)
     data = np.array(data[target])
     size = len(data)
