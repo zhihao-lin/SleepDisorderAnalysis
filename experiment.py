@@ -26,7 +26,7 @@ def evaluate(model, train_data, target_data):
     print('========================')
     print('ACC: {:.3f} (+/- {:.3f})'.format(acc.mean(), acc.std()))
     print('AUC: {:.3f} (+/- {:.3f})'.format(auc.mean(), auc.std()))
-    return acc, auc
+    return acc.mean(), auc.mean()
 
 def select_feature(model, train_data, target_data, num= 50):
     model.fit(train_data, target_data)
@@ -37,16 +37,32 @@ def select_feature(model, train_data, target_data, num= 50):
     return feature
 
 def main():
+    target = 'DPQ030'
     model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
     label_handler = get_all_handler()
+    error_messages = []
+    results = []
+    all_categories = label_handler.get_categories()
+    
+    for category in all_categories:
+        try:
+            symbols = label_handler.get_symbols_by_category(category)
+            target_data = get_2015_sleep_data(target= target)
+            train_data, target_data = get_2015_all(target_data, symbols)
+            acc, auc = evaluate(model, train_data, target_data)
+            info = '{} | ACC: {} | AUC: {}'.format(category, acc, auc)
+            results.append(info)
 
-    symbols = ['DPQ010', 'DPQ020', 'DPQ040', 'DPQ050', 'DPQ060', 'DPQ070', 'DPQ080', 'DPQ090', 'DPQ100']
-    target_data = get_2015_sleep_data(target= 'DPQ030')
-    train_data, target_data = get_2015_Questionnaire_data(target_data, symbols)
-    evaluate(model, train_data, target_data)
+        except Exception as e:
+            info = '{} | Error: {}'.format(category, e)
+            error_messages.append(info)
 
-    features = select_feature(model, train_data, target_data, 20)
-    print(features)
+    print('============== Results ===============')
+    for result in results:
+        print(result)
+    print('============== Errors  ===============')
+    for error in error_messages:
+        print(error)
 
 if __name__ == '__main__':
     main()
