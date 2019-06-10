@@ -36,8 +36,8 @@ def select_feature(model, train_data, target_data, num= 50):
     feature = np.array(train_data.columns[priority])
     return feature
 
-def main():
-    target = 'DPQ030'
+def analyze_by_category():
+    target = 'SLQ050'
     model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
     label_handler = get_all_handler()
     error_messages = []
@@ -64,5 +64,39 @@ def main():
     for error in error_messages:
         print(error)
 
+def test_performance():
+    target = 'DPQ030'
+    model = model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
+    DPQ030_categories = ['Cardiovascular Health (CDQ_I)', 'Current Health Status (HSQ_I)', 'Disability (DLQ_I)', 'Hospital Utilization & Access to Care (HUQ_I)',
+                        'Medical Conditions (MCQ_I)', 'Mental Health - Depression Screener (DPQ_I)']
+    
+
+    label_handler = get_all_handler()
+    symbols = label_handler.get_symbols_by_categories(DPQ030_categories)
+    target_data = get_2015_sleep_data(target)
+    train_data, target_data = get_2015_all(target_data, symbols)
+    evaluate(model, train_data, target_data)
+
+    best_feautres = select_feature(model, train_data, target_data, 50)
+    print(' ------ Best Feature ------')
+    for f in best_feautres:
+        print(f)
+
+def main():
+    test_performance()
+
+def test():
+    handler = get_all_handler()
+    category = 'Weight History - Youth (WHQMEC_I)'
+    symbols = handler.get_symbols_by_category(category)
+    target_data = get_2015_sleep_data(target = 'SLQ050')
+    train_data, target_data = get_2015_all(target_data, symbols)
+    print(train_data.head())
+
 if __name__ == '__main__':
-    main()
+    import sys
+    mode = sys.argv[1]
+    if mode == 'main':
+        main()
+    else:
+        test()

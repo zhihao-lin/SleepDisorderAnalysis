@@ -47,6 +47,7 @@ def align_data_with_target(train_data, target_data):
 
 def process_nan(csv):
     # split categorical data & replace nan with median if numerical data
+    has_categorical = False
     features_to_discard = []
     for feature in csv.columns:
         try:
@@ -59,6 +60,7 @@ def process_nan(csv):
 
         if len(possible_values) < 10: # categorical
             # print('== {} =='.format(feature))
+            has_categorical = True
             csv[feature][csv[feature] == max(possible_values)] = np.nan
             csv[feature] = csv[feature].astype('object')
         else: # numerical
@@ -71,7 +73,8 @@ def process_nan(csv):
     if len(features_to_discard) > 0:
         csv = csv.drop(features_to_discard, axis= 1)
 
-    csv = pd.get_dummies(csv)
+    if has_categorical:
+        csv = pd.get_dummies(csv)
     return csv
 
 def normalize_time(raw_array):

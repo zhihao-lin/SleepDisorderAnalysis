@@ -112,3 +112,106 @@ Speciated Arsenics - Urine (UAS_I) | Error: No objects to concatenate
 Volatile Organic Compound (VOC) Metabolites - Urine (UVOC_I) | Error: No objects to concatenate
 Volatile Organic Compound (VOC) Metabolites - Urine - Special Sample (UVOCS_I) | Error: No objects to concatenate
 Volatile Organic Compounds and Trihalomethanes/MTBE - Blood (VOCWB_I) | Error: No objects to concatenate
+
+--------------------------------------------------------------------------
+Target : SLQ050
+model : RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
+
+============== Results ===============
+Acculturation (ACQ_I) | ACC: 0.7423692256657247 | AUC: 0.5727611337987203
+Alcohol Use (ALQ_I) | ACC: 0.6988611027080321 | AUC: 0.562430222298605
+Audiometry (AUQ_I) | ACC: 0.7328995272569686 | AUC: 0.6318709268554427
+Blood Pressure & Cholesterol (BPQ_I) | ACC: 0.7399959316390174 | AUC: 0.6461756576671336
+Cardiovascular Health (CDQ_I) | ACC: 0.705313277680375 | AUC: 0.6619820350185893
+Consumer Behavior (CBQ_I) | ACC: 0.7353471512222326 | AUC: 0.5638700589295762
+Current Health Status (HSQ_I) | ACC: 0.733248486279171 | AUC: 0.6029016994847263
+Dermatology (DEQ_I) | ACC: 0.7547767145010615 | AUC: 0.5664384359552295
+Diabetes (DIQ_I) | ACC: 0.7619573920121698 | AUC: 0.6181383751128473
+Diet Behavior & Nutrition (DBQ_I) | ACC: 0.7420325833193642 | AUC: 0.5821091723860011
+Disability (DLQ_I) | ACC: 0.7771633509524658 | AUC: 0.736162648700968
+Drug Use (DUQ_I) | ACC: 0.7365582054804346 | AUC: 0.594294761824855
+Health Insurance (HIQ_I) | ACC: 0.7426851808386458 | AUC: 0.553626996820918
+Hepatitis (HEQ_I) | ACC: 0.7426864326420249 | AUC: 0.5102841207963456
+Hospital Utilization & Access to Care (HUQ_I) | ACC: 0.762767486910831 | AUC: 0.7274190140286219
+Housing Characteristics (HOQ_I) | ACC: 0.7402729901895413 | AUC: 0.5229961826415137
+Immunization (IMQ_I) | ACC: 0.7422111228989263 | AUC: 0.5259084981980099
+Income (INQ_I) | ACC: 0.7386306846576712 | AUC: 0.6364371655568257
+Kidney Conditions - Urology (KIQ_U_I) | ACC: 0.703720603941051 | AUC: 0.6082127044084865
+Medical Conditions (MCQ_I) | ACC: 0.7480342494832201 | AUC: 0.7338851695286929
+Mental Health - Depression Screener (DPQ_I) | ACC: 0.7430251284306434 | AUC: 0.6908245953175983
+Occupation (OCQ_I) | ACC: 0.7973290598290598 | AUC: 0.5495625046873494
+Oral Health (OHQ_I) | ACC: 0.7300910529254825 | AUC: 0.6259425091461741
+Physical Activity (PAQ_I) | ACC: 0.763718356757704 | AUC: 0.6786497695322613
+Preventive Aspirin Use (RXQASA_I) | ACC: 0.7423692256657247 | AUC: 0.6161538807342113
+Sexual Behavior (SXQ_I) | ACC: 0.7407724414610388 | AUC: 0.5681293061156567
+Smoking - Cigarette Use (SMQ_I) | ACC: 0.7353038969153546 | AUC: 0.5780940584691494
+Smoking - Household Smokers (SMQFAM_I) | ACC: 0.7423692256657247 | AUC: 0.5253415381448607
+Smoking - Recent Tobacco Use (SMQRTU_I) | ACC: 0.733466850998716 | AUC: 0.5479802303274557
+Smoking - Secondhand Smoke Exposure (SMQSHS_I) | ACC: 0.7337458961679665 | AUC: 0.5823099083742533
+Weight History (WHQ_I) | ACC: 0.7441053517723971 | AUC: 0.6440870753652395
+Demographic Variables and Sample Weights (DEMO_I) | ACC: 0.7412617552161083 | AUC: 0.6655369349701897
+Blood Pressure (BPX_I) | ACC: 0.739469428909792 | AUC: 0.5582252095747592
+Body Measures (BMX_I) | ACC: 0.7389387933810306 | AUC: 0.5805579955874125
+Oral Health - Dentition (OHXDEN_I) | ACC: 0.737293794191328 | AUC: 0.5960604491519599
+Oral Health - Recommendation of Care (OHXREF_I) | ACC: 0.736469152712689 | AUC: 0.5148020321252216
+Albumin & Creatinine - Urine (ALB_CR_I) | ACC: 0.7345941669517619 | AUC: 0.5197679059130049
+Cholesterol - High-Density Lipoprotein (HDL) (HDL_I) | ACC: 0.732068706020818 | AUC: 0.4989113955437981
+Cholesterol - Total (TCHOL_I) | ACC: 0.7303086101597129 | AUC: 0.49986261537341614
+Chromium & Cobalt (CRCO_I) | ACC: 0.6679200486587387 | AUC: 0.5113823845167129
+Complete Blood Count with 5-Part Differential - Whole Blood (CBC_I) | ACC: 0.7347082895480586 | AUC: 0.5909383119762847
+Cotinine and Hydroxycotinine - Serum (COT_I) | ACC: 0.7271449947792938 | AUC: 0.5251539102650555
+Fasting Questionnaire (FASTQX_I) | ACC: 0.736973691355572 | AUC: 0.5102266722826381
+Folate - RBC (FOLATE_I) | ACC: 0.731011885335699 | AUC: 0.5113371298371499
+Folate Forms - Total & Individual - Serum (FOLFMS_I) | ACC: 0.7334860040736074 | AUC: 0.5474504169626997
+Glycohemoglobin (GHB_I) | ACC: 0.7399974338030726 | AUC: 0.536570729250788
+Hepatitis A (HEPA_I) | ACC: 0.7423692256657247 | AUC: 0.5518668483997192
+Hepatitis B: Core antibody, Surface antigen, and Hepatitis D antibody (HEPBD_I) | ACC: 0.7423692256657247 | AUC: 0.5053361347051021
+Hepatitis B: Surface Antibody (HEPB_S_I) | ACC: 0.7423692256657247 | AUC: 0.5023170422125924
+Hepatitis C: RNA (HCV-RNA) and Hepatitis C Genotype (HEPC_I) | ACC: 0.7423692256657247 | AUC: 0.5068809409979363
+Hepatitis E: IgG & IgM Antibodies (HEPE_I) | ACC: 0.7340158930066851 | AUC: 0.5066105054107929
+HIV Antibody Test (HIV_I) | ACC: 0.7418949173653295 | AUC: 0.50149635158235
+Human Papillomavirus (HPV) - Oral Rinse (ORHPV_I) | ACC: 0.7381264404960097 | AUC: 0.49036891679290073
+Sex Steroid Hormone - Serum (TST_I) | ACC: 0.7307560715687924 | AUC: 0.5806942069594293
+Standard Biochemistry Profile (BIOPRO_I) | ACC: 0.7343772012584536 | AUC: 0.629071281183044
+Trichomonas - Urine (TRICH_I) | ACC: 0.7423692256657247 | AUC: 0.4973077236722013
+Urine Flow Rate (UCFLOW_I) | ACC: 0.7348181669406081 | AUC: 0.4895554833184218
+Volatile Organic Compounds and Trihalomethanes/MTBE – Blood – Special Sample (VOCWBS_I) | ACC: 0.7368318734176423 | AUC: 0.5076799860406342
+============== Errors  ===============
+Early Childhood (ECQ_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Prescription Medications (RXQ_RX_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Reproductive Health (RHQ_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Sleep Disorders (SLQ_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Weight History - Youth (WHQMEC_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Fluorosis - Clinical (FLXCLN_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Apolipoprotein B (APOB_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Aromatic Diamines - Urine (UADM_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Arsenic - Total - Urine - Special Sample (Subsample) (UTASS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Arsenic - Total - Urine (UTAS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Blood Lead, Cadmium, Total Mercury, Selenium & Manganese - Blood (PBCD_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Mercury: Inorganic, Ethyl and Methyl – Blood (IHGEM_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Chlamydia - Urine (CHLMDA_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Cholesterol - Low - Density Lipoprotein (LDL) & Triglycerides (TRIGLY_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Copper, Selenium & Zinc - Serum (CUSEZN_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Fluoride - Plasma (FLDEP_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Fluoride - Water (FLDEW_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Herpes Simplex Virus Type-1 & Type-2 (HSV_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Cobas High-Risk (HPVSWC_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Human Papillomavirus (HPV) DNA - Vaginal Swab: Roche Linear Array (HPVSWR_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Neonicotinoids - Urine - Surplus (SSNEON_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Insulin (INS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Iodine - Urine (UIO_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Mercury - Urine (UHG_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Metals - Urine (UM_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Metals - Urine - Special Sample (Subsample) (UMS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Mono-2-ethyl-5-hydroxyhexyl terephthalate, mono-2-ethyl-5-carboxypentyl terephthalate, and monooxoisononyl phthalate - Urine (Surplus) (SSMHHT_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Oral Glucose Tolerance Test (OGTT_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Perfluoroalkyl and Polyfluoroalkyl (PFAS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Personal Care and Consumer Product Chemicals and Metabolites (EPHPP_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Phthalates and Plasticizers Metabolites - Urine (PHTHTE_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Plasma Fasting Glucose (GLU_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Pregnancy Test - Urine (UCPREG_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Speciated Arsenics - Urine - Special Sample (Subsample) (UASS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Speciated Arsenics - Urine (UAS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Volatile Organic Compound (VOC) Metabolites - Urine (UVOC_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Volatile Organic Compound (VOC) Metabolites - Urine - Special Sample (UVOCS_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
+Volatile Organic Compounds and Trihalomethanes/MTBE - Blood (VOCWB_I) | Error: Found array with 0 feature(s) (shape=(5058, 0)) while a minimum of 1 is required.
