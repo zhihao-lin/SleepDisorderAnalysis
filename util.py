@@ -60,7 +60,8 @@ def process_nan(csv):
 
         if len(possible_values) < 10: # categorical
             # print('== {} =='.format(feature))
-            csv[feature].loc[csv[feature] == max(possible_values)] = np.nan
+            has_categorical = True
+            csv[feature][csv[feature] == max(possible_values)] = np.nan
             csv[feature] = csv[feature].astype('object')
         else: # numerical
             # print('** {} **'.format(feature))
@@ -151,10 +152,10 @@ def get_2015_sleep_data(target,
         data[target][data[target]>= 3] = 1
 
     elif target == 'DPQ030':
-        data = data.loc[data[target] != 7]
-        data = data.loc[data[target] != 9]
-        data[target].loc[data[target] == 0] = 0
-        data[target].loc[data[target] > 0] = 1
+        data = data[data[target] != 7]
+        data = data[data[target] != 9]
+        data[target][data[target] == 0] = 0
+        data[target][data[target] > 0] = 1
 
     return data
 
