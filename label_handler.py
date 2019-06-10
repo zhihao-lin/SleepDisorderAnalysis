@@ -73,9 +73,11 @@ class LabelHandler():
     def contents_to_symbols(self, contents):
         symbols = []
         for content in contents:
+            if content[-2] == '.':
+                content = content[:-4]
             symbol = self.get_symbol_by_content(content)
             if not symbol:
-                print('- {} - cant be found')
+                print('- {} - cant be found'.format(content))
             else:
                 symbols.append(symbol)
         return symbols

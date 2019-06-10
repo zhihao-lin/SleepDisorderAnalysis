@@ -22,11 +22,6 @@ def filter_data(csv, column_threshold= 0.5, row_threshold= 0.5):
     for feature in csv.columns:
         
         missing_num = csv[feature].isna().sum()
-        # if type(missing_num) != int:
-        #     print('*************')
-        #     print(missing_num)
-        #     drop_columns.append(feature)
-        #     continue
 
         if missing_num/data_num > column_threshold:
             drop_columns.append(feature)

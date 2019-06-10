@@ -28,29 +28,25 @@ def evaluate(model, train_data, target_data):
     print('AUC: {:.3f} (+/- {:.3f})'.format(auc.mean(), auc.std()))
     return acc, auc
 
-def select_feature(model, train_data, target_data, num= 10):
+def select_feature(model, train_data, target_data, num= 50):
     model.fit(train_data, target_data)
     importances = model.feature_importances_
-    print('========================')
-    print(importances)
-    priority = np.argsort(importances)[-num:]
-    print(priority)
-    print(importances[priority])
-    feature = train_data.columns[priority]
-    print(feature)
+    
+    priority = np.argsort(importances)[::-1][:num]
+    feature = np.array(train_data.columns[priority])
+    return feature
 
 def main():
+    model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
     label_handler = get_all_handler()
-    # cat = label_handler.get_categories()[1]
-    # symbols = label_handler.get_symbols_by_category(cat)
-    symbols = []
 
-    target_data = get_2015_sleep_data(target= 'SLQ050')
+    symbols = ['DPQ010', 'DPQ020', 'DPQ040', 'DPQ050', 'DPQ060', 'DPQ070', 'DPQ080', 'DPQ090', 'DPQ100']
+    target_data = get_2015_sleep_data(target= 'DPQ030')
     train_data, target_data = get_2015_Questionnaire_data(target_data, symbols)
-
-    model = RandomForestClassifier(n_estimators= 20, max_depth= 10, random_state= 0)
-    # select_feature(model, train_data, target_data)
     evaluate(model, train_data, target_data)
+
+    features = select_feature(model, train_data, target_data, 20)
+    print(features)
 
 if __name__ == '__main__':
     main()

@@ -1,4 +1,4 @@
-= Acculturation (ACQ_I) 
+= Acculturation (ACQ_I)
 ACQBOX1 - CHECK ITEM
 ACD011A - Speak English at home - NHW or NHB
 ACD011B - Speak Spanish at home - NHW or NHB
