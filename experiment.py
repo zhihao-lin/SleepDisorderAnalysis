@@ -7,7 +7,7 @@ import plotly.figure_factory as ff
 import plotly.io as pio
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_auc_score
+from sklearn.metrics import roc_auc_score, roc_curve, auc
 from sklearn.model_selection import cross_val_score
 from util import *
 from label_handler import LabelHandler
@@ -94,8 +94,6 @@ def analyze_features():
                         'Mental Health - Depression Screener (DPQ_I)', 'Physical Activity (PAQ_I)', 'Weight History (WHQ_I)', 
                         'Demographic Variables and Sample Weights (DEMO_I)', 'Standard Biochemistry Profile (BIOPRO_I)']
 
-    SLQ050_categories = ['Physical Activity (PAQ_I)']
-
     label_handler = get_all_handler()
     symbols = label_handler.get_symbols_by_categories(SLQ050_categories)
     target_data = get_2015_sleep_data(target)
@@ -126,8 +124,38 @@ def analyze_feature_impact():
     model.fit(train_data, target_data)
     plot_single_feature_impact(model, train_data, target_feautre, 'img/single_feature_impact/{}_{}.png'.format(target, target_feautre))
 
+def plot_roc_curve():
+    target = 'SLQ050'
+    model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
+
+    SLQ050_categories = ['Audiometry (AUQ_I)', 'Blood Pressure & Cholesterol (BPQ_I)', 'Cardiovascular Health (CDQ_I)', 'Diabetes (DIQ_I)',
+                        'Disability (DLQ_I)', 'Hospital Utilization & Access to Care (HUQ_I)', 'Income (INQ_I)', 'Medical Conditions (MCQ_I)',
+                        'Mental Health - Depression Screener (DPQ_I)', 'Physical Activity (PAQ_I)', 'Weight History (WHQ_I)', 
+                        'Demographic Variables and Sample Weights (DEMO_I)', 'Standard Biochemistry Profile (BIOPRO_I)']
+
+    label_handler = get_all_handler()
+    symbols = label_handler.get_symbols_by_categories(SLQ050_categories)
+    target_data = get_2015_sleep_data(target)
+    train_data, target_data = get_2015_all(target_data, symbols)
+    
+    # evaluate(model, train_data, target_data)
+    train_x, valid_x, train_y, valid_y = train_test_split(train_data, target_data, test_size = .2, random_state=0) 
+    model.fit(train_x, train_y)
+    valid_pred = model.predict_proba(valid_x)[:, 1]
+    
+    fpr, tpr, _ = roc_curve(valid_y.ravel(), valid_pred.ravel())
+    auc_value = auc(fpr, tpr)
+
+    plt.figure()
+    plt.plot(fpr, tpr, color= 'red', label= 'ROC curve area(AUC) = {}'.format(auc_value))
+    plt.plot([0, 1], [0, 1], color= 'blue', linestyle= '--')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver operating characteristic example')
+    plt.legend(loc="lower right")
+    plt.show()
+
 def test():
-    pass
+    plot_roc_curve()
 
 def main():
     analyze_feature_impact()
