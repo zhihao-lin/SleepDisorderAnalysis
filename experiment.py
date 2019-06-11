@@ -13,7 +13,6 @@ from util import *
 from label_handler import LabelHandler
 from pdpbox import pdp, info_plots
 import shap
-from analyze import *
 
 # targets 
 # SLQ300 - Usual sleep time on weekdays or workdays
@@ -130,42 +129,6 @@ def analyze_feature_impact():
 def test():
     pass
 
-def plot_shapplot(target = 'DPQ030' ):
-    model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
-    if target == 'DPQ030':
-        categories = ['Cardiovascular Health (CDQ_I)', 'Current Health Status (HSQ_I)', 'Disability (DLQ_I)', 'Hospital Utilization & Access to Care (HUQ_I)',
-                        'Medical Conditions (MCQ_I)', 'Mental Health - Depression Screener (DPQ_I)']
-    if target == 'SLQ050':
-        categories = ['Audiometry (AUQ_I)', 'Blood Pressure & Cholesterol (BPQ_I)', 'Cardiovascular Health (CDQ_I)', 'Diabetes (DIQ_I)',
-                        'Disability (DLQ_I)', 'Hospital Utilization & Access to Care (HUQ_I)', 'Income (INQ_I)', 'Medical Conditions (MCQ_I)',
-                        'Mental Health - Depression Screener (DPQ_I)', 'Physical Activity (PAQ_I)', 'Weight History (WHQ_I)', 
-                        'Demographic Variables and Sample Weights (DEMO_I)', 'Standard Biochemistry Profile (BIOPRO_I)']
-        categories += ['Sexual Behavior (SXQ_I)']
-    if target == 'SLQ030':
-        categories = ['']
-    #DPQ030_categories = ['Mental Health - Depression Screener (DPQ_I)']
-    for cat in categories:
-        label_handler = get_all_handler()
-        if target =='SLQ030':
-            symbols = []
-        else:
-            symbols = label_handler.get_symbols_by_category(cat)
-        target_data = get_2015_sleep_data(target)
-        train_data, target_data = get_2015_all(target_data,symbols)
-        print('--')
-        x_train, x_valid, y_train, y_valid = train_test_split(train_data, target_data, test_size = .2, random_state=0) 
-        acc, auc = evaluate(model, x_train, y_train)
-        info = '| ACC: {:.3f} | AUC: {:.3f}'.format(acc, auc)
-        features, scores = most_important_features(model, x_train, y_train, 50)
-        
-        path = '../plotshap/'+target+'/'
-        os.makedirs(path, exist_ok=True)
-        shap_plot(model, x_valid, path+cat+'_')
-    #for f in features:
-       #print(f)
-    
-    #plot_feature_scores(features, scores, 'SLQ040_all', info= info)
-
 def main():
     analyze_feature_impact()
 
@@ -175,11 +138,6 @@ if __name__ == '__main__':
     if mode == 'main':
         print('-- MAIN --')
         main()
-    elif mode == 'test1':
-        print('-- TEST1 --')
+    else:
+        print('-- TEST --')
         test()
-    elif mode == 'test2':
-        print('-- TEST2 --')
-        plot_shapplot('DPQ030')
-        #plot_shapplot('SLQ050')
-        #plot_shapplot('SLQ030')
