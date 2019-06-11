@@ -11,6 +11,8 @@ from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import cross_val_score
 from util import *
 from label_handler import LabelHandler
+from pdpbox import pdp, info_plots
+import shap
 
 # targets 
 # SLQ300 - Usual sleep time on weekdays or workdays
@@ -47,6 +49,11 @@ def plot_feature_scores(features, scores, name, info= None):
         data_table.append(pair)
     table = ff.create_table(data_table)
     py.plot(table, filename= name)
+
+def plot_single_feature_impact(model, data, feature, img_name):
+    pdp_dist = pdp.pdp_isolate(model, dataset= data, model_features= data.columns, feature= feature)
+    pdp.pdp_plot(pdp_dist, feature)
+    plt.savefig(img_name)
 
 def analyze_by_category():
     target = 'SLQ050'
@@ -104,21 +111,23 @@ def analyze_features():
     
     plot_feature_scores(features, scores, 'SLQ040_all', info= info)
 
-def main():
-    analyze_features()
-
 def test():
-    target = 'SLQ050'
+    target = 'SLQ030'
     model = model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
 
-    category = 'Disability (DLQ_I)'
+    category = 'Body Measures (BMX_I)'
     label_handler = get_all_handler()
     symbols = label_handler.get_symbols_by_category(category)
     target_data = get_2015_sleep_data(target)
     train_data, target_data = get_2015_all(target_data, symbols)
 
-    features, scores = most_important_features(model, train_data, target_data)
-    plot_feature_scores(features, scores, 'test')
+    evaluate(model, train_data, target_data)
+    model.fit(train_data, target_data)
+    target_feautre = 'Weight (kg)'
+    plot_single_feature_impact(model, train_data, target_feautre, 'test.png')
+
+def main():
+    analyze_features()
 
 if __name__ == '__main__':
     import sys

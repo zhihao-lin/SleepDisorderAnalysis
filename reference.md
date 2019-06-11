@@ -11,6 +11,7 @@
 * [Feature importances with forest of trees](https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html)
 * [Eli5 Doc](https://eli5.readthedocs.io/en/latest/overview.html)
 * [PDPBox - github](https://github.com/SauceCat/PDPbox)
+* [SHAP - github](https://github.com/slundberg/shap)
 * [sklearn -RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 * [Using XGBoost with Scikit-learn](https://www.kaggle.com/stuarthallows/using-xgboost-with-scikit-learn)
 
