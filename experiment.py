@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 import os 
 from matplotlib import pyplot as plt
+import plotly.plotly as py
+import plotly.figure_factory as ff
+import plotly.io as pio
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
@@ -28,13 +31,22 @@ def evaluate(model, train_data, target_data):
     print('AUC: {:.3f} (+/- {:.3f})'.format(auc.mean(), auc.std()))
     return acc.mean(), auc.mean()
 
-def select_feature(model, train_data, target_data, num= 50):
+def most_important_features(model, train_data, target_data, num= 50):
     model.fit(train_data, target_data)
     importances = model.feature_importances_
     
     priority = np.argsort(importances)[::-1][:num]
-    feature = np.array(train_data.columns[priority])
-    return feature
+    features = np.array(train_data.columns[priority])
+    scores = importances[priority]
+    return features, scores
+
+def plot_feature_scores(features, scores, name, info= None):
+    data_table = [['Feature', 'Score - {}'.format(info)]]
+    for i in range(len(features)):
+        pair = [features[i], scores[i]]
+        data_table.append(pair)
+    table = ff.create_table(data_table)
+    py.plot(table, filename= name)
 
 def analyze_by_category():
     target = 'SLQ050'
@@ -65,7 +77,7 @@ def analyze_by_category():
         print(error)
 
 def analyze_features():
-    target = 'SLQ050'
+    target = 'SLQ040'
     model = model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
     DPQ030_categories = ['Cardiovascular Health (CDQ_I)', 'Current Health Status (HSQ_I)', 'Disability (DLQ_I)', 'Hospital Utilization & Access to Care (HUQ_I)',
                         'Medical Conditions (MCQ_I)', 'Mental Health - Depression Screener (DPQ_I)']
@@ -75,33 +87,45 @@ def analyze_features():
                         'Mental Health - Depression Screener (DPQ_I)', 'Physical Activity (PAQ_I)', 'Weight History (WHQ_I)', 
                         'Demographic Variables and Sample Weights (DEMO_I)', 'Standard Biochemistry Profile (BIOPRO_I)']
 
+    DPQ030_categories = ['Mental Health - Depression Screener (DPQ_I)']
+
     label_handler = get_all_handler()
-    symbols = label_handler.get_symbols_by_categories(SLQ050_categories)
+    symbols = label_handler.get_symbols_by_categories(DPQ030_categories)
     symbols = []
     target_data = get_2015_sleep_data(target)
     train_data, target_data = get_2015_all(target_data, symbols)
-    evaluate(model, train_data, target_data)
+    acc, auc = evaluate(model, train_data, target_data)
+    info = '| ACC: {:.3f} | AUC: {:.3f}'.format(acc, auc)
 
-    best_feautres = select_feature(model, train_data, target_data, 50)
-    print(' ------ Best Feature ------')
-    for f in best_feautres:
+    features, scores = most_important_features(model, train_data, target_data, 50)
+    print(' ------ Most important Feature ------')
+    for f in features:
         print(f)
+    
+    plot_feature_scores(features, scores, 'SLQ040_all', info= info)
 
 def main():
     analyze_features()
 
 def test():
-    handler = get_all_handler()
-    category = 'Weight History - Youth (WHQMEC_I)'
-    symbols = handler.get_symbols_by_category(category)
-    target_data = get_2015_sleep_data(target = 'SLQ050')
+    target = 'SLQ050'
+    model = model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
+
+    category = 'Disability (DLQ_I)'
+    label_handler = get_all_handler()
+    symbols = label_handler.get_symbols_by_category(category)
+    target_data = get_2015_sleep_data(target)
     train_data, target_data = get_2015_all(target_data, symbols)
-    print(train_data.head())
+
+    features, scores = most_important_features(model, train_data, target_data)
+    plot_feature_scores(features, scores, 'test')
 
 if __name__ == '__main__':
     import sys
     mode = sys.argv[1]
     if mode == 'main':
+        print('-- MAIN --')
         main()
     else:
+        print('-- TEST --')
         test()

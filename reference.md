@@ -25,3 +25,8 @@
 * [Fundamental Techniques of Feature Engineering for Machine Learning](https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114)
 * [Rare Feature Engineering Techniques for Machine Learning Competitions](https://medium.com/ml-byte/rare-feature-engineering-techniques-for-machine-learning-competitions-de36c7bb418f)
 * [Feature Engineering: What Powers Machine Learning](https://towardsdatascience.com/feature-engineering-what-powers-machine-learning-93ab191bcc2d)
+
+## Visualization
+* [The Next Level of Data Visualization in Python](https://towardsdatascience.com/the-next-level-of-data-visualization-in-python-dd6e99039d5e)
+* [10 Useful Python Data Visualization Libraries for Any Discipline](https://mode.com/blog/python-data-visualization-libraries)
+* [The Python Graph Gallery](https://python-graph-gallery.com/)
