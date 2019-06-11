@@ -84,8 +84,8 @@ def analyze_by_category():
         print(error)
 
 def analyze_features():
-    target = 'SLQ040'
-    model = model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
+    target = 'SLQ050'
+    model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
     DPQ030_categories = ['Cardiovascular Health (CDQ_I)', 'Current Health Status (HSQ_I)', 'Disability (DLQ_I)', 'Hospital Utilization & Access to Care (HUQ_I)',
                         'Medical Conditions (MCQ_I)', 'Mental Health - Depression Screener (DPQ_I)']
     
@@ -94,40 +94,43 @@ def analyze_features():
                         'Mental Health - Depression Screener (DPQ_I)', 'Physical Activity (PAQ_I)', 'Weight History (WHQ_I)', 
                         'Demographic Variables and Sample Weights (DEMO_I)', 'Standard Biochemistry Profile (BIOPRO_I)']
 
-    DPQ030_categories = ['Mental Health - Depression Screener (DPQ_I)']
+    SLQ050_categories = ['Physical Activity (PAQ_I)']
 
     label_handler = get_all_handler()
-    symbols = label_handler.get_symbols_by_categories(DPQ030_categories)
-    symbols = []
+    symbols = label_handler.get_symbols_by_categories(SLQ050_categories)
     target_data = get_2015_sleep_data(target)
     train_data, target_data = get_2015_all(target_data, symbols)
     acc, auc = evaluate(model, train_data, target_data)
     info = '| ACC: {:.3f} | AUC: {:.3f}'.format(acc, auc)
 
-    features, scores = most_important_features(model, train_data, target_data, 50)
+    features, scores = most_important_features(model, train_data, target_data, 10)
     print(' ------ Most important Feature ------')
     for f in features:
         print(f)
     
-    plot_feature_scores(features, scores, 'SLQ040_all', info= info)
+    plot_feature_scores(features, scores, 'SLQ050_Physical Activity', info= info)
 
-def test():
-    target = 'SLQ030'
+def analyze_feature_impact():
+    target = 'SLQ050'
+    target_feautre = '#times receive healthcare over past year'
     model = model = RandomForestClassifier(n_estimators= 200, max_depth= 10, random_state= 0)
 
-    category = 'Body Measures (BMX_I)'
+    category = 'Hospital Utilization & Access to Care (HUQ_I)'
     label_handler = get_all_handler()
     symbols = label_handler.get_symbols_by_category(category)
+    # symbols = []
     target_data = get_2015_sleep_data(target)
     train_data, target_data = get_2015_all(target_data, symbols)
 
     evaluate(model, train_data, target_data)
     model.fit(train_data, target_data)
-    target_feautre = 'Weight (kg)'
-    plot_single_feature_impact(model, train_data, target_feautre, 'test.png')
+    plot_single_feature_impact(model, train_data, target_feautre, 'img/single_feature_impact/{}_{}.png'.format(target, target_feautre))
+
+def test():
+    pass
 
 def main():
-    analyze_features()
+    analyze_feature_impact()
 
 if __name__ == '__main__':
     import sys
