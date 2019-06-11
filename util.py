@@ -270,6 +270,11 @@ def get_2015_all(target_data, symbol_list= []):
 
     columns = train_data.columns
     contents, noresults = label_handler.symbols_to_contents(columns)
+    '''
+    for i in range(len(contents)):
+        if  contents[i]  != 'SEQN' :
+            contents[i] = '---------------------' + contents[i]
+    '''
     train_data.columns = contents
     if noresults:
         train_data = train_data.drop(noresults, axis= 1)

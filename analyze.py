@@ -45,29 +45,32 @@ def  partial_dependence_plot(feat_name, model, X_test, base_features, path):
     plt.close()
 
 def shap_plot(model, X_test, path):
-
+    '''
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(X_test)
     shap.summary_plot(shap_values[1], X_test, plot_type="bar", show=False   )
     plt.savefig(path+'shap_plot_1.png', bbox_inches='tight')
     print('generate '+path+'shap_plot_1.png')
     plt.close()
-
+    '''
+    explainer = shap.TreeExplainer(model)
+    shap_values = explainer.shap_values(X_test)
     shap.summary_plot(shap_values[1], X_test, show=False)
     plt.savefig(path+'shap_plot_2.png', bbox_inches='tight')
     print('generate '+path+'shap_plot_2.png')
     plt.close()
-
+    '''
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(X_test.iloc[1,:].astype(float))
     shap.initjs()
+    
     shap.force_plot(explainer.expected_value[1], shap_values[1],
                     X_test.iloc[1,:].astype(float), show=False,
-                    matplotlib=True, text_rotation=15)
+                    matplotlib=True, text_rotation=60)
     plt.savefig(path+'shap_plot_3.png', bbox_inches='tight')
     print('generate '+path+'shap_plot_3.png')
     plt.close()
-
+    '''
 
 #   Add confusion_matrix(sensitivity, specificity) & ROC &AUC
 
